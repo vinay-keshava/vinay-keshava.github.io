@@ -1,0 +1,33 @@
+baseURL = "https://vinay-keshava.gitlab.io/"
+defaultContentLanguage = "en"
+languageCode = "en"
+
+title = "Vinay Keshava"
+
+theme = "gokarna"
+
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    # Unique identifier for a menu item
+    identifier = "posts"
+    url = "/posts/"
+    pre = "<span data-feather='book'></span>"
+    name = "Posts"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+    
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/vinay-keshava"
+    weight = 3
+    
+    # We use feather-icons: https://feathericons.com/
+    pre = "<span data-feather='github'></span>"
