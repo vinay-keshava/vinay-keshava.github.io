@@ -2,7 +2,7 @@
 title: "git.fosscommunity.in Server Update"
 date: 2021-12-10T20:01:24+05:30
 weight: 10
-description: "A guide to getting started with Gokarna"
+description: "Updating git.fosscommunity.in"
 tags: ["git.fosscommunity.in", "debian", "fsci"]
 type: post
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Software Freedom Camp 2021 Snikket"
-date: 2021-12-10T20:01:24+05:30
+date: 2022-03-29T20:01:24+05:30
 weight: 10
-description: "A guide to getting started with Gokarna"
+description: "Learnings from software freedom camp"
 tags: ["git.fosscommunity.in", "debian", "fsci"]
 type: post
 ---
