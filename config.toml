@@ -9,6 +9,16 @@ theme = "gokarna"
 # Automatically generate robots.txt
 enableRobotsTXT = true
 
+[params]
+  avatarURL = "image/vinay.png"
+  description = "Hacker | Undergraduate | Engineer"
+  metaKeywords = ["blog","vinay","vinay-keshava"]
+  socialIcons = [
+      {name = "github", url = "https://github.com/vinay-keshava"},
+      {name = "linkedin", url = "https://linkedin.in/in/vinay-keshava"},
+      {name = "email", url = "vinaykeshava AT SPAMFREE disroot.org"},
+    ]
+
 [menu]
   [[menu.main]]
     # Unique identifier for a menu item
@@ -28,6 +38,31 @@ enableRobotsTXT = true
     identifier = "github"
     url = "https://github.com/vinay-keshava"
     weight = 3
-    
     # We use feather-icons: https://feathericons.com/
     pre = "<span data-feather='github'></span>"
+
+  [[menu.main]]
+    identifier = "linkedin"
+    url = "https://linkedin.in/in/vinay-keshava"
+    #https://feathericons.com/ for icons 
+    weight = 4
+    pre = "<span data-feather='linkedin'></span>"
+
+  [[menu.main]]
+    identifier = "gitlab"
+    url = "https://gitlab.com/vinay-keshava"
+    weight = 5
+    pre = "<span data-feather='gitlab'></span>"
+  [[menu.main]]
+    identifier = "rss"
+    url = "/index.xml"
+    weight = 6
+    pre = "<span data-feather='rss'></span>"
+
+  [[menu.main]]
+    identifier = "twitter" 
+    url = "https://mastodon.world/@vinaykeshava"
+    weight = 7
+    pre = "<span data-feather='twitter'></span>"
+
+
