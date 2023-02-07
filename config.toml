@@ -16,7 +16,7 @@ enableRobotsTXT = true
   socialIcons = [
       {name = "github", url = "https://github.com/vinay-keshava"},
       {name = "linkedin", url = "https://linkedin.in/in/vinay-keshava"},
-      {name = "email", url = "vinaykeshava AT SPAMFREE disroot.org"},
+      {name = "email", url = "mailto:vinaykeshava AT disroot.org"},
     ]
 
 [menu]
