@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Contributing to Debian</title>
+    <meta name="description" content="Debian Packaging ">
+    <meta name="keywords" content='blog, vinay, vinay-keshava, debian-packaging, debian, sfcamp'>
+
+    <meta property="og:url" content="https://vinay-keshava.gitlab.io/posts/contributing_to_debian/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contributing to Debian">
+    <meta property="og:description" content="Debian Packaging ">
+    <meta property="og:image" content="image/vinay.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contributing to Debian">
+    <meta name="twitter:description" content="Debian Packaging ">
+    <meta property="twitter:domain" content="https://vinay-keshava.gitlab.io/posts/contributing_to_debian/">
+    <meta property="twitter:url" content="https://vinay-keshava.gitlab.io/posts/contributing_to_debian/">
+    <meta name="twitter:image" content="image/vinay.png">
+
+    
+    <link rel="canonical" href="https://vinay-keshava.gitlab.io/posts/contributing_to_debian/" />
+
+    <link rel="stylesheet" type="text/css" href="https://vinay-keshava.gitlab.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://vinay-keshava.gitlab.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://vinay-keshava.gitlab.io//css/dark.css">
+
+    <script src="https://vinay-keshava.gitlab.io//js/svg-injector.min.js"></script>
+    <script src="https://vinay-keshava.gitlab.io//js/feather-icons.min.js"></script>
+    <script src="https://vinay-keshava.gitlab.io//js/main.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://vinay-keshava.gitlab.io/">
+                <img src="https://vinay-keshava.gitlab.io/image/vinay.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://vinay-keshava.gitlab.io/">Vinay Keshava</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://vinay-keshava.gitlab.io/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://vinay-keshava.gitlab.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/vinay-keshava"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://linkedin.in/in/vinay-keshava"><span data-feather='linkedin'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://gitlab.com/vinay-keshava"><span data-feather='gitlab'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://vinay.in"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://vinay-keshava.gitlab.io/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://vinay-keshava.gitlab.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/vinay-keshava"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://linkedin.in/in/vinay-keshava"><span data-feather='linkedin'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://gitlab.com/vinay-keshava"><span data-feather='gitlab'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://vinay.in"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Contributing to Debian</h1>
+        <small role="doc-subtitle">Debian Packaging </small>
+        <p class="post-date">
+            July 30, 2022
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://vinay-keshava.gitlab.io/tags/debian-packaging">debian-packaging</a></li>
+        
+            <li class="post-tag"><a href="https://vinay-keshava.gitlab.io/tags/debian">debian</a></li>
+        
+            <li class="post-tag"><a href="https://vinay-keshava.gitlab.io/tags/sfcamp">sfcamp</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="debian">Debian</h1>
+<p>Debian is a GNU/Linux distribution completely inclinded towards Free Software philosophy, maintained by the community.</p>
+<p>Before talking about how i started contributing to debian, i would like to talk about the camp organized by FSCI
+It is an online free mentorship programme organized by <a href="https://fsci.in">Free Software Community of India</a> ,introducing people
+to Free Software.<a href="https://ravish0007.github.io">Ravish</a> introduced me to 2021 <a href="https://camp.fsci.in">FSCI&rsquo;s camp</a>, and there i
+got introduced to Debian Packaging through <a href="https://wiki.debian.org/DebianDeveloper">Debian Developers</a> and <a href="https://wiki.debian.org/DebianMaintainer">Debian Maintainers</a>.</p>
+<p>During the project phase of the camp, i choosed to work on Debian Packaging and System Administration(here is my
+<a href="https://git.fosscommunity.in/community/camp/-/wikis/Proposals/Debian-Packaging-and-System-Administration/Vinay-Keshava">Project Proposal</a>)</p>
+<h1 id="debian-packages-and-my-story-">Debian Packages and my Story !!</h1>
+<p>Debian has roughly over 51,000 packages, these packages are installable through apt, just like &ldquo;sudo apt install nano&rdquo;.
+I always wanted to know how &ldquo;sudo apt install nano&rdquo; works !.</p>
+<p>During the project phase of the camp <a href="https://social.masto.host/@praveen">Praveen</a> my mentor of the project,a <a href="https://wiki.debian.org/DebianDeveloper">Debian Developer</a> himself
+suggested to get started by packaging node packages(dependencies of <a href="https://tracker.debian.org/pkg/gitlab">Gitlab</a>).
+A big Thanks to praveen for teaching packaging from scratch, also answering my useless questions and also sponsoring my packages to debian.
+Initially i found it very difficult to understand it,but the community was so welcoming, they were helping and assisting me by clearing all my doubts through matrix.</p>
+<p>I took a lot of time to learn,tried to spend more time in learning  during hectic schedule of college and also i gave up hope many times and restarted it.
+So initial task was to setup the <a href="https://wiki.debian.org/DebianUnstable">Debian Unstable environment </a> and rebuilding the existing simple node-pretty-ms package, and then tried a simple
+package update and then went to continue packaging few node modules.</p>
+<p>I currently <a href="https://qa.debian.org/developer.php?login=vinaykeshava@disroot.org">maintain</a> around two node modules as of today, looking forward to maintain more packages in debian.
+All the communication happens mainly through mailing list or irc of respective <a href="https://wiki.debian.org/Teams">teams</a>.</p>
+<h1 id="further-development">Further Development</h1>
+<p>Looking forward to contribute and hangout with the awesome debian community and learn more.</p>
+<pre tabindex="0"><code>    :wq
+</code></pre>
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 </span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
