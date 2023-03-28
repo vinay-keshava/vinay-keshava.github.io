@@ -11,7 +11,7 @@ enableRobotsTXT = true
 
 [params]
   avatarURL = "image/vinay.png"
-  description = "Hacker | Undergraduate | Engineer"
+  description = "Debian Maintainer | Undergraduate | Engineer"
   metaKeywords = ["blog","vinay","vinay-keshava"]
   socialIcons = [
       {name = "github", url = "https://github.com/vinay-keshava"},
