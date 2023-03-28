@@ -1,6 +1,6 @@
 ---
 title: "Debian Maintainer Now !!!!"
-date: 2022-03-29T20:01:24+05:30
+date: 2023-03-28T20:01:24+05:30
 weight: 10
 description: "a debian maintainer now !!!"
 tags: ["gitlab", "debian", "debian-maintainer" , "ruby"]
