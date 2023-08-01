@@ -1,0 +1,19 @@
+---
+enable: true
+title: Frequently asked questions
+description: 
+faqItem:
+  - question: Do you service all types of diesel generators ?
+    answer: Yeah , we service all types of generators of leading brands.
+    dataTarget: One
+    show: show
+
+  - question: Can you assist with the installation of a new generator, including support for EB and erection of new generator?
+    answer: Yes.
+    dataTarget: Two
+    show:
+    
+ # - question: How much it costs to get started?
+ #   answer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus a, expedita dolorum consequatur magni commodi tempore nesciunt soluta veritatis corporis iste labore eaque aliquam, sapiente debitis dignissimos aut exercitationem minima.
+ #   dataTarget: Three
+ #   show: 

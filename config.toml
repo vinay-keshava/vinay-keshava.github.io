@@ -1,0 +1,66 @@
+# MAIN base
+baseURL = "https://apsho-hugo.netlify.app/"
+languageCode = "en-us"
+title = "SMP Diesel "
+theme = "apsho"
+
+# Navigation Bar
+[[menu.main]]
+    name = "Home"
+    url = "#hero"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "#feature"
+    weight = 2
+#[[menu.main]]
+#    name = "Services"
+#    url = "#services"
+#    weight = 3
+[[menu.main]]
+    name = "Blog"
+    url = "#blog"
+    weight = 3
+
+# Footer Sitemap
+[[menu.sitemap]]
+    name = "Home"
+    url = "#"
+    weight = 1
+[[menu.sitemap]]
+    name = "Latest Article"
+    url = "/blog"
+    weight = 2
+#[[menu.sitemap]]
+#    name = "Privacy & Policy"
+#    url = "/privacy"
+#    weight = 3
+[[menu.sitemap]]
+    name = "Contact"
+    url = "/contact"
+    weight = 3
+
+# Footer Address
+[params.address]
+address = "Krishnadevaraya layout Kogilu Yelahanka Bengaluru-560064."
+email = "info@smpdiesel.in"
+phone = "+91 98452 45369"
+
+# Footer Social
+[params.social]
+linkedin = "https://www.facebook.com/pg/staticmania"
+email = "https://twitter.com/static_mania"
+
+[params]
+
+# Header
+logo = "images/smp1.png"
+fabFormURL = "https://fabform.io/f/FrlX9zW"
+googleAnalytics = "UA-175025671-2"
+
+# Footer
+footerTitle = "Get in touch with us"
+copyright1 = "Designed by Vinay"
+copyright2 = "Copyright ©  <a href=\"https://smpdiesel.in/\" target=\"_blank\">SMP Diesel </a> {year}"
+#contact
+email = "info@smpdiesel.in"

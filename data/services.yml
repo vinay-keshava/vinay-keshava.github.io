@@ -1,0 +1,27 @@
+#  icons can be found on https://themify.me/themify-icons
+---
+enable: true
+title: Services Provided
+services:
+  - icon: ti-alarm-clock
+    title: Quick Service
+    description: Swift Solutions at Your Doorstep - Prompt and Efficient Quick Service for Your Diesel Generator Needs.
+
+  - icon: ti-check-box
+    title: Annual Maintenance Contract (AMC)
+    description: Annual Maintenance Contracts (AMC) for Diesel Generators - Ensuring Optimal Performance and Reliability
+
+  - icon: ti-key
+    title: Sale of New & Used Generators
+    description: New and Used Generator Sales - Kirloskar, Cummins, Mahindra, and Ashok Leyland.
+
+  - icon: ti-settings
+    title: Erection work of Diesel Generators
+    description: Efficient Erection Services - Expert Installation and Setup of Diesel Generators.
+
+
+  - icon: ti-settings
+    title: Synchronizing and Auto Panel works.
+    description: All related works of AMF panel related to generators.
+
+

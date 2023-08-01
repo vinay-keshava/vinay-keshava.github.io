@@ -1,0 +1,17 @@
+---
+enable: true
+title: Clients We Service
+description: Clientele Showcase - Our Diverse Range of Satisfied Clients in Various Industries
+
+images:
+  - url: images/screenshots/hoyasala.jpg
+  - url: images/screenshots/sbi.png
+  - url: images/screenshots/nitte.jpg
+  - url: images/screenshots/suguna.jpg
+  - url: images/screenshots/syndicate.jpg
+  - url: images/screenshots/canara-bank.png
+  - url: images/screenshots/atria.jpg
+  - url: images/screenshots/atria-power.png
+#  - url: images/screenshots/canara-bank.png
+#  - url: images/screenshots/canara-bank.png
+
