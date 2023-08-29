@@ -4,7 +4,6 @@ date: 2023-08-29T20:01:24+05:30
 weight: 10
 description: "Mapping of Physical USB ports to Device Names (/dev/sda) on GNU/Linux"
 tags: ["usb", "linux", "gnu/linux" , "gnu"]
-draft: false
 type: post
 ---
 
