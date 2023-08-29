@@ -4,7 +4,7 @@ date: 2023-08-29T20:01:24+05:30
 weight: 10
 description: "Mapping of Physical USB ports to Device Names (/dev/sda) on GNU/Linux"
 tags: ["usb", "linux", "gnu/linux" , "gnu"]
-draft: true
+draft: false
 type: post
 ---
 
@@ -110,3 +110,7 @@ lrwxrwxrwx 1 root root  9 Aug 29 09:49 pci-0000:00:14.0-usb-0:4.2:1.0-scsi-0:0:0
 ```
 Here /dev/sdb is the USB device attached and "pci-0000:00:14.0-usb-0:4.2:1.0-scsi-0:0:0:0" file which represents the USB device describes that the USB device is connected from PCI bus to SCSI adapter."by-path" is the pci path of the disk device. this device file name is created depending on the shortest physical path to the device.
 "/dev/sda" the first SCSI drive on the first SCSI bus,/dev/sdb is the second SCSI drive and /dev/sdc is the third SCSI drive and so on.
+
+```
+:wq
+```
