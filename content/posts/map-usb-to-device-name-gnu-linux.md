@@ -47,7 +47,7 @@ sdb      8:16   1  28.9G  0 disk
 sr0     11:0    1  1024M  0 rom  
 ```
 
-### Suppose if there are multiple USB sticks attached to mutiple physical USB ports how to know which device names is mapped to which USB port ?
+## Suppose if there are multiple USB sticks attached to mutiple physical USB ports how to know which device names is mapped to which USB port ?
 
 If there are multiple USB's attached how do we get to know USB drive's device file and to which port that USB is connected ?
 
