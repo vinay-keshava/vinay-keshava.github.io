@@ -1,10 +1,10 @@
 ---
 title: "Interception Vimproved"
-date: 2023-09-18T11:19:15+05:30
+date: 2023-09-18T11:23:17+05:30
 weight: 10
 description: "Setting up Interception Vimproved on Debian Bookworm GNU/Linux"
 tags: ["vim", "interception-tools", " gnu/linux" , "gnu","keyboard"]
-draft:true
+draft: true
 type: post
 ---
 
