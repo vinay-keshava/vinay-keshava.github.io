@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debian-maintainer on Vinay Keshava</title>
+    <link>/tags/debian-maintainer/</link>
+    <description>Recent content in debian-maintainer on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Mar 2023 20:01:24 +0530</lastBuildDate><atom:link href="/tags/debian-maintainer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debian Maintainer Now !!!!</title>
+      <link>/posts/debian-maintainer/</link>
+      <pubDate>Tue, 28 Mar 2023 20:01:24 +0530</pubDate>
+      
+      <guid>/posts/debian-maintainer/</guid>
+      <description>I am excited to share with you all that I have recently become a Debian maintainer!! Thanks to amazing debian community.
+It all started with Software Freedom Camp, ravish my college super senior (we were a part of college linux club) introduced me to software freedom camp organized by FSCI, since then i was a noob hopping between various distro&amp;rsquo;s from kali linux to other debian based distros to arch !</description>
+    </item>
+    
+  </channel>
+</rss>

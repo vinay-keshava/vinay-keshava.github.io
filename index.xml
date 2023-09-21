@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Live What You Learn on Vinay Keshava</title>
+    <link>/</link>
+    <description>Recent content in Live What You Learn on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Aug 2023 11:19:15 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mapping of Physical USB ports to Device Name on GNU/Linux</title>
+      <link>/posts/mapping-of-physical-usb-ports-to-device-names/</link>
+      <pubDate>Tue, 29 Aug 2023 11:19:15 +0530</pubDate>
+      
+      <guid>/posts/mapping-of-physical-usb-ports-to-device-names/</guid>
+      <description>How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05.</description>
+    </item>
+    
+    <item>
+      <title>Debian Maintainer Now !!!!</title>
+      <link>/posts/debian-maintainer/</link>
+      <pubDate>Tue, 28 Mar 2023 20:01:24 +0530</pubDate>
+      
+      <guid>/posts/debian-maintainer/</guid>
+      <description>I am excited to share with you all that I have recently become a Debian maintainer!! Thanks to amazing debian community.
+It all started with Software Freedom Camp, ravish my college super senior (we were a part of college linux club) introduced me to software freedom camp organized by FSCI, since then i was a noob hopping between various distro&amp;rsquo;s from kali linux to other debian based distros to arch !</description>
+    </item>
+    
+    <item>
+      <title>Contributing to Debian</title>
+      <link>/posts/contributing-to-debian/</link>
+      <pubDate>Sat, 30 Jul 2022 20:01:24 +0530</pubDate>
+      
+      <guid>/posts/contributing-to-debian/</guid>
+      <description>DebianDebian is a GNU/Linux distribution completely inclinded towards Free Software philosophy, maintained by the community.
+Before talking about how i started contributing to debian, i would like to talk about the camp organized by FSCI It is an online free mentorship programme organized by Free Software Community of India ,introducing people to Free Software.Ravish introduced me to 2021 FSCI&amp;rsquo;s camp, and there i got introduced to Debian Packaging through Debian Developers and Debian Maintainers.</description>
+    </item>
+    
+    <item>
+      <title>Software Freedom Camp 2021 Snikket</title>
+      <link>/posts/software-freedom-camp-2021/</link>
+      <pubDate>Tue, 29 Mar 2022 20:01:24 +0530</pubDate>
+      
+      <guid>/posts/software-freedom-camp-2021/</guid>
+      <description>Back to writing after a 2-month long Semester End Exam !!!!.
+Everyone uses messaging platforms like WhatsApp, Facebook, Signal, Telegram, and various other applications to communicate with people, in this blog post I would like to introduce to XMPP Protocol( Extensible Messaging and Presence Protocol), XMPP is an open, decentralized universal messaging standard for instant messaging, voice/video calls. Many Applications or Clients are built using the XMPP protocol due to its open nature.</description>
+    </item>
+    
+    <item>
+      <title>git.fosscommunity.in Server Update</title>
+      <link>/posts/git-fosscommunity-in-update/</link>
+      <pubDate>Fri, 10 Dec 2021 20:01:24 +0530</pubDate>
+      
+      <guid>/posts/git-fosscommunity-in-update/</guid>
+      <description>Ahh, my first blog post. Good Beginnings (:
+Excited!!
+This blog post is dedicated to sharing my experience with updating the FSCI’s GitLab instance git.fosscommunity.in update.
+FSCI runs a free instance of GitLab Community Edition at git.fosscommunity.in for collaborative software development.
+FSCI also hosts and maintains a lot of services for the community, you can check out the services here, these services are managed by volunteers.
+After joining Software Freedom Camp 2021 Diversity Edition( Online mentorship programme organized by Free Software Community of India(FSCI) ) as a learner and I met a bunch of people who discuss about Free/Libre/Open Source Software and educate people about why it is important to use free software in our life maintaining freedom and privacy in this era of technology.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hello, I&amp;rsquo;m Vinay a FOSS enthusiast and a undergraduate, currently Intern&amp;rsquo;ing at Deeproot GNU/Linux.
+I&amp;rsquo;m a Debian Maintainer,maintaining &amp;amp; working on ruby and golang packages of GitLab and its components on Debian.
+Please feel free to hit me up if you want to get in contact or want to know about me. I go by the handle vinay-keshava across the web.
+Email/XMPP: vinaykeshava [AT] disroot.org</description>
+    </item>
+    
+    <item>
+      <title>Blog Post&#39;s</title>
+      <link>/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/</guid>
+      <description> Mapping of Physical USB ports to device filename on GNU/Linux Debian Maintainer Now!! Contributing to Debian !! Software Freedom Camp 2021 git.fosscommunity.in Server Update </description>
+    </item>
+    
+    <item>
+      <title>Interception Vimproved</title>
+      <link>/docs/interception-vimproved/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/interception-vimproved/</guid>
+      <description>Setting up Interception Vimproved on Debian Bookworm I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.
+Interception Vimproved is a plugin for interception-tools which combines both caps2esc and space on hold work as special fn key. This blog post shows how to setup interception-vimproved using interception-tools on Debian Bookworm.
+Step 1: Dependencies Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux</description>
+    </item>
+    
+    <item>
+      <title>NextCloud</title>
+      <link>/docs/selfhosting/nextcloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/selfhosting/nextcloud/</guid>
+      <description>Coming Soon.</description>
+    </item>
+    
+  </channel>
+</rss>

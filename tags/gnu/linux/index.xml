@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gnu/linux on Vinay Keshava</title>
+    <link>/tags/gnu/linux/</link>
+    <description>Recent content in gnu/linux on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/tags/gnu/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mapping of Physical USB ports to Device Name on GNU/Linux</title>
+      <link>/posts/mapping-of-physical-usb-ports-to-device-names/</link>
+      <pubDate>Tue, 29 Aug 2023 11:19:15 +0530</pubDate>
+      
+      <guid>/posts/mapping-of-physical-usb-ports-to-device-names/</guid>
+      <description>How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05.</description>
+    </item>
+    
+    <item>
+      <title>Mapping of Physical USB ports to Device Name on GNU/Linux</title>
+      <link>/posts/mapping-of-physical-usb-ports-to-device-names/</link>
+      <pubDate>Tue, 29 Aug 2023 11:19:15 +0530</pubDate>
+      
+      <guid>/posts/mapping-of-physical-usb-ports-to-device-names/</guid>
+      <description>How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05.</description>
+    </item>
+    
+  </channel>
+</rss>

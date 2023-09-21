@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation of Vinay Keshava</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interception Vimproved</title>
+      <link>/docs/interception-vimproved/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/interception-vimproved/</guid>
+      <description>Setting up Interception Vimproved on Debian Bookworm I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.
+Interception Vimproved is a plugin for interception-tools which combines both caps2esc and space on hold work as special fn key. This blog post shows how to setup interception-vimproved using interception-tools on Debian Bookworm.
+Step 1: Dependencies Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux</description>
+      <content:encoded><![CDATA[<h3>Setting up Interception Vimproved on  Debian Bookworm<span class="absolute -mt-20" id="setting-up-interception-vimproved-on--debian-bookworm"></span>
+    <a href="#setting-up-interception-vimproved-on--debian-bookworm" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.</p>
+<p><a href="https://github.com/maricn/interception-vimproved" target="_blank" rel="noopener">Interception Vimproved</a> is a plugin for <a href="https://gitlab.com/interception/linux/tools" target="_blank" rel="noopener">interception-tools</a> which combines both caps2esc and space on hold work as special <code>fn</code> key.
+This blog post shows how to setup <a href="https://github.com/maricn/interception-vimproved" target="_blank" rel="noopener">interception-vimproved</a> using interception-tools on Debian Bookworm.</p>
+<h4>Step 1: Dependencies<span class="absolute -mt-20" id="step-1-dependencies"></span>
+    <a href="#step-1-dependencies" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt install interception-tools meson libyaml-cpp-dev cmake </span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-0">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>interception-tools is a small set of tools for input events of devices,that can be used to customize the behaviour of input keyboard mappings.</p>
+<p>The advantage of interception-tools operates at lower level compared to xmodmap by using libevdev and libudev.</p>
+<h4>Step 2: Clone &amp; Build<span class="absolute -mt-20" id="step-2-clone--build"></span>
+    <a href="#step-2-clone--build" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Clone interception-vimproved repository and build</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-1"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git clone <span class="s2">&#34;https://github.com/maricn/interception-vimproved&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> interception-vimproved
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ sudo make install</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-1">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>Clone the git repository and change the directory, and then launch a <code>make install</code> command to build.</p>
+<h4>Step 3: Configuration<span class="absolute -mt-20" id="step-3-configuration"></span>
+    <a href="#step-3-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Create a new file called udevmon.yaml in /etc/interception and paste the following contents into the file /etc/interception/udevmon.yaml</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- JOB: <span class="s2">&#34;interception -g </span><span class="nv">$DEVNODE</span><span class="s2"> | interception-vimproved /etc/interception-vimproved/config.yaml | uinput -d </span><span class="nv">$DEVNODE</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  DEVICE:
+</span></span><span class="line"><span class="cl">    NAME: <span class="s2">&#34;.*((k|K)(eyboard|EYBOARD)).*&#34;</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-2">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p><code>udevmon.yaml</code> is like a job specification for <code>udevmon</code>,specifying that it matches with <code>(k|K)(eyboard|EYBOARD))</code> input device.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200">
+  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>ℹ️</div>
+  <div class="w-full min-w-0 leading-7">
+    <p class="mt-6 leading-7 first:mt-0">
+      I haven&rsquo;t tested this for an External Keyboard Input device,but works fine for the built-in keyboard of the laptop.
+    </p>
+  </div>
+</div>
+
+<h4>Step 4: Reload udevmon<span class="absolute -mt-20" id="step-4-reload-udevmon"></span>
+    <a href="#step-4-reload-udevmon" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Reload udevmon using systemctl</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-3"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl restart udevmon</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-3">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<h4>Hack around the config<span class="absolute -mt-20" id="hack-around-the-config"></span>
+    <a href="#hack-around-the-config" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>To change any keybindings or to add new mappings the config file is present in config.yaml located in /etc/interception-vimproved/ when a <code>sudo make install</code> is launched the config file is
+copied to <code>/etc/interception-vimproved/config.yaml</code>.</p>
+<p>my config.yaml has the below shortcuts</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">/etc/interception-vimproved/config.yaml</div><div id="code-block-4"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- intercept: KEY_CAPSLOCK
+</span></span><span class="line"><span class="cl">  ontap: KEY_ESC
+</span></span><span class="line"><span class="cl">  onhold: KEY_LEFTCTRL
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- intercept: KEY_ENTER
+</span></span><span class="line"><span class="cl">  <span class="c1"># not necessary: ontap: KEY_ENTER is inferred if left empty</span>
+</span></span><span class="line"><span class="cl">  onhold: KEY_RIGHTCTRL
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># this is a layer. hold space (onhold) contains several remappings</span>
+</span></span><span class="line"><span class="cl">- intercept: KEY_SPACE
+</span></span><span class="line"><span class="cl">  onhold:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># special chars</span>
+</span></span><span class="line"><span class="cl">  - from: KEY_E
+</span></span><span class="line"><span class="cl">    to: KEY_ESC
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># alternative syntax</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_D, to: KEY_DELETE<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_B, to: KEY_BACKSPACE<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># vim home row</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_H, to: KEY_LEFT<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_J, to: KEY_DOWN<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_K, to: KEY_UP<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_L, to: KEY_RIGHT<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># vim above home row</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_Y, to: KEY_HOME<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_U, to: KEY_PAGEDOWN<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_I, to: KEY_PAGEUP<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_O, to: KEY_END<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># number row, to F keys</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_1, to: KEY_F1<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_2, to: KEY_F2<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_3, to: KEY_F3<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_4, to: KEY_F4<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_5, to: KEY_F5<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_6, to: KEY_F6<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_7, to: KEY_F7<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_8, to: KEY_F8<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_9, to: KEY_F9<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_0, to: KEY_F10<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_MINUS, to: KEY_F11<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_EQUAL, to: KEY_F12<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># xf86 audio</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_M, to: KEY_MUTE<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_COMMA, to: KEY_VOLUMEDOWN<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_DOT, to: KEY_VOLUMEUP<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># mouse navigation</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: BTN_LEFT, to: BTN_BACK<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: BTN_RIGHT, to: BTN_FORWARD<span class="o">}</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-4">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p><a href="https://tracker.debian.org/pkg/interception-tools" target="_blank" rel="noopener">Interception-tools</a> is packaged on debian,interception-vimproved is not,
+that is the reason we are building the source of interception-vimproved,hopefully i&rsquo;ll try packaging it !.</p>
+<p>Arch has interception-tools already packaged here is the <a href="https://wiki.archlinux.org/title/Interception-tools" target="_blank" rel="noopener">link</a></p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-5"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:wq <span class="c1">#until next time</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-5">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
