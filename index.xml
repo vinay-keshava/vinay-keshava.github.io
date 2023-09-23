@@ -101,5 +101,14 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
       <description>Coming Soon.</description>
     </item>
     
+    <item>
+      <title>OpenLDAP</title>
+      <link>/docs/openldap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/openldap/</guid>
+      <description>Directory Service ℹ️ Difference between a folder and a directory Folder is for grouping items. Directory has index. It is for finding specific item,Directory is a filesystem concept. In simple terms think directory like a telephone directory which is in a hierarchial structure. The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users.</description>
+    </item>
+    
   </channel>
 </rss>
