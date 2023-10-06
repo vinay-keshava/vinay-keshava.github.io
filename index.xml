@@ -6,16 +6,7 @@
     <description>Recent content in Live What You Learn on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Aug 2023 11:19:15 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Mapping of Physical USB ports to Device Name on GNU/Linux</title>
-      <link>/posts/mapping-of-physical-usb-ports-to-device-names/</link>
-      <pubDate>Tue, 29 Aug 2023 11:19:15 +0530</pubDate>
-      
-      <guid>/posts/mapping-of-physical-usb-ports-to-device-names/</guid>
-      <description>How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 28 Mar 2023 20:01:24 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Debian Maintainer Now !!!!</title>
       <link>/posts/debian-maintainer/</link>
@@ -78,7 +69,20 @@ Email/XMPP: vinaykeshava [AT] disroot.org</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/blog/</guid>
-      <description> Mapping of Physical USB ports to device filename on GNU/Linux Debian Maintainer Now!! Contributing to Debian !! Software Freedom Camp 2021 git.fosscommunity.in Server Update </description>
+      <description> Debian Maintainer Now!! Contributing to Debian !! Software Freedom Camp 2021 git.fosscommunity.in Server Update </description>
+    </item>
+    
+    <item>
+      <title>Customize .qcow2 image</title>
+      <link>/docs/hacks/customize-qcow2-disk-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/hacks/customize-qcow2-disk-image/</guid>
+      <description>Tired of Debian Installer ):
+On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
+Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
+Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
+By default the .qcow2 doesn&amp;rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.</description>
     </item>
     
     <item>
@@ -90,6 +94,15 @@ Email/XMPP: vinaykeshava [AT] disroot.org</description>
       <description>Setting up Interception Vimproved on Debian Bookworm I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.
 Interception Vimproved is a plugin for interception-tools which combines both caps2esc and space on hold work as special fn key. This blog post shows how to setup interception-vimproved using interception-tools on Debian Bookworm.
 Step 1: Dependencies Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux</description>
+    </item>
+    
+    <item>
+      <title>Mapping of Physical USB ports to Device Name on GNU/Linux</title>
+      <link>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</guid>
+      <description>How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05.</description>
     </item>
     
     <item>

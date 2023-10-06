@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/mapping-of-physical-usb-ports-to-device-names/</loc>
-    <lastmod>2023-08-29T11:19:15+05:30</lastmod>
-  </url><url>
     <loc>/posts/debian-maintainer/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
   </url><url>
@@ -17,24 +14,6 @@
     <loc>/posts/git-fosscommunity-in-update/</loc>
     <lastmod>2021-12-10T20:01:24+05:30</lastmod>
   </url><url>
-    <loc>/tags/gnu/</loc>
-    <lastmod>2023-08-29T11:19:15+05:30</lastmod>
-  </url><url>
-    <loc>/tags/linux/</loc>
-    <lastmod>2023-08-29T11:19:15+05:30</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2023-08-29T11:19:15+05:30</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-08-29T11:19:15+05:30</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-08-29T11:19:15+05:30</lastmod>
-  </url><url>
-    <loc>/tags/usb/</loc>
-    <lastmod>2023-08-29T11:19:15+05:30</lastmod>
-  </url><url>
     <loc>/tags/debian/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
   </url><url>
@@ -44,7 +23,16 @@
     <loc>/tags/gitlab/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
   </url><url>
+    <loc>/</loc>
+    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+  </url><url>
     <loc>/tags/ruby/</loc>
+    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
   </url><url>
     <loc>/tags/fsci/</loc>
@@ -59,11 +47,15 @@
   </url><url>
     <loc>/categories/</loc>
   </url><url>
+    <loc>/docs/hacks/customize-qcow2-disk-image/</loc>
+  </url><url>
     <loc>/docs/</loc>
   </url><url>
-    <loc>/tags/gnu/linux/</loc>
+    <loc>/docs/hacks/</loc>
   </url><url>
     <loc>/docs/interception-vimproved/</loc>
+  </url><url>
+    <loc>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</loc>
   </url><url>
     <loc>/docs/selfhosting/nextcloud/</loc>
   </url><url>

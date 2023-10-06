@@ -11,32 +11,24 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
-  <title>Interception Vimproved – Vinay Keshava</title>
-  <meta name="description" content="Setting up Interception Vimproved on Debian Bookworm I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.
-Interception Vimproved is a plugin for interception-tools which combines both caps2esc and space on hold work as special fn key. This blog post shows how to setup interception-vimproved using interception-tools on Debian Bookworm.
-Step 1: Dependencies Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux" />
+  <title>Mapping of Physical USB ports to Device Name on GNU/Linux – Vinay Keshava</title>
+  <meta name="description" content="How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05." />
   
 
-<meta property="og:title" content="Interception Vimproved" />
-<meta property="og:description" content="Setting up Interception Vimproved on Debian Bookworm I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.
-Interception Vimproved is a plugin for interception-tools which combines both caps2esc and space on hold work as special fn key. This blog post shows how to setup interception-vimproved using interception-tools on Debian Bookworm.
-Step 1: Dependencies Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux" />
+<meta property="og:title" content="Mapping of Physical USB ports to Device Name on GNU/Linux" />
+<meta property="og:description" content="How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/interception-vimproved/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="/docs/hacks/mapping-of-physical-usb-ports-to-device-names/" /><meta property="article:section" content="docs" />
 
 
 
-  <meta itemprop="name" content="Interception Vimproved">
-<meta itemprop="description" content="Setting up Interception Vimproved on Debian Bookworm I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.
-Interception Vimproved is a plugin for interception-tools which combines both caps2esc and space on hold work as special fn key. This blog post shows how to setup interception-vimproved using interception-tools on Debian Bookworm.
-Step 1: Dependencies Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux">
+  <meta itemprop="name" content="Mapping of Physical USB ports to Device Name on GNU/Linux">
+<meta itemprop="description" content="How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05.">
 
-<meta itemprop="wordCount" content="528">
+<meta itemprop="wordCount" content="863">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Interception Vimproved"/>
-<meta name="twitter:description" content="Setting up Interception Vimproved on Debian Bookworm I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.
-Interception Vimproved is a plugin for interception-tools which combines both caps2esc and space on hold work as special fn key. This blog post shows how to setup interception-vimproved using interception-tools on Debian Bookworm.
-Step 1: Dependencies Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux"/>
+<meta name="twitter:title" content="Mapping of Physical USB ports to Device Name on GNU/Linux"/>
+<meta name="twitter:description" content="How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05."/>
 
     <link rel="preload" href="/css/compiled/main.min.ec0a76e430d051ec523dea20c4d500c5d1fd32feb733b2dfabd6c3e1b9565c17.css" as="style" />
     <link href="/css/compiled/main.min.ec0a76e430d051ec523dea20c4d500c5d1fd32feb733b2dfabd6c3e1b9565c17.css" rel="stylesheet" integrity="sha256-7Ap25DDQUexSPeogxNUAxdH9Mv63M7Lfq9bD4blWXBc=" />
@@ -210,7 +202,7 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
   >Documentation
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/"
@@ -227,32 +219,32 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
   >Customize .qcow2 image
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col gap-1 open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
     href="/docs/hacks/mapping-of-physical-usb-ports-to-device-names/"
     
   >Mapping of Physical USB ports to Device Name on GNU/Linux
     </a>
+  
+    <ul class='flex flex-col gap-1 relative before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] dark:before:bg-neutral-800 ltr:pl-3 ltr:before:left-0 rtl:pr-3 rtl:before:right-0 ltr:ml-3 rtl:mr-3'><li>
+              <a
+                href="#how-to-map-physical-usb-ports-to-device-names-on-gnulinux"
+                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border flex gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
+              >How to Map Physical USB ports to Device Names on GNU/Linux</a>
+            </li>
+          </ul>
+  
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col gap-1 open"><a
+            </li><li class="flex flex-col gap-1 "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/interception-vimproved/"
     
   >Interception Vimproved
     </a>
-  
-    <ul class='flex flex-col gap-1 relative before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] dark:before:bg-neutral-800 ltr:pl-3 ltr:before:left-0 rtl:pr-3 rtl:before:right-0 ltr:ml-3 rtl:mr-3'><li>
-              <a
-                href="#"
-                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border flex gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
-              ></a>
-            </li>
-          </ul>
-  
               
             </li><li class="flex flex-col gap-1 "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -287,7 +279,7 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
 
     <ul class="flex flex-col gap-1 max-md:hidden">
         
-        <li class=""><a
+        <li class="open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/"
@@ -303,9 +295,9 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
   >Customize .qcow2 image
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col gap-1 open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
     href="/docs/hacks/mapping-of-physical-usb-ports-to-device-names/"
     
   >Mapping of Physical USB ports to Device Name on GNU/Linux
@@ -313,9 +305,9 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
               
             </li></ul>
       </div></li>
-        <li class="open"><a
+        <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/interception-vimproved/"
     
   >Interception Vimproved
@@ -371,27 +363,19 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
 <nav class="hextra-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
     <div class="sticky top-16 overflow-y-auto pr-4 pt-6 text-sm [hyphens:auto] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:-mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#setting-up-interception-vimproved-on--debian-bookworm">Setting up Interception Vimproved on  Debian Bookworm
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#how-to-map-physical-usb-ports-to-device-names-on-gnulinux">How to Map Physical USB ports to Device Names on GNU/Linux
         </a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#step-1-dependencies">Step 1: Dependencies
+        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#by-uuiduniversally-unique-identifier">By UUID(Universally Unique Identifier)
         </a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#step-2-clone--build">Step 2: Clone &amp; Build
+        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#by-label">By-Label
         </a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#step-3-configuration">Step 3: Configuration
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#step-4-reload-udevmon">Step 4: Reload udevmon
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#hack-around-the-config">Hack around the config
+        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#by-path">By-Path
         </a>
       </li></ul>
       <div class="mt-8 border-t bg-white pt-8 shadow-[0_-12px_16px_white] dark:bg-dark dark:shadow-[0_-12px_16px_#111] sticky bottom-0 flex flex-col items-start gap-2 pb-8 dark:border-neutral-800 contrast-more:border-t contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:border-neutral-400"></div>
@@ -404,155 +388,129 @@ Step 1: Dependencies Installing Dependencies to build interception-vimproved on 
         <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400 contrast-more:text-current">
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
         <a href="/docs/">Documentation</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="whitespace-nowrap transition-colors font-medium text-gray-700 contrast-more:font-bold contrast-more:text-current dark:text-gray-100 contrast-more:dark:text-current">Interception Vimproved</div>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="/docs/hacks/">Hacks</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="whitespace-nowrap transition-colors font-medium text-gray-700 contrast-more:font-bold contrast-more:text-current dark:text-gray-100 contrast-more:dark:text-current">Mapping of Physical USB ports to Device Name on GNU/Linux</div>
 </div>
 
         <div class="content">
-          <h1>Interception Vimproved</h1>
-          <h3>Setting up Interception Vimproved on  Debian Bookworm<span class="absolute -mt-20" id="setting-up-interception-vimproved-on--debian-bookworm"></span>
-    <a href="#setting-up-interception-vimproved-on--debian-bookworm" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>I started learning vim few months ago and wanted to try vim key bindings like shortcuts on my laptop after trying a mechanical hackable keyboard.</p>
-<p><a href="https://github.com/maricn/interception-vimproved" target="_blank" rel="noopener">Interception Vimproved</a> is a plugin for <a href="https://gitlab.com/interception/linux/tools" target="_blank" rel="noopener">interception-tools</a> which combines both caps2esc and space on hold work as special <code>fn</code> key.
-This blog post shows how to setup <a href="https://github.com/maricn/interception-vimproved" target="_blank" rel="noopener">interception-vimproved</a> using interception-tools on Debian Bookworm.</p>
-<h4>Step 1: Dependencies<span class="absolute -mt-20" id="step-1-dependencies"></span>
-    <a href="#step-1-dependencies" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Installing Dependencies to build interception-vimproved on Debian Bookworm GNU/Linux</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt install interception-tools meson libyaml-cpp-dev cmake </span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+          <h1>Mapping of Physical USB ports to Device Name on GNU/Linux</h1>
+          <h2>How to Map Physical USB ports to Device Names on GNU/Linux<span class="absolute -mt-20" id="how-to-map-physical-usb-ports-to-device-names-on-gnulinux"></span>
+    <a href="#how-to-map-physical-usb-ports-to-device-names-on-gnulinux" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">lsusb command</div><div id="code-block-0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ lsusb
+</span></span><span class="line"><span class="cl">Bus <span class="m">002</span> Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard
+</span></span><span class="line"><span class="cl">Bus <span class="m">002</span> Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+</span></span><span class="line"><span class="cl">Bus <span class="m">003</span> Device 123: ID 0951:1666 Kingston Technology DataTraveler <span class="m">100</span> G3/G4/SE9 G2/50
+</span></span><span class="line"><span class="cl">Bus <span class="m">003</span> Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub             
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ lsusb -t
+</span></span><span class="line"><span class="cl">/:  Bus 06.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/2p, 10000M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 2: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/7p, 5000M
+</span></span><span class="line"><span class="cl">/:  Bus 05.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>ehci-pci/3p, 480M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 1: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/8p, 480M
+</span></span><span class="line"><span class="cl">/:  Bus 04.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/2p, 480M
+</span></span><span class="line"><span class="cl">/:  Bus 03.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/4p, 5000M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 4: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/4p, 5000M
+</span></span><span class="line"><span class="cl">        <span class="p">|</span>__ Port 2: Dev 123, If 0, <span class="nv">Class</span><span class="o">=</span>Mass Storage, <span class="nv">Driver</span><span class="o">=</span>usb-storage, 5000M
+</span></span><span class="line"><span class="cl">/:  Bus 02.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>ehci-pci/3p, 480M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 1: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/6p, 480M
+</span></span><span class="line"><span class="cl">        <span class="p">|</span>__ Port 3: Dev 4, If 0, <span class="nv">Class</span><span class="o">=</span>Human Interface Device, <span class="nv">Driver</span><span class="o">=</span>usbhid, 1.5M
+</span></span><span class="line"><span class="cl">/:  Bus 01.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/4p, 480M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 4: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/4p, 480M</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
     <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-0">
       <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
       <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
     </button>
   </div>
 </div>
-<p>interception-tools is a small set of tools for input events of devices,that can be used to customize the behaviour of input keyboard mappings.</p>
-<p>The advantage of interception-tools operates at lower level compared to xmodmap by using libevdev and libudev.</p>
-<h4>Step 2: Clone &amp; Build<span class="absolute -mt-20" id="step-2-clone--build"></span>
-    <a href="#step-2-clone--build" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Clone interception-vimproved repository and build</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-1"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git clone <span class="s2">&#34;https://github.com/maricn/interception-vimproved&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> interception-vimproved
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ sudo make install</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+<p>&ldquo;lsusb&rdquo; is a utility of &ldquo;usbutils&rdquo; in GNU/Linux to display information about the USB Buses and the USB&rsquo;s attached to the buses.The output of the command displays the VendorID:ProductID and to which bus it is attached,the &ldquo;Kingston Technology DataTraveler&rdquo; bearing the VendorID:ProductID (0951:1666) attached to bus 003, the lsusb command with option &ldquo;-t&rdquo; provides a tree like output in a hierarchial structure.</p>
+<p>&ldquo;lsblk&rdquo; is a tree-like structure to identify devices and their partitions,and also displays device name (/dev/sd* if its a hard disk,/dev/nvme0n1 in case of SSD),size of the drive/partition,  whether it is a disk/partition and the device&rsquo;s mountpoints,here the /dev/sda* is the hard disk and sda1/2/5 are the partitions of the hard disk and /dev/sdb is the Kingston USB drive connected.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-1"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ lsblk
+</span></span><span class="line"><span class="cl">NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+</span></span><span class="line"><span class="cl">sda      8:0    <span class="m">0</span> 119.2G  <span class="m">0</span> disk 
+</span></span><span class="line"><span class="cl">├─sda1   8:1    <span class="m">0</span> 118.3G  <span class="m">0</span> part /
+</span></span><span class="line"><span class="cl">├─sda2   8:2    <span class="m">0</span>     1K  <span class="m">0</span> part 
+</span></span><span class="line"><span class="cl">└─sda5   8:5    <span class="m">0</span>   976M  <span class="m">0</span> part <span class="o">[</span>SWAP<span class="o">]</span>
+</span></span><span class="line"><span class="cl">sdb      8:16   <span class="m">1</span>  28.9G  <span class="m">0</span> disk 
+</span></span><span class="line"><span class="cl">sr0     11:0    <span class="m">1</span>  1024M  <span class="m">0</span> rom  </span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
     <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-1">
       <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
       <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
     </button>
   </div>
 </div>
-<p>Clone the git repository and change the directory, and then launch a <code>make install</code> command to build.</p>
-<h4>Step 3: Configuration<span class="absolute -mt-20" id="step-3-configuration"></span>
-    <a href="#step-3-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Create a new file called udevmon.yaml in /etc/interception and paste the following contents into the file /etc/interception/udevmon.yaml</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- JOB: <span class="s2">&#34;interception -g </span><span class="nv">$DEVNODE</span><span class="s2"> | interception-vimproved /etc/interception-vimproved/config.yaml | uinput -d </span><span class="nv">$DEVNODE</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">  DEVICE:
-</span></span><span class="line"><span class="cl">    NAME: <span class="s2">&#34;.*((k|K)(eyboard|EYBOARD)).*&#34;</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+<p><code>Suppose if there are multiple USB sticks attached to mutiple physical USB ports how to know which device names is mapped to which USB port ?</code></p>
+<p>If there are multiple USB&rsquo;s attached how do we get to know USB drive&rsquo;s device file and to which port that USB is connected ?</p>
+<p>The answer is by /dev/disk/*
+Everything in GNU/Linux is either a file or a directory,so even the disk are represented as files in GNU/Linux.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$  ls -ltrh /dev/disk/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">100</span> Aug <span class="m">28</span> 12:28 by-partuuid
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">100</span> Aug <span class="m">29</span> 09:49 by-uuid
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">260</span> Aug <span class="m">29</span> 09:49 by-path
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root  <span class="m">60</span> Aug <span class="m">29</span> 09:49 by-label
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">160</span> Aug <span class="m">29</span> 09:49 by-id
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">260</span> Aug <span class="m">29</span> 09:49 by-diskseq</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
     <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-2">
       <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
       <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
     </button>
   </div>
 </div>
-<p><code>udevmon.yaml</code> is like a job specification for <code>udevmon</code>,specifying that it matches with <code>(k|K)(eyboard|EYBOARD))</code> input device.</p>
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200">
-  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>ℹ️</div>
-  <div class="w-full min-w-0 leading-7">
-    <p class="mt-6 leading-7 first:mt-0">
-      I haven&rsquo;t tested this for an External Keyboard Input device,but works fine for the built-in keyboard of the laptop.
-    </p>
-  </div>
-</div>
-
-<h4>Step 4: Reload udevmon<span class="absolute -mt-20" id="step-4-reload-udevmon"></span>
-    <a href="#step-4-reload-udevmon" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Reload udevmon using systemctl</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-3"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl restart udevmon</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+<p>The USB disks can be identified by the Partition UUID, UUID of the disk, by path, by label of the disk and also by disk sequence.</p>
+<h3>By UUID(Universally Unique Identifier)<span class="absolute -mt-20" id="by-uuiduniversally-unique-identifier"></span>
+    <a href="#by-uuiduniversally-unique-identifier" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">by uuid</div><div id="code-block-3"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat /etc/fstab 
+</span></span><span class="line"><span class="cl"><span class="nv">UUID</span><span class="o">=</span>3341b336-0c26-4079-b3aa-faca8e2dd8b6 /               ext4    <span class="nv">errors</span><span class="o">=</span>remount-ro <span class="m">0</span>       <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">UUID</span><span class="o">=</span>53b53d97-b5e4-43fe-b560-2a01f119b6cf none            swap    sw              <span class="m">0</span>       <span class="m">0</span>
+</span></span><span class="line"><span class="cl">/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     <span class="m">0</span>       <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ ls -ltrh /dev/disk/by-uuid/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 3341b336-0c26-4079-b3aa-faca8e2dd8b6 -&gt; ../../sda1
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 53b53d97-b5e4-43fe-b560-2a01f119b6cf -&gt; ../../sda5
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">29</span> 09:49 2010-10-06-11-43-04-00 -&gt; ../../sdb</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
     <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-3">
       <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
       <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
     </button>
   </div>
 </div>
-<h4>Hack around the config<span class="absolute -mt-20" id="hack-around-the-config"></span>
-    <a href="#hack-around-the-config" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>To change any keybindings or to add new mappings the config file is present in config.yaml located in /etc/interception-vimproved/ when a <code>sudo make install</code> is launched the config file is
-copied to <code>/etc/interception-vimproved/config.yaml</code>.</p>
-<p>my config.yaml has the below shortcuts</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">/etc/interception-vimproved/config.yaml</div><div id="code-block-4"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- intercept: KEY_CAPSLOCK
-</span></span><span class="line"><span class="cl">  ontap: KEY_ESC
-</span></span><span class="line"><span class="cl">  onhold: KEY_LEFTCTRL
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">- intercept: KEY_ENTER
-</span></span><span class="line"><span class="cl">  <span class="c1"># not necessary: ontap: KEY_ENTER is inferred if left empty</span>
-</span></span><span class="line"><span class="cl">  onhold: KEY_RIGHTCTRL
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># this is a layer. hold space (onhold) contains several remappings</span>
-</span></span><span class="line"><span class="cl">- intercept: KEY_SPACE
-</span></span><span class="line"><span class="cl">  onhold:
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1"># special chars</span>
-</span></span><span class="line"><span class="cl">  - from: KEY_E
-</span></span><span class="line"><span class="cl">    to: KEY_ESC
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1"># alternative syntax</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_D, to: KEY_DELETE<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_B, to: KEY_BACKSPACE<span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1"># vim home row</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_H, to: KEY_LEFT<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_J, to: KEY_DOWN<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_K, to: KEY_UP<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_L, to: KEY_RIGHT<span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1"># vim above home row</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_Y, to: KEY_HOME<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_U, to: KEY_PAGEDOWN<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_I, to: KEY_PAGEUP<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_O, to: KEY_END<span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1"># number row, to F keys</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_1, to: KEY_F1<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_2, to: KEY_F2<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_3, to: KEY_F3<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_4, to: KEY_F4<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_5, to: KEY_F5<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_6, to: KEY_F6<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_7, to: KEY_F7<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_8, to: KEY_F8<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_9, to: KEY_F9<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_0, to: KEY_F10<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_MINUS, to: KEY_F11<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_EQUAL, to: KEY_F12<span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1"># xf86 audio</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_M, to: KEY_MUTE<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_COMMA, to: KEY_VOLUMEDOWN<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: KEY_DOT, to: KEY_VOLUMEUP<span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1"># mouse navigation</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: BTN_LEFT, to: BTN_BACK<span class="o">}</span>
-</span></span><span class="line"><span class="cl">  - <span class="o">{</span>from: BTN_RIGHT, to: BTN_FORWARD<span class="o">}</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
+<p>The device /dev/disk/by-uuid/3341b336-0c26-4079-b3aa-faca8e2dd8b6 is simply a symbolic link to actual an device,the reason being this is device name may change depending whether disk is attached or not,whereas these links will point to the same drive,so henceforth safer to use.</p>
+<h3>By-Label<span class="absolute -mt-20" id="by-label"></span>
+    <a href="#by-label" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">by-label</div><div id="code-block-4"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls -ltrh /dev/disk/by-label/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">9</span> Aug <span class="m">29</span> 09:49 VINAY-USB -&gt; ../../sdb</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
     <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-4">
       <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
       <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
     </button>
   </div>
 </div>
-<p><a href="https://tracker.debian.org/pkg/interception-tools" target="_blank" rel="noopener">Interception-tools</a> is packaged on debian,interception-vimproved is not,
-that is the reason we are building the source of interception-vimproved,hopefully i&rsquo;ll try packaging it !.</p>
-<p>Arch has interception-tools already packaged here is the <a href="https://wiki.archlinux.org/title/Interception-tools" target="_blank" rel="noopener">link</a></p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-5"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:wq <span class="c1">#until next time</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+<p>Labels are easy, it avoids confusion in identifying disk, instead of remembering /dev/sda device file names.</p>
+<h3>By-Path<span class="absolute -mt-20" id="by-path"></span>
+    <a href="#by-path" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">by-path</div><div id="code-block-5"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls -ltrh /dev/disk/by-path/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0 -&gt; ../../sda
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2 -&gt; ../../sda
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2-part2 -&gt; ../../sda2
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0-part2 -&gt; ../../sda2
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2-part1 -&gt; ../../sda1
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0-part1 -&gt; ../../sda1
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2-part5 -&gt; ../../sda5
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0-part5 -&gt; ../../sda5
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-3.0 -&gt; ../../sr0
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-3 -&gt; ../../sr0
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">29</span> 09:49 pci-0000:00:14.0-usb-0:4.2:1.0-scsi-0:0:0:0 -&gt; ../../sdb</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
     <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-5">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>Here /dev/sdb is the USB device attached and &ldquo;pci-0000:00:14.0-usb-0:4.2:1.0-scsi-0:0:0:0&rdquo; file which represents the USB device describes that the USB device is connected from PCI bus to SCSI adapter.&ldquo;by-path&rdquo; is the pci path of the disk device. this device file name is created depending on the shortest physical path to the device.
+&ldquo;/dev/sda&rdquo; the first SCSI drive on the first SCSI bus,/dev/sdb is the second SCSI drive and /dev/sdc is the third SCSI drive and so on.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-6">:wq</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-6">
       <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
       <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
     </button>
@@ -562,10 +520,14 @@ that is the reason we are building the source of interception-vimproved,hopefull
         </div>
         <div class="mt-16"></div>
         <div class="mb-8 flex items-center border-t pt-8 dark:border-neutral-800 contrast-more:border-neutral-400 dark:contrast-more:border-neutral-400 print:hidden"><a
-        href="/docs/openldap/"
-        title="OpenLDAP"
+        href="/docs/hacks/customize-qcow2-disk-image/"
+        title="Customize .qcow2 image"
+        class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:pr-4 rtl:pl-4"
+      ><svg class="inline h-5 shrink-0 ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Customize .qcow2 image</a><a
+        href="/docs/"
+        title="Documentation"
         class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:ml-auto ltr:pl-4 ltr:text-right rtl:mr-auto rtl:pr-4 rtl:text-left"
-      >OpenLDAP<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+      >Documentation<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
       </main>
     </article>
   </div>

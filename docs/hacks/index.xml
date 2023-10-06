@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacks of Vinay Keshava</title>
+    <link>/docs/hacks/</link>
+    <description>Recent content in Hacks on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/docs/hacks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customize .qcow2 image</title>
+      <link>/docs/hacks/customize-qcow2-disk-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/hacks/customize-qcow2-disk-image/</guid>
+      <description>Tired of Debian Installer ):
+On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
+Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
+Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
+By default the .qcow2 doesn&amp;rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.</description>
+      <content:encoded><![CDATA[<p>Tired of Debian Installer ):</p>
+<p>On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.</p>
+<ol>
+<li>Download the .qcow2 image from cloud.debian.org</li>
+</ol>
+<p><a href="https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2" target="_blank" rel="noopener">https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2</a> ,this is a generic cloud image which can be easily imported onto proxmox.</p>
+<ol start="2">
+<li>Reset the root password on the disk image</li>
+</ol>
+<p><code>$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian</code></p>
+<p>By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.</p>
+<ol start="3">
+<li>Increase size of .qcow2 disk image.
+By default the size of Debian Generic Cloud is 2GB, using qemu-img we can resize the disk image.</li>
+</ol>
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-0">qemu-img resize image.qcow2 &#43;SIZE </code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-0">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<ol start="4">
+<li>Import the disk image on Proxmox VE.</li>
+</ol>
+<p>Copy the image to <code>/var/lib/vz/template/qemu/</code>.
+Create a VM on Proxmox VE without any media (do not attach any physical media) and delete any existing disk on proxmox.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-1">qm importdisk 114 /var/lib/vz/template/qemu/debian-12-genericcloud-amd64-20230910-1499.qcow2 amogha -format qcow2</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-1">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>Execute the above <code>qm importdisk</code> on the proxmox server where <code>114</code>is the VM id where in your case will be different.
+Refreshing the Proxmox GUI on the browser,attach the <code>unused Hard Disk</code> under <code>Hardware</code>, also add a cloudInit drive and set <code>IP address to dhcp</code> to automatically assign IP address for both IPv4 and IPv6.</p>
+<p>Under <code>Options</code> update the boot order and check whether the hard disk which was added to be checklisted and prioritize it to first.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Another alternative way is to use Preseed file at boot which automates 
+</span></span><span class="line"><span class="cl">debian installer,haven<span class="err">&#39;</span>t tried that yet.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">:wq <span class="c1">#for now</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-2">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Mapping of Physical USB ports to Device Name on GNU/Linux</title>
+      <link>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</guid>
+      <description>How to Map Physical USB ports to Device Names on GNU/Linux lsusb command$ lsusb Bus 002 Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub Bus 003 Device 123: ID 0951:1666 Kingston Technology DataTraveler 100 G3/G4/SE9 G2/50 Bus 003 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub $ lsusb -t /: Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/7p, 5000M /: Bus 05.</description>
+      <content:encoded><![CDATA[<h2>How to Map Physical USB ports to Device Names on GNU/Linux<span class="absolute -mt-20" id="how-to-map-physical-usb-ports-to-device-names-on-gnulinux"></span>
+    <a href="#how-to-map-physical-usb-ports-to-device-names-on-gnulinux" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">lsusb command</div><div id="code-block-0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ lsusb
+</span></span><span class="line"><span class="cl">Bus <span class="m">002</span> Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard
+</span></span><span class="line"><span class="cl">Bus <span class="m">002</span> Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+</span></span><span class="line"><span class="cl">Bus <span class="m">003</span> Device 123: ID 0951:1666 Kingston Technology DataTraveler <span class="m">100</span> G3/G4/SE9 G2/50
+</span></span><span class="line"><span class="cl">Bus <span class="m">003</span> Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub             
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ lsusb -t
+</span></span><span class="line"><span class="cl">/:  Bus 06.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/2p, 10000M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 2: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/7p, 5000M
+</span></span><span class="line"><span class="cl">/:  Bus 05.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>ehci-pci/3p, 480M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 1: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/8p, 480M
+</span></span><span class="line"><span class="cl">/:  Bus 04.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/2p, 480M
+</span></span><span class="line"><span class="cl">/:  Bus 03.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/4p, 5000M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 4: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/4p, 5000M
+</span></span><span class="line"><span class="cl">        <span class="p">|</span>__ Port 2: Dev 123, If 0, <span class="nv">Class</span><span class="o">=</span>Mass Storage, <span class="nv">Driver</span><span class="o">=</span>usb-storage, 5000M
+</span></span><span class="line"><span class="cl">/:  Bus 02.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>ehci-pci/3p, 480M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 1: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/6p, 480M
+</span></span><span class="line"><span class="cl">        <span class="p">|</span>__ Port 3: Dev 4, If 0, <span class="nv">Class</span><span class="o">=</span>Human Interface Device, <span class="nv">Driver</span><span class="o">=</span>usbhid, 1.5M
+</span></span><span class="line"><span class="cl">/:  Bus 01.Port 1: Dev 1, <span class="nv">Class</span><span class="o">=</span>root_hub, <span class="nv">Driver</span><span class="o">=</span>xhci_hcd/4p, 480M
+</span></span><span class="line"><span class="cl">    <span class="p">|</span>__ Port 4: Dev 2, If 0, <span class="nv">Class</span><span class="o">=</span>Hub, <span class="nv">Driver</span><span class="o">=</span>hub/4p, 480M</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-0">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>&ldquo;lsusb&rdquo; is a utility of &ldquo;usbutils&rdquo; in GNU/Linux to display information about the USB Buses and the USB&rsquo;s attached to the buses.The output of the command displays the VendorID:ProductID and to which bus it is attached,the &ldquo;Kingston Technology DataTraveler&rdquo; bearing the VendorID:ProductID (0951:1666) attached to bus 003, the lsusb command with option &ldquo;-t&rdquo; provides a tree like output in a hierarchial structure.</p>
+<p>&ldquo;lsblk&rdquo; is a tree-like structure to identify devices and their partitions,and also displays device name (/dev/sd* if its a hard disk,/dev/nvme0n1 in case of SSD),size of the drive/partition,  whether it is a disk/partition and the device&rsquo;s mountpoints,here the /dev/sda* is the hard disk and sda1/2/5 are the partitions of the hard disk and /dev/sdb is the Kingston USB drive connected.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-1"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ lsblk
+</span></span><span class="line"><span class="cl">NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+</span></span><span class="line"><span class="cl">sda      8:0    <span class="m">0</span> 119.2G  <span class="m">0</span> disk 
+</span></span><span class="line"><span class="cl">├─sda1   8:1    <span class="m">0</span> 118.3G  <span class="m">0</span> part /
+</span></span><span class="line"><span class="cl">├─sda2   8:2    <span class="m">0</span>     1K  <span class="m">0</span> part 
+</span></span><span class="line"><span class="cl">└─sda5   8:5    <span class="m">0</span>   976M  <span class="m">0</span> part <span class="o">[</span>SWAP<span class="o">]</span>
+</span></span><span class="line"><span class="cl">sdb      8:16   <span class="m">1</span>  28.9G  <span class="m">0</span> disk 
+</span></span><span class="line"><span class="cl">sr0     11:0    <span class="m">1</span>  1024M  <span class="m">0</span> rom  </span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-1">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p><code>Suppose if there are multiple USB sticks attached to mutiple physical USB ports how to know which device names is mapped to which USB port ?</code></p>
+<p>If there are multiple USB&rsquo;s attached how do we get to know USB drive&rsquo;s device file and to which port that USB is connected ?</p>
+<p>The answer is by /dev/disk/*
+Everything in GNU/Linux is either a file or a directory,so even the disk are represented as files in GNU/Linux.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$  ls -ltrh /dev/disk/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">100</span> Aug <span class="m">28</span> 12:28 by-partuuid
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">100</span> Aug <span class="m">29</span> 09:49 by-uuid
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">260</span> Aug <span class="m">29</span> 09:49 by-path
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root  <span class="m">60</span> Aug <span class="m">29</span> 09:49 by-label
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">160</span> Aug <span class="m">29</span> 09:49 by-id
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> root root <span class="m">260</span> Aug <span class="m">29</span> 09:49 by-diskseq</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-2">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>The USB disks can be identified by the Partition UUID, UUID of the disk, by path, by label of the disk and also by disk sequence.</p>
+<h3>By UUID(Universally Unique Identifier)<span class="absolute -mt-20" id="by-uuiduniversally-unique-identifier"></span>
+    <a href="#by-uuiduniversally-unique-identifier" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">by uuid</div><div id="code-block-3"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat /etc/fstab 
+</span></span><span class="line"><span class="cl"><span class="nv">UUID</span><span class="o">=</span>3341b336-0c26-4079-b3aa-faca8e2dd8b6 /               ext4    <span class="nv">errors</span><span class="o">=</span>remount-ro <span class="m">0</span>       <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">UUID</span><span class="o">=</span>53b53d97-b5e4-43fe-b560-2a01f119b6cf none            swap    sw              <span class="m">0</span>       <span class="m">0</span>
+</span></span><span class="line"><span class="cl">/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     <span class="m">0</span>       <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ ls -ltrh /dev/disk/by-uuid/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 3341b336-0c26-4079-b3aa-faca8e2dd8b6 -&gt; ../../sda1
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 53b53d97-b5e4-43fe-b560-2a01f119b6cf -&gt; ../../sda5
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">29</span> 09:49 2010-10-06-11-43-04-00 -&gt; ../../sdb</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-3">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>The device /dev/disk/by-uuid/3341b336-0c26-4079-b3aa-faca8e2dd8b6 is simply a symbolic link to actual an device,the reason being this is device name may change depending whether disk is attached or not,whereas these links will point to the same drive,so henceforth safer to use.</p>
+<h3>By-Label<span class="absolute -mt-20" id="by-label"></span>
+    <a href="#by-label" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">by-label</div><div id="code-block-4"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls -ltrh /dev/disk/by-label/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">9</span> Aug <span class="m">29</span> 09:49 VINAY-USB -&gt; ../../sdb</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-4">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>Labels are easy, it avoids confusion in identifying disk, instead of remembering /dev/sda device file names.</p>
+<h3>By-Path<span class="absolute -mt-20" id="by-path"></span>
+    <a href="#by-path" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">by-path</div><div id="code-block-5"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls -ltrh /dev/disk/by-path/
+</span></span><span class="line"><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0 -&gt; ../../sda
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2 -&gt; ../../sda
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2-part2 -&gt; ../../sda2
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0-part2 -&gt; ../../sda2
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2-part1 -&gt; ../../sda1
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0-part1 -&gt; ../../sda1
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2-part5 -&gt; ../../sda5
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root <span class="m">10</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-2.0-part5 -&gt; ../../sda5
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-3.0 -&gt; ../../sr0
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">22</span> 10:40 pci-0000:00:1f.2-ata-3 -&gt; ../../sr0
+</span></span><span class="line"><span class="cl">lrwxrwxrwx <span class="m">1</span> root root  <span class="m">9</span> Aug <span class="m">29</span> 09:49 pci-0000:00:14.0-usb-0:4.2:1.0-scsi-0:0:0:0 -&gt; ../../sdb</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-5">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+<p>Here /dev/sdb is the USB device attached and &ldquo;pci-0000:00:14.0-usb-0:4.2:1.0-scsi-0:0:0:0&rdquo; file which represents the USB device describes that the USB device is connected from PCI bus to SCSI adapter.&ldquo;by-path&rdquo; is the pci path of the disk device. this device file name is created depending on the shortest physical path to the device.
+&ldquo;/dev/sda&rdquo; the first SCSI drive on the first SCSI bus,/dev/sdb is the second SCSI drive and /dev/sdc is the third SCSI drive and so on.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-6">:wq</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50" title="Copy code" data-clipboard-target="#code-block-6">
+      <svg class="group-[.copied]/copybtn:hidden pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+      <svg class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </button>
+  </div>
+</div>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
