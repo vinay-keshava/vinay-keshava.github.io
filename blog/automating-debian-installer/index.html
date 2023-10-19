@@ -11,41 +11,25 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
-  <title>Customize .qcow2 image – Vinay Keshava</title>
-  <meta name="description" content="Tired of Debian Installer ):
-On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
-Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
-By default the .qcow2 doesn’t have any root password,so the disk image has be customized using virt-customize to add root password." />
+  <title> Automating the Debian Installer – Vinay Keshava</title>
+  <meta name="description" content=" Automating the Debian Installer with the help of preseed.cfg file " />
 
   
 
-<meta property="og:title" content="Customize .qcow2 image" />
-<meta property="og:description" content="Tired of Debian Installer ):
-On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
-Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
-By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password." />
+<meta property="og:title" content=" Automating the Debian Installer" />
+<meta property="og:description" content=" Automating the Debian Installer with the help of preseed.cfg file " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/hacks/customize-qcow2-disk-image/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="/blog/automating-debian-installer/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-10-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-10-18T00:00:00+00:00" />
 
-
-
-  <meta itemprop="name" content="Customize .qcow2 image">
-<meta itemprop="description" content="Tired of Debian Installer ):
-On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
-Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
-By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.">
-
-<meta itemprop="wordCount" content="253">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Customize .qcow2 image"/>
-<meta name="twitter:description" content="Tired of Debian Installer ):
-On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
-Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
-By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password."/>
+  <meta itemprop="name" content=" Automating the Debian Installer">
+<meta itemprop="description" content=" Automating the Debian Installer with the help of preseed.cfg file "><meta itemprop="datePublished" content="2023-10-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-10-18T00:00:00+00:00" />
+<meta itemprop="wordCount" content="366">
+<meta itemprop="keywords" content="git.fosscommunity.in,debian,fsci," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=" Automating the Debian Installer"/>
+<meta name="twitter:description" content=" Automating the Debian Installer with the help of preseed.cfg file "/>
 
     <link rel="preload" href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" as="style" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
     <link href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" rel="stylesheet" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
@@ -91,14 +75,14 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
             title="Docs"
             href="/docs/"
             
-            class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block font-medium"
+            class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
           >
             <span class="text-center">Docs</span>
           </a><a
             title="Blog"
             href="/blog/"
             
-            class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+            class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block font-medium"
           >
             <span class="text-center">Blog</span>
           </a><div class="search-wrapper relative md:w-64">
@@ -130,7 +114,7 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
 </div>
 
   <div class='mx-auto flex max-w-screen-xl'>
-    <aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:sticky">
+    <aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:hidden xl:block">
   
   <div class="px-4 pt-4 md:hidden">
     <div class="search-wrapper relative md:w-64">
@@ -162,7 +146,7 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
     <ul class="flex flex-col gap-1 md:hidden">
       
       
-        <li class=""><a
+        <li class="open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/"
@@ -194,13 +178,14 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
   >git.fosscommunity.in Server Update
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col gap-1 open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
     href="/blog/automating-debian-installer/"
     
   > Automating the Debian Installer
     </a>
+  
               
             </li><li class="flex flex-col gap-1 "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -226,7 +211,7 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
     
   >Blog Post&#39;s
     </a></li>
-        <li class="open"><a
+        <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/"
@@ -242,7 +227,7 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
   >Debian Packaging
     </a>
               
-            </li><li class="flex flex-col gap-1 open"><a
+            </li><li class="flex flex-col gap-1 "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/"
@@ -251,14 +236,13 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
               <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 open"><a
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/customize-qcow2-disk-image/"
     
   >Customize .qcow2 image
     </a>
-  
               
             </li><li class="flex flex-col gap-1 "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -327,97 +311,10 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
     
     </ul>
 
-    <ul class="flex flex-col gap-1 max-md:hidden">
-        
-        <li class="open"><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/debian/"
-    
-  >Debian Packaging
-    </a></li>
-        <li class="open"><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/hacks/"
-    
-  >Hacks
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
-    </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 open"><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
-    href="/docs/hacks/customize-qcow2-disk-image/"
-    
-  >Customize .qcow2 image
-    </a>
-              
-            </li><li class="flex flex-col gap-1 "><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/hacks/mapping-of-physical-usb-ports-to-device-names/"
-    
-  >Mapping of Physical USB ports to Device Name on GNU/Linux
-    </a>
-              
-            </li></ul>
-      </div></li>
-        <li class=""><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/interception-vimproved/"
-    
-  >Interception Vimproved
-    </a></li>
-        <li class=""><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/openldap/"
-    
-  >OpenLDAP
-    </a></li>
-        <li class="open"><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/selfhosting/"
-    
-  >Self Hosting
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
-    </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/selfhosting/nextcloud/"
-    
-  >NextCloud
-    </a>
-              
-            </li></ul>
-      </div></li>
-        
-      <li class="[word-break:break-word] mt-5 mb-2 px-2 py-1.5 text-sm font-semibold text-gray-900 first:mt-0 dark:text-gray-100">
-        <span class="cursor-default">More</span>
-      </li>
-    
-      <li><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/about/"
-    
-  >About</a></li>
-    
-      <li><a
-    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/blog/"
-    
-  >Blog↗</a></li>
-    
-      </ul>
-    </div>
+    <div class="max-xl:hidden h-0 w-64 shrink-0"></div></div>
   
   
-  <div class="  sticky bottom-0 bg-white dark:bg-dark mx-4 py-4 shadow-[0_-12px_16px_#fff] flex items-center gap-2 dark:border-neutral-800 dark:shadow-[0_-12px_16px_#111] contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:shadow-none border-t" data-toggle-animation="show">
+  <div class="md:hidden  sticky bottom-0 bg-white dark:bg-dark mx-4 py-4 shadow-[0_-12px_16px_#fff] flex items-center gap-2 dark:border-neutral-800 dark:shadow-[0_-12px_16px_#111] contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:shadow-none border-t" data-toggle-animation="show">
       <div class="flex grow flex-col">
         <button
   title="Change theme"
@@ -451,31 +348,42 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
       <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
         <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400 contrast-more:text-current">
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="/docs/">Documentation</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="/docs/hacks/">Hacks</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="whitespace-nowrap transition-colors font-medium text-gray-700 contrast-more:font-bold contrast-more:text-current dark:text-gray-100 contrast-more:dark:text-current">Customize .qcow2 image</div>
+        <a href="/blog/">Blog</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="whitespace-nowrap transition-colors font-medium text-gray-700 contrast-more:font-bold contrast-more:text-current dark:text-gray-100 contrast-more:dark:text-current"> Automating the Debian Installer</div>
 </div>
 
+        <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100"> Automating the Debian Installer</h1>
+        
+          <div class="mt-4 mb-16 text-gray-500 text-sm">
+            October 18, 2023</div>
+        
         <div class="content">
-          <h1>Customize .qcow2 image</h1>
-          <p>Tired of Debian Installer ):</p>
-<p>On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.</p>
-<ol>
-<li>Download the .qcow2 image from cloud.debian.org</li>
-</ol>
-<p><a href="https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2" target="_blank" rel="noopener">https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2</a> ,this is a generic cloud image which can be easily imported onto proxmox.</p>
-<ol start="2">
-<li>Reset the root password on the disk image</li>
-</ol>
-<p><code>$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian</code></p>
-<p>By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.</p>
-<ol start="3">
-<li>Increase size of .qcow2 disk image.
-By default the size of Debian Generic Cloud is 2GB, using qemu-img we can resize the disk image.</li>
-</ol>
-<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-0">qemu-img resize image.qcow2 &#43;SIZE </code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+          <p>The Debian Graphical Installer,when i was introduced to Kali Linux(a Debian based distro),during my initial days of bachelor&rsquo;s, the installer was so tricky to install GNU / Linux,thereby losing my data (:</p>
+<p>Even though nowadays, Live systems have <a href="https://calamares.io/" target="_blank" rel="noopener">Calamares</a>  based installer,i feel the Graphical Installer is a bit annoying,so i wanted to automate the debian installer using a preseed configuration file,giving answers to debian installer in a config file making it easier and faster.</p>
+<p>This is the wiki link for Debian Installer Preseeding <a href="https://wiki.debian.org/DebianInstaller/Preseed" target="_blank" rel="noopener">https://wiki.debian.org/DebianInstaller/Preseed</a> .
+Preseeding is  like a set of answers to debian-installer(d-i)  questions.Preseeding can be done in 3 ways</p>
+<p>1.Adding the preseed file to installer&rsquo;s initrd.gz</p>
+<p>2.Over webserver via DHCP</p>
+<p>3.Loading the preseed file from a webserver.</p>
+<p>This blog post explains automating the debian installer by loading the preseed file from a webserver.</p>
+<p>When Graphical Installer boot menu appears after booting through the Debian iso,select the  <code>Help</code> entry from the menu.
+<img src="/images/automate-debian-installer-1.png" alt="AutomateDebianInstaller1" loading="lazy" /></p>
+<p>After selecting the <code>Help</code>  entry from boot menu,a <code>boot:</code>  prompt is displayed below, enter you webserver url of the preseed file, in my case the preseed file was on my server with ip <code>http://144.24.135.168/preseed.cfg/</code>, and give <code> boot: auto url=http://144.24.135.168/preseed.cfg</code> and  the <code>auto</code>  command launchs the automated debian installer.
+<img src="/images/automate-debian-installer-2.png" alt="AutomateDebianInstaller2" loading="lazy" /></p>
+<p>The default preseed file for new release will be updated here <a href="https://wiki.debian.org/DebianInstaller/Preseed#Default_preseed_files" target="_blank" rel="noopener">https://wiki.debian.org/DebianInstaller/Preseed#Default_preseed_files</a>
+Answers like setting username and password for Account setup,Network Configuration,Mirror Settings,Partitioning disks,setting normal user as root user Locales,Keyboard layout,Package Selection and many more</p>
+<p>All the features in the Debian installer can be answered with the preseed file.
+<img src="/images/automate-debian-installer-3.png" alt="AutomateDebianInstaller3" loading="lazy" /></p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">My Preseed file</div><div id="code-block-0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">d-i mirror/http/hostname string http.us.debian.org
+</span></span><span class="line"><span class="cl">d-i mirror/http/directory string /debian
+</span></span><span class="line"><span class="cl">d-i mirror/http/proxy string
+</span></span><span class="line"><span class="cl">d-i passwd/root-login boolean <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">d-i passwd/user-fullname string Vinay Keshava
+</span></span><span class="line"><span class="cl">d-i passwd/username string vinay
+</span></span><span class="line"><span class="cl">d-i passwd/user-password password vinay
+</span></span><span class="line"><span class="cl">d-i passwd/user-password-again password vinay
+</span></span><span class="line"><span class="cl">d-i clock-setup/ntp boolean <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">d-i partman-auto/init_automatically_partition <span class="k">select</span> biggest_free</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
     <button
       class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
       title="Copy code"
@@ -486,12 +394,10 @@ By default the size of Debian Generic Cloud is 2GB, using qemu-img we can resize
     </button>
   </div>
 </div>
-<ol start="4">
-<li>Import the disk image on Proxmox VE.</li>
-</ol>
-<p>Copy the image to <code>/var/lib/vz/template/qemu/</code>.
-Create a VM on Proxmox VE without any media (do not attach any physical media) and delete any existing disk on proxmox.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-1">qm importdisk 114 /var/lib/vz/template/qemu/debian-12-genericcloud-amd64-20230910-1499.qcow2 amogha -format qcow2</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+<p>In the above preseed file i&rsquo;ve set the debian mirrors [ line 1-3 ]with <code>http.us.debian.org</code>  and the directory for the mirror is <code> /debian</code>,Account setup with password[ line 4-8 ], [ line 9 ] for ntp server to sync time with and [ line 10 ] for automatically partitioning the disk with biggest free space disk partition.</p>
+<p>This is sample preseed file with few options and it can be customized accordingly.</p>
+<p>Bye for now.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-1">    :wq</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
     <button
       class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
       title="Copy code"
@@ -502,37 +408,36 @@ Create a VM on Proxmox VE without any media (do not attach any physical media) a
     </button>
   </div>
 </div>
-<p>Execute the above <code>qm importdisk</code> on the proxmox server where <code>114</code>is the VM id where in your case will be different.
-Refreshing the Proxmox GUI on the browser,attach the <code>unused Hard Disk</code> under <code>Hardware</code>, also add a cloudInit drive and set <code>IP address to dhcp</code> to automatically assign IP address for both IPv4 and IPv6.</p>
-<p>Under <code>Options</code> update the boot order and check whether the hard disk which was added to be checklisted and prioritize it to first.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Another alternative way is to use Preseed file at boot which automates 
-</span></span><span class="line"><span class="cl">debian installer,haven<span class="err">&#39;</span>t tried that yet.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">:wq <span class="c1">#for now</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-2"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
 
         </div>
         <div class="mt-16"></div>
+        
         <div class="mb-8 flex items-center border-t pt-8 dark:border-neutral-800 contrast-more:border-neutral-400 dark:contrast-more:border-neutral-400 print:hidden"><a
-        href="/docs/hacks/mapping-of-physical-usb-ports-to-device-names/"
-        title="Mapping of Physical USB ports to Device Name on GNU/Linux"
+        href="/blog/contributing-to-debian/"
+        title="Contributing to Debian"
+        class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:pr-4 rtl:pl-4"
+      ><svg class="inline h-5 shrink-0 ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Contributing to Debian</a><a
+        href="/blog/git-fosscommunity-in-update/"
+        title="git.fosscommunity.in Server Update"
         class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:ml-auto ltr:pl-4 ltr:text-right rtl:mr-auto rtl:pr-4 rtl:text-left"
-      >Mapping of Physical USB ports to Device Name on GNU/Linux<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+      >git.fosscommunity.in Server Update<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
         
       </main>
     </article>
   </div>
 
-      <footer class="hextra-footer bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent"><hr class="dark:border-neutral-800" />
+      <footer class="hextra-footer bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent">
+    <div class='mx-auto flex gap-2 py-2 px-4 max-w-screen-xl'><button
+  title="Change theme"
+  data-theme="light"
+  class="theme-toggle group h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50"
+  type="button"
+  aria-label="Toggle Dark Mode"
+>
+  <div class="flex items-center gap-2 capitalize"><svg height=12 class="group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hidden">Light</span><svg height=12 class="group-data-[theme=dark]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hidden">Dark</span></div>
+</button>
+</div>
+  <hr class="dark:border-neutral-800" />
   <div
     class='max-w-screen-xl mx-auto flex justify-center py-12 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)] text-gray-600 dark:text-gray-400 md:justify-start'
   >

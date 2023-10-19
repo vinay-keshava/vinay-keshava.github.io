@@ -2,20 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/debian-maintainer/</loc>
+    <loc>/blog/debian-maintainer/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
   </url><url>
-    <loc>/posts/contributing-to-debian/</loc>
-    <lastmod>2022-07-30T20:01:24+05:30</lastmod>
-  </url><url>
-    <loc>/posts/software-freedom-camp-2021/</loc>
+    <loc>/blog/software-freedom-camp-2021/</loc>
     <lastmod>2022-03-29T20:01:24+05:30</lastmod>
   </url><url>
-    <loc>/posts/git-fosscommunity-in-update/</loc>
+    <loc>/blog/git-fosscommunity-in-update/</loc>
     <lastmod>2021-12-10T20:01:24+05:30</lastmod>
   </url><url>
+    <loc>/</loc>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/automating-debian-installer/</loc>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/debian/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/fsci/</loc>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/git.fosscommunity.in/</loc>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/debian-maintainer/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
@@ -23,23 +38,11 @@
     <loc>/tags/gitlab/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
-  </url><url>
     <loc>/tags/ruby/</loc>
     <lastmod>2023-03-28T20:01:24+05:30</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
-  </url><url>
-    <loc>/tags/fsci/</loc>
-    <lastmod>2022-03-29T20:01:24+05:30</lastmod>
-  </url><url>
-    <loc>/tags/git.fosscommunity.in/</loc>
-    <lastmod>2022-03-29T20:01:24+05:30</lastmod>
+    <loc>/blog/contributing-to-debian/</loc>
+    <lastmod>2022-07-30T20:01:24+05:30</lastmod>
   </url><url>
     <loc>/about/</loc>
   </url><url>
@@ -48,6 +51,8 @@
     <loc>/categories/</loc>
   </url><url>
     <loc>/docs/hacks/customize-qcow2-disk-image/</loc>
+  </url><url>
+    <loc>/docs/debian/</loc>
   </url><url>
     <loc>/docs/</loc>
   </url><url>

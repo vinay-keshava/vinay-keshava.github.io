@@ -1,65 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Vinay Keshava</title>
+    <title>Vinay Keshava – Tags</title>
     <link>/tags/</link>
     <description>Recent content in Tags on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Mar 2023 20:01:24 +0530</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>debian</title>
-      <link>/tags/debian/</link>
-      <pubDate>Tue, 28 Mar 2023 20:01:24 +0530</pubDate>
-      
-      <guid>/tags/debian/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate>
     
-    <item>
-      <title>debian-maintainer</title>
-      <link>/tags/debian-maintainer/</link>
-      <pubDate>Tue, 28 Mar 2023 20:01:24 +0530</pubDate>
-      
-      <guid>/tags/debian-maintainer/</guid>
-      <description></description>
-    </item>
+	  <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>gitlab</title>
-      <link>/tags/gitlab/</link>
-      <pubDate>Tue, 28 Mar 2023 20:01:24 +0530</pubDate>
-      
-      <guid>/tags/gitlab/</guid>
-      <description></description>
-    </item>
     
-    <item>
-      <title>ruby</title>
-      <link>/tags/ruby/</link>
-      <pubDate>Tue, 28 Mar 2023 20:01:24 +0530</pubDate>
       
-      <guid>/tags/ruby/</guid>
-      <description></description>
-    </item>
+        
+      
     
-    <item>
-      <title>fsci</title>
-      <link>/tags/fsci/</link>
-      <pubDate>Tue, 29 Mar 2022 20:01:24 +0530</pubDate>
-      
-      <guid>/tags/fsci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git.fosscommunity.in</title>
-      <link>/tags/git.fosscommunity.in/</link>
-      <pubDate>Tue, 29 Mar 2022 20:01:24 +0530</pubDate>
-      
-      <guid>/tags/git.fosscommunity.in/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
