@@ -1,0 +1,82 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – kochi</title>
+    <link>/tags/kochi/</link>
+    <description>Recent content in kochi on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Nov 2023 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/kochi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>DebConf 23,Kochi India</title>
+      <link>/blog/debconf23/</link>
+      <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/debconf23/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Its almost been more than a month since &lt;a href=&#34;https://debconf23.debconf.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DebConf23&lt;/a&gt; happened,and this post was in draft for very long time because i just wanted to write the best post of all my post, and finally writing about the experience of attending a FOSS conference/conference for the first time.I had graduated in early May&#39;23, so was not sure whether i could attend DebConf.I had joined &lt;a href=&#34;https://deeproot.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Deeproot GNU/Linux&lt;/a&gt;,just before DebConf as an Intern.
+I was excited for this because i meeting my Debian and &lt;a href=&#34;https://fsci.in&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Free Software Community of India&lt;/a&gt; friends for the first time in 2 years,i hadn&amp;rsquo;t met anyone physically,was conversing with them online.&lt;/p&gt;
+&lt;p&gt;I became a &lt;a href=&#34;https://wiki.debian.org/DebianMaintainer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Debian Maintainer&lt;/a&gt; in early&#39;2023 March ,special thanks to &lt;a href=&#34;https://poddery.com/u/praveen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Praveen&lt;/a&gt; my GURU,for advocating my Debian Maintainer process,who taught me Debian Packaging from scratch,answering my stupid questions and &lt;a href=&#34;https://nileshpatra.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nilesh&lt;/a&gt; for signing my keys.
+I have written a separate &lt;a href=&#34;https://blog.vinay.im/blog/debian-maintainer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blog post&lt;/a&gt; about my experience of becoming a DM.&lt;/p&gt;
+&lt;img src=&#34;/images/ravish-debconf.jpg&#34; alt=&#34;image&#34; style=&#34;width:400px;height:auto;&#34;&gt;
+&lt;p&gt;Ahh so this is &lt;a href=&#34;https://ravish0007.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ravish&lt;/a&gt; [Left] and me. Ravish is my college super senior,we were part of FOSS club called Edwin&amp;rsquo;s Lab in our college,he&amp;rsquo;s the one who introduced me to GNU/Linux. Forever indebted to ravish its because of him i&amp;rsquo;m working at DeeprootLinux,Thanks man.&lt;/p&gt;
+&lt;p&gt;It was my first time flying,I,&lt;a href=&#34;https://abhas.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Abhas - Founder of Deeproot Linux&lt;/a&gt;,Ravish boarded a cab to the Bangalore Airport, and we reached around 8:00pm,the architecture of &lt;a href=&#34;https://www.bengaluruairport.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KIAL&lt;/a&gt; was just amazing,i was astonished, we had huge baggage to carry for the &lt;a href=&#34;https://mostlyharmless.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mostly Harmless&lt;/a&gt; Stall at the airport,so we had rigourous security checks at the airport.
+We boarded the flight on 9th September, DebConf was about to start from 10th September [ I missed DebCamp ]&lt;/p&gt;
+&lt;img src=&#34;/images/debconf-flight.jpg&#34; alt=&#34;DebConf-Flight&#34; style=&#34;width:400px;height:300px;&#34;&gt;
+&lt;p&gt;It was a surreal experience of flying for the first time,it was amazing feel.We also had our dinner (Veg Roll) on the flight.
+Had the best view of city during the night time,watching&amp;rsquo;em from higher altitude was just so satisfying for eyes.
+We reached Kochi Airport around 11:15pm and boarded a cab to Four Points Sheraton Hotel.
+We reached Infopark Kochi around 12:30am and checked in to our hotels.I had applied for Accomodation and Food Bursary and it was approved :)
+So my room was at &lt;a href=&#34;https://www.booking.com/hotel/in/four-points-by-sheraton-kochi-infopark.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Four Points Sheraton Kochi&lt;/a&gt;,6th floor, also i was wondering who my roomate was,the earlier day i had receieved a mail that &lt;a href=&#34;kurianbenoy.com&#34; &gt;Kurian Benoy&lt;/a&gt; was my roommate, i was curious to meet him.&lt;/p&gt;
+&lt;p&gt;The next morning was DebConf Opening Ceremony,so had to sleep because it was already 3:00am i was exploring my hotel room.&lt;/p&gt;
+&lt;img src=&#34;/images/debconf.jpg&#34; alt=&#34;DebConf&#34; style=&#34;width:400px;height:auto;&#34;&gt;
+&lt;p&gt;Woke up around 8:00 am and freshened up and headed to FrontDesk for Registration,we got our name with GPG key printed on our ID&amp;rsquo;s,also got the SwagBag,with some cool stickers and swags by Debian.
+After the registration i met kurian benoy, my roommate for a week.&lt;/p&gt;
+&lt;img src=&#34;/images/stickers.jpg&#34; alt=&#34;DebConf-Stickers&#34; style=&#34;width:400px;height:auto;&#34;&gt;
+Stickers part of Debian Swag
+&lt;p&gt;I and ravish were waiting at the HackLab for the opening ceremony,in mean time we met urbec,part of Video Team,had some good conversation too.&lt;/p&gt;
+&lt;p&gt;DEBCONF-23 starts with opening ceremony at Anamudi(These were the hall names,other hall names were Kuthiran,Ponmudi) the DebConf organizing team were on the stage giving a Welcome Note, and then after welcoming ceremony i went to attend talks which we interesting.
+The talk schedule was not very tight, because we used to gather more at the eating place to meet new people from diverse countries,having some really good conversations.&lt;/p&gt;
+&lt;p&gt;I met praveen,shruti,anupa,ravi,sahil,abhijith,nilesh,bilal,suman,kelvin,pushkar,utkarsh,joostvb,Israel Galadima&amp;hellip; and lot more people whom i wanted to meet.&lt;/p&gt;
+&lt;p&gt;I also met Pushkar from canonical, who used to stay at Bengaluru in the same locality and that was coincidence,meeting him was great too.
+First day ended good.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/debconf-group-photo-praveen-ravi.jpg&#34; alt=&#34;Debconf Praveen Ravi&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;A picture with Pirate Praveen and Ravi.&lt;/figcaption&gt;
+&lt;img src=&#34;/images/abhas-talk-debconf.jpg&#34; alt=&#34;Abhas DebConf talk&#34; style=&#34;width:400px;height:auto;&#34;&gt;
+Abhas&#39;s talk on Home automation with his amazing LED pant :) 
+&lt;img src=&#34;/images/debconf-cheese-and-wind-party1.jpg&#34; alt=&#34;Cheese and wine party&#34; style=&#34;width:auto;height:auto;&#34;&gt;
+&lt;img src=&#34;/images/debconf-cheese-and-wind-party2.jpg&#34; alt=&#34;Cheese and wine party 2&#34; style=&#34;width:auto;height:auto;&#34;&gt;
+&lt;p&gt;Cheese and wine party, the party is simple to bring good stuff from other countries like cheese and wine, People from all over the world bought different stuff to the cheese and wine party,we got the chance to taste from Korean wafers and red wine.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/debconf-daytrip.jpg&#34; alt=&#34;Debconf DayTrip&#34; loading=&#34;lazy&#34; /&gt;
+On 13th Sep there&amp;rsquo;s a Day trip,but i hadn&amp;rsquo;t registered early, only for Bird Sanctuary the registration was open,just the day before day trip edited the wiki and added my name.
+A Day trip to &lt;a href=&#34;https://wiki.debian.org/DebConf/23/DayTrip/#Tour_D:_Destination_Wilderness:_Jungle_Walk_at_Thattekad_.28Early_Morning_Departure.29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thattekad Bird Sanctuary&lt;/a&gt; On the way to Thattekad i met /su/bin/ siby, on the bus.
+Thattekad Bird Sanctuary is around 50km from the kochi,so we left around 7:00 am&lt;/p&gt;
+&lt;p&gt;We reached around 9:00 and had snacks and started walking towards the bird sanctuary.
+It started with a walk around the bird sanctuary spotting for birds around,during the trek i was with Praveen,Bady,Kannan and Kelvin.
+Spotting birds was difficult because it wasn&amp;rsquo;t the actual season for migrating birds,so we could spot only few.
+Kelvin was explaining how to started to contribute to  Open Street Map.&lt;/p&gt;
+&lt;p&gt;On our way back to the bus it started raining heavily and we were drenched completely,
+The &lt;a href=&#34;https://aana.site/@subins2000/111057301872140828&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cool debian umbrella&lt;/a&gt; with Debian symbol on it,helped us to get back to the bus.After a hot tea and snacks we started back to kochi.&lt;/p&gt;
+&lt;img src=&#34;/images/debian-in-the-cloud.jpg&#34; alt=&#34;Debian Cloud&#34; style=&#34;width:350px;height:700px;&#34;&gt;
+&lt;p&gt;Debian and Clouds :)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/mostly-harmless-stall.jpg&#34; alt=&#34;Mostly Harmless Stall&#34; loading=&#34;lazy&#34; /&gt;
+The place were i stayed the most Mostly Harmless Stall (But not Harmless) with Abhas,Akshay explaining people about Liberated Hardware,and why it is important in life to use Liberated Hardware.Enjoyed Sahil&amp;rsquo;s touch typing and testing keyboards,i couldn&amp;rsquo;t take a picture with Sahil,he also volunteers at FSCI managing instances,he taught me &lt;a href=&#34;https://blog.vinay.im/blog/git-fosscommunity-in-update&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;git.fosscommunity.in update&lt;/a&gt; generating keys etc he&amp;rsquo;s also a Debian Developer,part of DebConf organizing committe too, also met saswata from Unmukti Tech.&lt;/p&gt;
+&lt;p&gt;It was an Amazing conference,it was my first Conference/FOSS conference enjoyed it,got to meet new people,the ecosystem of the Hacklab to hack around,seeing the community bonding even ravish wanted to contribute by packaging so taught him packaging at hacklab during free time,Also i learnt about OpenStreetMap,and now i map in and around Bangalore in my free time,a good hobby that i&amp;rsquo;m interested.Enjoyed ravi&amp;rsquo;s humourous jokes :) throughout DebConf&lt;/p&gt;
+&lt;p&gt;The only disappointing thing at DebConf was the demise of &lt;a href=&#34;https://abrahamraji.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Abraham Raji&lt;/a&gt; during a Day Trip,&lt;a href=&#34;https://www.debian.org/News/2023/20230914&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Debian project mourns the death of abraham&lt;/a&gt;, i hadn&amp;rsquo;t personally met him,but conversed online about fsci camp,an inspiring soul&lt;/p&gt;
+&lt;p&gt;Abraham Lives Onnn!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

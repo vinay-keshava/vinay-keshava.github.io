@@ -26,8 +26,8 @@
   <meta itemprop="name" content=" Automating the Debian Installer">
 <meta itemprop="description" content=" Automating the Debian Installer with the help of preseed.cfg file "><meta itemprop="datePublished" content="2023-10-18T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-10-18T00:00:00+00:00" />
-<meta itemprop="wordCount" content="366">
-<meta itemprop="keywords" content="git.fosscommunity.in,debian,fsci," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="370">
+<meta itemprop="keywords" content="debian-installer,debian,preseed.cfg file," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=" Automating the Debian Installer"/>
 <meta name="twitter:description" content=" Automating the Debian Installer with the help of preseed.cfg file "/>
 
@@ -176,6 +176,22 @@
     href="/blog/git-fosscommunity-in-update/"
     
   >git.fosscommunity.in Server Update
+    </a>
+              
+            </li><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/blog/debconf23/"
+    
+  >DebConf 23,Kochi India
+    </a>
+              
+            </li><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/blog/i-should-write-more/"
+    
+  >I Should Write more!
     </a>
               
             </li><li class="flex flex-col gap-1 open"><a
@@ -364,8 +380,8 @@
 Preseeding is  like a set of answers to debian-installer(d-i)  questions.Preseeding can be done in 3 ways</p>
 <p>1.Adding the preseed file to installer&rsquo;s initrd.gz</p>
 <p>2.Over webserver via DHCP</p>
-<p>3.Loading the preseed file from a webserver.</p>
-<p>This blog post explains automating the debian installer by loading the preseed file from a webserver.</p>
+<p>3.Loading the preseed file from a webserver over the boot options.</p>
+<p>This blog post explains automating the debian installer by loading the preseed file from a webserver over the boot.</p>
 <p>When Graphical Installer boot menu appears after booting through the Debian iso,select the  <code>Help</code> entry from the menu.
 <img src="/images/automate-debian-installer-1.png" alt="AutomateDebianInstaller1" loading="lazy" /></p>
 <p>After selecting the <code>Help</code>  entry from boot menu,a <code>boot:</code>  prompt is displayed below, enter you webserver url of the preseed file, in my case the preseed file was on my server with ip <code>http://144.24.135.168/preseed.cfg/</code>, and give <code> boot: auto url=http://144.24.135.168/preseed.cfg</code> and  the <code>auto</code>  command launchs the automated debian installer.
@@ -396,7 +412,6 @@ Answers like setting username and password for Account setup,Network Configurati
 </div>
 <p>In the above preseed file i&rsquo;ve set the debian mirrors [ line 1-3 ]with <code>http.us.debian.org</code>  and the directory for the mirror is <code> /debian</code>,Account setup with password[ line 4-8 ], [ line 9 ] for ntp server to sync time with and [ line 10 ] for automatically partitioning the disk with biggest free space disk partition.</p>
 <p>This is sample preseed file with few options and it can be customized accordingly.</p>
-<p>Bye for now.</p>
 <div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-1">    :wq</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
     <button
       class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
@@ -417,10 +432,10 @@ Answers like setting username and password for Account setup,Network Configurati
         title="Contributing to Debian"
         class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:pr-4 rtl:pl-4"
       ><svg class="inline h-5 shrink-0 ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Contributing to Debian</a><a
-        href="/blog/git-fosscommunity-in-update/"
-        title="git.fosscommunity.in Server Update"
+        href="/blog/i-should-write-more/"
+        title="I Should Write more!"
         class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:ml-auto ltr:pl-4 ltr:text-right rtl:mr-auto rtl:pr-4 rtl:text-left"
-      >git.fosscommunity.in Server Update<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+      >I Should Write more!<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
         
       </main>
     </article>

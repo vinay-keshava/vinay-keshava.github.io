@@ -1,0 +1,81 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – preseed.cfg file</title>
+    <link>/tags/preseed.cfg-file/</link>
+    <description>Recent content in preseed.cfg file on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/preseed.cfg-file/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title> Automating the Debian Installer</title>
+      <link>/blog/automating-debian-installer/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/automating-debian-installer/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Debian Graphical Installer,when i was introduced to Kali Linux(a Debian based distro),during my initial days of bachelor&amp;rsquo;s, the installer was so tricky to install GNU / Linux,thereby losing my data (:&lt;/p&gt;
+&lt;p&gt;Even though nowadays, Live systems have &lt;a href=&#34;https://calamares.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Calamares&lt;/a&gt;  based installer,i feel the Graphical Installer is a bit annoying,so i wanted to automate the debian installer using a preseed configuration file,giving answers to debian installer in a config file making it easier and faster.&lt;/p&gt;
+&lt;p&gt;This is the wiki link for Debian Installer Preseeding &lt;a href=&#34;https://wiki.debian.org/DebianInstaller/Preseed&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wiki.debian.org/DebianInstaller/Preseed&lt;/a&gt; .
+Preseeding is  like a set of answers to debian-installer(d-i)  questions.Preseeding can be done in 3 ways&lt;/p&gt;
+&lt;p&gt;1.Adding the preseed file to installer&amp;rsquo;s initrd.gz&lt;/p&gt;
+&lt;p&gt;2.Over webserver via DHCP&lt;/p&gt;
+&lt;p&gt;3.Loading the preseed file from a webserver over the boot options.&lt;/p&gt;
+&lt;p&gt;This blog post explains automating the debian installer by loading the preseed file from a webserver over the boot.&lt;/p&gt;
+&lt;p&gt;When Graphical Installer boot menu appears after booting through the Debian iso,select the  &lt;code&gt;Help&lt;/code&gt; entry from the menu.
+&lt;img src=&#34;/images/automate-debian-installer-1.png&#34; alt=&#34;AutomateDebianInstaller1&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;After selecting the &lt;code&gt;Help&lt;/code&gt;  entry from boot menu,a &lt;code&gt;boot:&lt;/code&gt;  prompt is displayed below, enter you webserver url of the preseed file, in my case the preseed file was on my server with ip &lt;code&gt;http://144.24.135.168/preseed.cfg/&lt;/code&gt;, and give &lt;code&gt; boot: auto url=http://144.24.135.168/preseed.cfg&lt;/code&gt; and  the &lt;code&gt;auto&lt;/code&gt;  command launchs the automated debian installer.
+&lt;img src=&#34;/images/automate-debian-installer-2.png&#34; alt=&#34;AutomateDebianInstaller2&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The default preseed file for new release will be updated here &lt;a href=&#34;https://wiki.debian.org/DebianInstaller/Preseed#Default_preseed_files&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wiki.debian.org/DebianInstaller/Preseed#Default_preseed_files&lt;/a&gt;
+Answers like setting username and password for Account setup,Network Configuration,Mirror Settings,Partitioning disks,setting normal user as root user Locales,Keyboard layout,Package Selection and many more&lt;/p&gt;
+&lt;p&gt;All the features in the Debian installer can be answered with the preseed file.
+&lt;img src=&#34;/images/automate-debian-installer-3.png&#34; alt=&#34;AutomateDebianInstaller3&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;My Preseed file&lt;/div&gt;&lt;div id=&#34;code-block-0&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/hostname string http.us.debian.org
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/directory string /debian
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/proxy string
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/root-login boolean &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/user-fullname string Vinay Keshava
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/username string vinay
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/user-password password vinay
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/user-password-again password vinay
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i clock-setup/ntp boolean &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i partman-auto/init_automatically_partition &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; biggest_free&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+      data-clipboard-target=&#34;#code-block-0&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In the above preseed file i&amp;rsquo;ve set the debian mirrors [ line 1-3 ]with &lt;code&gt;http.us.debian.org&lt;/code&gt;  and the directory for the mirror is &lt;code&gt; /debian&lt;/code&gt;,Account setup with password[ line 4-8 ], [ line 9 ] for ntp server to sync time with and [ line 10 ] for automatically partitioning the disk with biggest free space disk partition.&lt;/p&gt;
+&lt;p&gt;This is sample preseed file with few options and it can be customized accordingly.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-1&#34;&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+      data-clipboard-target=&#34;#code-block-1&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

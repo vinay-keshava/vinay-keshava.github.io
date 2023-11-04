@@ -38,7 +38,7 @@ Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/
 Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
 By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.">
 
-<meta itemprop="wordCount" content="253">
+<meta itemprop="wordCount" content="369">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Customize .qcow2 image"/>
 <meta name="twitter:description" content="Tired of Debian Installer ):
@@ -192,6 +192,22 @@ By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has
     href="/blog/git-fosscommunity-in-update/"
     
   >git.fosscommunity.in Server Update
+    </a>
+              
+            </li><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/blog/debconf23/"
+    
+  >DebConf 23,Kochi India
+    </a>
+              
+            </li><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/blog/i-should-write-more/"
+    
+  >I Should Write more!
     </a>
               
             </li><li class="flex flex-col gap-1 "><a
@@ -505,14 +521,54 @@ Create a VM on Proxmox VE without any media (do not attach any physical media) a
 <p>Execute the above <code>qm importdisk</code> on the proxmox server where <code>114</code>is the VM id where in your case will be different.
 Refreshing the Proxmox GUI on the browser,attach the <code>unused Hard Disk</code> under <code>Hardware</code>, also add a cloudInit drive and set <code>IP address to dhcp</code> to automatically assign IP address for both IPv4 and IPv6.</p>
 <p>Under <code>Options</code> update the boot order and check whether the hard disk which was added to be checklisted and prioritize it to first.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Another alternative way is to use Preseed file at boot which automates 
-</span></span><span class="line"><span class="cl">debian installer,haven<span class="err">&#39;</span>t tried that yet.
+<p>Another alternative way is to use Preseed file at boot which automates
+debian installer,haven&rsquo;t tried that yet.</p>
+<ol start="5">
+<li>Creating a new VM</li>
+</ol>
+<p>Creating a vm using command line on proxmox without using using the WEB-UI</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">function</span> newqemu_vm
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">qm create <span class="nv">$vmid</span> --name <span class="nv">$name</span> --memory <span class="nv">$ram</span> --net0 virtio,bridge<span class="o">=</span>vmbr0
+</span></span><span class="line"><span class="cl">qm importdisk <span class="nv">$vmid</span> /var/lib/vz/template/qemu/debian-12-genericcloud-amd64-20230910-1499.qcow2 amogha -format qcow2
+</span></span><span class="line"><span class="cl">sleep <span class="m">5</span>
+</span></span><span class="line"><span class="cl">qm <span class="nb">set</span> <span class="nv">$vmid</span> --scsihw virtio-scsi-pci --scsi0 amogha:vm-<span class="nv">$vmid</span>-disk-0
+</span></span><span class="line"><span class="cl">qm <span class="nb">set</span> <span class="nv">$vmid</span> --ide2 amogha:cloudinit --boot c --bootdisk scsi0 --serial0 socket --vga serial0
+</span></span><span class="line"><span class="cl">qm <span class="nb">set</span> <span class="nv">$vmid</span> --ipconfig0 <span class="nv">ip</span><span class="o">=</span>dhcp
+</span></span><span class="line"><span class="cl">qm resize <span class="nv">$vmid</span> scsi0 +<span class="s2">&#34;</span><span class="nv">$size</span><span class="s2">&#34;</span>G
+</span></span><span class="line"><span class="cl">qm <span class="nb">set</span> <span class="nv">$vmid</span> --sshkey  ~/.ssh/id_rsa.pub
+</span></span><span class="line"><span class="cl">qm start <span class="nv">$vmid</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">:wq <span class="c1">#for now</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;HostName of the VM:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> name
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Enter new VMID:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> vmid
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Enter number of CPU cores:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> cpucores
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Ram:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> ram
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Enter Total Storage of the VM: [Example: +11G ]&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> size
+</span></span><span class="line"><span class="cl">newqemu_vm</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
     <button
       class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
       title="Copy code"
       data-clipboard-target="#code-block-2"
+    >
+      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
+      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
+    </button>
+  </div>
+</div>
+<p>:wq #for now</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-3"></code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button
+      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
+      title="Copy code"
+      data-clipboard-target="#code-block-3"
     >
       <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
       <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>

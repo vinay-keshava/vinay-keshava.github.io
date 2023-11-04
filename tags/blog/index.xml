@@ -1,0 +1,48 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – blog</title>
+    <link>/tags/blog/</link>
+    <description>Recent content in blog on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Nov 2023 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>I Should Write more!</title>
+      <link>/blog/i-should-write-more/</link>
+      <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/i-should-write-more/</guid>
+      <description>
+        
+        
+        &lt;p&gt;2023 is about to end in another few months,I feel ,i should write more now!.
+I just love writing now,I feel i should write more to express my thoughts,ideas,its been since few months i started to write more &lt;a href=&#34;/docs&#34; &gt;docs&lt;/a&gt;,and i just simply love it.&lt;/p&gt;
+&lt;p&gt;I feel like it helps me document stuff,check how my learning evolved over time and its progress.&lt;/p&gt;
+&lt;p&gt;At first when i started to create my portfolio i was reluctant to write much,barely one or two articles per year,i was not confident about my grammer too,now i really dont care about it,i just write my raw thoughts.There&amp;rsquo;s some level of satisfaction of writing,i encourage others also to write more.&lt;/p&gt;
+&lt;p&gt;People who read my blog might provide feedback too,correct if any mistakes.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-0&#34;&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+      data-clipboard-target=&#34;#code-block-0&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
