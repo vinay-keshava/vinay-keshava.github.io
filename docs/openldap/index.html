@@ -12,24 +12,19 @@
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
   <title>OpenLDAP – Vinay Keshava</title>
-  <meta name="description" content="Directory Service ℹ️ Difference between a folder and a directory Folder is for grouping items. Directory has index. It is for finding specific item,Directory is a filesystem concept. In simple terms think directory like a telephone directory which is in a hierarchial structure. The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users." />
+  <meta name="description" content="Documenting stuff learning about OpenLDAP with two types of configuration, the traditional slapd.conf and slapd.d way of configuring." />
 
   
 
 <meta property="og:title" content="OpenLDAP" />
-<meta property="og:description" content="Directory Service ℹ️ Difference between a folder and a directory Folder is for grouping items. Directory has index. It is for finding specific item,Directory is a filesystem concept. In simple terms think directory like a telephone directory which is in a hierarchial structure. The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/openldap/" /><meta property="article:section" content="docs" />
-
-
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/openldap/" />
 
   <meta itemprop="name" content="OpenLDAP">
-<meta itemprop="description" content="Directory Service ℹ️ Difference between a folder and a directory Folder is for grouping items. Directory has index. It is for finding specific item,Directory is a filesystem concept. In simple terms think directory like a telephone directory which is in a hierarchial structure. The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users.">
-
-<meta itemprop="wordCount" content="2041">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="OpenLDAP"/>
-<meta name="twitter:description" content="Directory Service ℹ️ Difference between a folder and a directory Folder is for grouping items. Directory has index. It is for finding specific item,Directory is a filesystem concept. In simple terms think directory like a telephone directory which is in a hierarchial structure. The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users."/>
+<meta name="twitter:description" content=""/>
 
     <link rel="preload" href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" as="style" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
     <link href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" rel="stylesheet" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
@@ -282,17 +277,28 @@
     href="/docs/openldap/"
     
   >OpenLDAP
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
   
-    <ul class='flex flex-col gap-1 relative before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] dark:before:bg-neutral-800 ltr:pl-3 ltr:before:left-0 rtl:pr-3 rtl:before:right-0 ltr:ml-3 rtl:mr-3'><li>
-              <a
-                href="#"
-                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border flex gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
-              ></a>
-            </li>
-          </ul>
-  
+              <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/openldap/slapd-conf/"
+    
+  >OpenLDAP (slapd.conf)
+    </a>
               
+            </li><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/openldap/slapd/"
+    
+  >OpenLDAP (slapd.d)
+    </a>
+              
+            </li></ul>
+      </div>
             </li><li class="flex flex-col gap-1 open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
@@ -382,7 +388,26 @@
     href="/docs/openldap/"
     
   >OpenLDAP
-    </a></li>
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
+    </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/openldap/slapd-conf/"
+    
+  >OpenLDAP (slapd.conf)
+    </a>
+              
+            </li><li class="flex flex-col gap-1 "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/openldap/slapd/"
+    
+  >OpenLDAP (slapd.d)
+    </a>
+              
+            </li></ul>
+      </div></li>
         <li class="open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
@@ -441,60 +466,8 @@
 </aside>
     
 <nav class="hextra-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
-    <div class="hextra-scrollbar sticky top-16 overflow-y-auto pr-4 pt-6 text-sm [hyphens:auto] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:-mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#directory-service">Directory Service
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#rdbms-vs-directory-service">RDBMS vs Directory Service
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#openldap">OpenLDAP
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#ldap-data-components">LDAP Data components
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#slapd---standalone-ldap-daemon">slapd - Standalone LDAP Daemon
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#ldapsearch">ldapsearch
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#adding-ou-organization-unit">Adding OU (Organization Unit)
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#add-new-user">Add new User
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#read-entries-within-ou-as-admin">Read entries within OU as admin
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#read-entries-within-ou-as-normal-user">Read entries within OU as normal user.
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#modifying-existing-entries">Modifying existing entries
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#conventions-in-openldap">Conventions in OpenLDAP
-        </a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="ltr:pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#references">References
-        </a>
-      </li></ul>
-      <div class="mt-8 border-t bg-white pt-8 shadow-[0_-12px_16px_white] dark:bg-dark dark:shadow-[0_-12px_16px_#111] sticky bottom-0 flex flex-col items-start gap-2 pb-8 dark:border-neutral-800 contrast-more:border-t contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:border-neutral-400">
+    <div class="hextra-scrollbar sticky top-16 overflow-y-auto pr-4 pt-6 text-sm [hyphens:auto] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:-mr-4 rtl:-ml-4">
+      <div class=" sticky bottom-0 flex flex-col items-start gap-2 pb-8 dark:border-neutral-800 contrast-more:border-t contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:border-neutral-400">
         <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="transition-all transition duration-75 opacity-0 text-xs font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 contrast-more:text-gray-800 contrast-more:dark:text-gray-50">
           <span>Scroll to top</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline ml-1 h-3.5 w-3.5 border rounded-full border-gray-500 hover:border-gray-900 dark:border-gray-400 dark:hover:border-gray-100 contrast-more:border-gray-800 contrast-more:dark:border-gray-50">
@@ -516,768 +489,15 @@
 
         <div class="content">
           <h1>OpenLDAP</h1>
-          <h3>Directory Service<span class="absolute -mt-20" id="directory-service"></span>
-    <a href="#directory-service" class="subheading-anchor" aria-label="Permalink for this section"></a></h3>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200">
-  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>ℹ️</div>
-  <div class="w-full min-w-0 leading-7">
-    <p class="mt-6 leading-7 first:mt-0">
-      <a href="https://stackoverflow.com/questions/5078676/what-is-the-difference-between-a-directory-and-a-folder" target="_blank" rel="noopener">Difference between a folder and a directory</a>
-Folder is for grouping items.
-Directory has index. It is for finding specific item,Directory is a filesystem concept.
-In simple terms think <code>directory</code> like a telephone directory which is in a hierarchial structure.
-    </p>
-  </div>
-</div>
-
-<p>The term directory service refers to the collection of software, hardware, and processes that store information about an enterprise, subscribers, or both, and make that information available to users. A directory service consists of at least one instance of Directory Server and at least one directory client program. Client programs can access names, phone numbers, addresses, and other data stored in the directory service.</p>
-<p>A directory is similar to database,which is attribute-based data;where data is read more often than write.</p>
-<p>Directory Server provides Global Directory Services which means it provides information to wide variety of applications,rather than using databases with different applications,which is very hard to administrate.Directory server is a single solution to manage the same information
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200">
-  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>ℹ️</div>
-  <div class="w-full min-w-0 leading-7">
-    <p class="mt-6 leading-7 first:mt-0">
-      For example, an organization has three different applications running like nextcloud,email and matrix server and all the applications are accessed by same credentials,if separate database schema&rsquo;s are used for each application it would be hard to manage,if user requesting a password change in one application maybe not be replicated into another application;this problem is solved single,centralized repository of directory information.
-    </p>
-  </div>
-</div>
-</p>
-<p>LDAP provides a common language that client applications and servers use to communicate with one another. LDAP is a &ldquo;lightweight&rdquo; version of the Directory Access Protocol (DAP)</p>
-<h3>RDBMS vs Directory Service<span class="absolute -mt-20" id="rdbms-vs-directory-service"></span>
-    <a href="#rdbms-vs-directory-service" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><details class="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4 group" open>
-  <summary class="flex items-center cursor-pointer select-none list-none p-1 rounded transition-colors hover:bg-gray-100 dark:hover:bg-neutral-800 before:mr-1 before:inline-block before:transition-transform before:content-[''] dark:before:invert rtl:before:rotate-180 group-open:before:rotate-90">
-    <strong class="text-lg"><ol>
-<li>How often does your data change?</li>
-</ol>
-</strong>
-  </summary>
-  <div class="p-2 overflow-hidden">
-    Directory servers are used for <code>reads</code>,if your data changes often and have many write operations directory service is not a ideal choice,RDBMS would be the ideal choice.
-  </div>
-</details>
-<details class="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4 group" open>
-  <summary class="flex items-center cursor-pointer select-none list-none p-1 rounded transition-colors hover:bg-gray-100 dark:hover:bg-neutral-800 before:mr-1 before:inline-block before:transition-transform before:content-[''] dark:before:invert rtl:before:rotate-180 group-open:before:rotate-90">
-    <strong class="text-lg"><ol start="2">
-<li>Type of Data?</li>
-</ol>
-</strong>
-  </summary>
-  <div class="p-2 overflow-hidden">
-    If data is defined in <code>Key:Value</code> pair or <code>Attribute:Value</code> pair, Directory service would be the best choice,like user profile.
-  </div>
-</details>
-<details class="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4 group" open>
-  <summary class="flex items-center cursor-pointer select-none list-none p-1 rounded transition-colors hover:bg-gray-100 dark:hover:bg-neutral-800 before:mr-1 before:inline-block before:transition-transform before:content-[''] dark:before:invert rtl:before:rotate-180 group-open:before:rotate-90">
-    <strong class="text-lg"><ol start="3">
-<li>Data in Hierarchial tree like structure</li>
-</ol>
-</strong>
-  </summary>
-  <div class="p-2 overflow-hidden">
-    If data can be modeled into a tree like structure,accessing the parent and child node in the tree,directory service
-  </div>
-</details>
-<h3>OpenLDAP<span class="absolute -mt-20" id="openldap"></span>
-    <a href="#openldap" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>LDAP stands for Lightweight Directory Access Protocol, for accessing directory services.OpenLDAP is the implementation of the LDAP protocol,is a communications protocol that defines the methods in which a directory service can be accessed.
-The LDAP information model is based on entries, which is a collection of attributes that has a globally unique Distinguished Name<code>(DN)</code>
-OpenLDAP is the implementation of the LDAP protocol which belong to User Management and Authentication in tech.</p>
-<p>The LDAP protocol both authenticates and authorize&rsquo;s users to their resources.The protocol authenticates users with a bind operation that allows users to communicate with LDAP directory
-then authorizes the authenticated user to resources they need if they have access that are defined in rules.Once a user is successfully authenticated, they need to be authorized to access the resource(s) requested.
-With OpenLDAP, for example, users belong to groups that can be assigned different permissions. If the authenticating user is assigned the correct permissions to access a certain resource, the LDAP protocol will authorize them to it; if not, the protocol will deny access.</p>
-<h4>LDAP Data components<span class="absolute -mt-20" id="ldap-data-components"></span>
-    <a href="#ldap-data-components" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ol>
-<li>
-<p>Directory: an LDAP server</p>
-</li>
-<li>
-<p>DIT: the tree of entries stored within a directory server</p>
-</li>
-<li>
-<p>Attributes</p>
-</li>
-</ol>
-<p>Data in LDAP system is stored in elements called attributes,like Key Value pair.Data in the attribute must match to the type defined in the attribute&rsquo;s initial declaration.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mail: user@example.com
-</span></span><span class="line"><span class="cl">dc:example,dc:com</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-0"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<ol start="4">
-<li>Entries</li>
-</ol>
-<p>Attributes by themselves are not useful, a group or collection of <code>attributes</code> under a name represents an entry.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-1"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dn: <span class="nv">ou</span><span class="o">=</span>people,dc<span class="o">=</span>example,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">objectClass: person
-</span></span><span class="line"><span class="cl">sn: Ramesh
-</span></span><span class="line"><span class="cl">cn: Varma</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-1"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>An example entry displayed in LDIF ( LDAP Data Interchange Format).</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-2"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat ldif/user.ldif 
-</span></span><span class="line"><span class="cl">dn: <span class="nv">uid</span><span class="o">=</span>vinay.m,ou<span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">uid: vinay.m
-</span></span><span class="line"><span class="cl">cn: vinay
-</span></span><span class="line"><span class="cl">sn: m
-</span></span><span class="line"><span class="cl">userPassword: <span class="nb">test</span>
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">dn: <span class="nv">uid</span><span class="o">=</span>akshay,ou<span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">uid: akshay
-</span></span><span class="line"><span class="cl">cn: akshay 
-</span></span><span class="line"><span class="cl">sn: p
-</span></span><span class="line"><span class="cl">userPassword: <span class="nb">test</span>
-</span></span><span class="line"><span class="cl">ou: People</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-2"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<ol start="5">
-<li>ObjectClass</li>
-</ol>
-<p>Object class: a collection of required (MUST) and optional (MAY) attributes. Object classes are further subdivided into STRUCTURAL and AUXILIARY classes, and they may inherit from each other.Every entry has a structural Object class which indicates what type of object an entry is and also can have more auxiliary object that have additional characteristics for that entry.</p>
-<p>The ObjectClass definitions are stored in the schema files.Object class must have an object identifier (OID)  Object classes may also list a set of required attribute types (so that any entry with that object class must also include those attributes) and/or a set of optional attribute types (so that any entry with that object class may optionally include those attributes).OID&rsquo;s are sequence of numbers separated by periods(.), “1.2.840.113556.1.4.473”</p>
-<ol start="6">
-<li>Schema</li>
-</ol>
-<p>Schema&rsquo;s define the directory, specifying the configuration of the directories including syntax,object classes,attribute types and matching rules.</p>
-<h4>slapd - Standalone LDAP Daemon<span class="absolute -mt-20" id="slapd---standalone-ldap-daemon"></span>
-    <a href="#slapd---standalone-ldap-daemon" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p><code>slapd</code> is a LDAP directory server,which stands for Standalone LDAP daemon.Providing simple auth and security layer.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-3"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt install slapd ldapvi ldap-utils</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-3"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-yellow-100 bg-yellow-50 text-yellow-900 dark:border-yellow-200/30 dark:bg-yellow-700/30 dark:text-yellow-200">
-  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>⚠️</div>
-  <div class="w-full min-w-0 leading-7">
-    <p class="mt-6 leading-7 first:mt-0">
-      when asked for administration password prompt during installation just press <code>Enter</code>,we reconfigure slapd using dpkg-reconfigure after the installation.
-    </p>
-  </div>
-</div>
-
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-4"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$sudo</span> dpkg-reconfigure slapd</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-4"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200">
-  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>ℹ️</div>
-  <div class="w-full min-w-0 leading-7">
-    <p class="mt-6 leading-7 first:mt-0">
-      <p>Reconfiguration:</p>
-<ol>
-<li>Omit initial LDAP server config : <code>No</code> we obviously want to create intial configuration.</li>
-<li>DNS Domain Name : domain name to build the base DN of LDAP directory in this case we are choosing <code>vinay.im</code>.</li>
-<li>Organization Name: Type down the organization name( here XYZ Pvt Ltd)</li>
-<li>Choose an Admin Password of your choice( for tutorial purpose i&rsquo;ve choosed test) and choose MDB as backend database</li>
-<li>If asked to purge database when slapd is removed we choose <code>No</code>,will be helpful when we want to switch to a different LDAP server.</li>
-<li>Choose Yes if you want to backup the current existing database to <code>/var/backups</code>.</li>
-</ol>
-
-    </p>
-  </div>
-</div>
-
-<p>To have a look at the LDAP database , simple execute <code>slapcat</code> with sudo privileges.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">$ sudo slapcat</div><div id="code-block-5"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo slapcat
-</span></span><span class="line"><span class="cl">dn: <span class="nv">dc</span><span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: dcObject
-</span></span><span class="line"><span class="cl">objectClass: organization
-</span></span><span class="line"><span class="cl">o: XYZ Pvt Ltd
-</span></span><span class="line"><span class="cl">dc: vinay
-</span></span><span class="line"><span class="cl">structuralObjectClass: organization
-</span></span><span class="line"><span class="cl">entryUUID: 8057316c-ed6e-103d-8b93-b9da23579469
-</span></span><span class="line"><span class="cl">creatorsName: <span class="nv">cn</span><span class="o">=</span>admin,dc<span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl">createTimestamp: 20230922083350Z
-</span></span><span class="line"><span class="cl">modifiersName: <span class="nv">cn</span><span class="o">=</span>admin,dc<span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl">modifyTimestamp: 20230922083350Z</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-5"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200">
-  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>ℹ️</div>
-  <div class="w-full min-w-0 leading-7">
-    <p class="mt-6 leading-7 first:mt-0">
-      Config files are present in <code>/etc/ldap</code> directory.<br>
-Schemas can be added within the <code>slap.d</code> directory for server customization.<br>
-Database is stored in <code>/var/lib/ldap</code> having two files <code>data.mdb</code> and <code>lock.mdb</code>.
-    </p>
-  </div>
-</div>
-
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-6"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo cp /usr/share/doc/slapd/examples/slapd.conf /etc/ldap/</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-6"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>Copy the example config file <code>slapd.conf</code> to <code>/etc/ldap</code>, and replace DNS domain components <code>dc=example</code> to <code>dc=vinay</code> and <code>dc=com</code> to <code>dc=im</code> everywhere in the config, also
-update <code>/etc/default/slapd</code> from  <code>SLAPD_CONF</code> to <code>SLAPD_CONF=/etc/ldap/slapd.conf</code> and update slapd service by <code>sudo systemctl restart slapd</code></p>
-<p>In <code>/etc/ldap/slapd.conf</code> under <code>suffix       &quot;dc=vinay,dc=com&quot;</code> add the following lines</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-7"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rootdn          <span class="s2">&#34;cn=admin,dc=vinay,dc=com&#34;</span>
-</span></span><span class="line"><span class="cl">rootpw          <span class="s2">&#34;test&#34;</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-7"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>Restart the slapd service again.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-8"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl restart slapd</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-8"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<h4>ldapsearch<span class="absolute -mt-20" id="ldapsearch"></span>
-    <a href="#ldapsearch" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">ldapsearch anonymous query</div><div id="code-block-9"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$ldapsearch</span> -x -b <span class="s2">&#34;dc=vinay,dc=im&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># vinay.im</span>
-</span></span><span class="line"><span class="cl">dn: <span class="nv">dc</span><span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: dcObject
-</span></span><span class="line"><span class="cl">objectClass: organization
-</span></span><span class="line"><span class="cl">o: XYZ Pvt Ltd
-</span></span><span class="line"><span class="cl">dc: vinay
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># search result</span>
-</span></span><span class="line"><span class="cl">search: <span class="m">2</span>
-</span></span><span class="line"><span class="cl">result: <span class="m">0</span> Success
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># numResponses: 2</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-9"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">ldapsearch authenticating with admin user</div><div id="code-block-10"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ldapsearch -D <span class="nv">cn</span><span class="o">=</span>admin,dc<span class="o">=</span>vinay,dc<span class="o">=</span>im -w <span class="nb">test</span> -b <span class="nv">dc</span><span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl"><span class="c1"># extended LDIF</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># LDAPv3</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># base &lt;dc=vinay,dc=im&gt; with scope subtree</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># filter: (objectclass=*)</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># requesting: ALL</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># vinay.im</span>
-</span></span><span class="line"><span class="cl">dn: <span class="nv">dc</span><span class="o">=</span>vinay,dc<span class="o">=</span>im
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: dcObject
-</span></span><span class="line"><span class="cl">objectClass: organization
-</span></span><span class="line"><span class="cl">o: XYZ Pvt Ltd
-</span></span><span class="line"><span class="cl">dc: vinay
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># search result</span>
-</span></span><span class="line"><span class="cl">search: <span class="m">2</span>
-</span></span><span class="line"><span class="cl">result: <span class="m">0</span> Success
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># numResponses: 2</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># numEntries: 1</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-10"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<ol>
-<li><code>-D</code> {dn} / <code>--bindDN</code> {dn} — The DN to use to bind to the directory server when performing simple authentication,to use the distinguished binddn name to bind the LDAP directory.</li>
-<li><code>-w</code> - this option is used to provide the password on the command line for auth, <code>-W</code> option is used to ask for prompt for typing invisible password without actualling having to type the pass on cli.</li>
-<li><code>-b</code> - search base as the starting point for the search instead of default.</li>
-<li><code>-x</code> option in ldapsearch is used for simple authentication instead of SASL.</li>
-</ol>
-<p>The above command search&rsquo;s through the ldap directory server with <code>admin</code> distinguished name providing password with the <code>-w</code> option and setting the searchbase to start from the rootdn.</p>
-<p>&ndash; To list all users on ldap</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-11"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ldapsearch -D <span class="s2">&#34;cn=admin,dc=vinay,dc=com&#34;</span> -W -b <span class="s2">&#34;dc=vinay,dc=com&#34;</span>
-</span></span><span class="line"><span class="cl">$ slapcat</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-11"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>lists all users from the base dn</p>
-<h4>Adding OU (Organization Unit)<span class="absolute -mt-20" id="adding-ou-organization-unit"></span>
-    <a href="#adding-ou-organization-unit" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Organizational units (OUs) are used to organize entries within the directory tree and can be used to delegate administrative responsibilities within your organization. It’s important to keep your directory organized and well-structured from the beginning; otherwise it will quickly become unwieldy and difficult to manage.</p>
-<p>Create a directory called ldif(LDAP Interchange Format) in <code>/etc/ldap</code> and create a file called people.ldif and paste the following contents.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-12"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat /etc/ldap/ldif/people.ldif
-</span></span><span class="line"><span class="cl">dn: <span class="nv">ou</span><span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">cn: people
-</span></span><span class="line"><span class="cl">sn: people
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ ldapadd  -D <span class="nv">cn</span><span class="o">=</span>admin,dc<span class="o">=</span>vinay,dc<span class="o">=</span>im -w <span class="nb">test</span> -f /etc/ldap/ldif/people.ldif 
-</span></span><span class="line"><span class="cl">adding new entry <span class="s2">&#34;ou=People,dc=vinay,dc=im&#34;</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-12"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>now <code>slapcat</code> command shows the OU added within the command output.</p>
-<h4>Add new User<span class="absolute -mt-20" id="add-new-user"></span>
-    <a href="#add-new-user" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Adding new user within the newly created OU(Organizational Unit)</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">/etc/ldap/john.ldif</div><div id="code-block-13"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># cat john.ldif </span>
-</span></span><span class="line"><span class="cl">dn: <span class="nv">uid</span><span class="o">=</span>john,ou<span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">uid: john
-</span></span><span class="line"><span class="cl">cn: john
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">sn: abraham
-</span></span><span class="line"><span class="cl">mail: john@vinay.com
-</span></span><span class="line"><span class="cl">userPassword: john</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-13"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>Adding the .ldif file using ldapadd command</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-14">$ sudo ldapadd -D &#34;cn=admin,dc=vinay,dc=com&#34; -W -f john.ldif 
-Enter LDAP Password: 
-adding new entry &#34;uid=john,ou=People,dc=vinay,dc=com&#34;</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-14"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<h4>Read entries within OU as admin<span class="absolute -mt-20" id="read-entries-within-ou-as-admin"></span>
-    <a href="#read-entries-within-ou-as-admin" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Now we have added an <code>OU</code> and a user <code>john</code> to <code>People</code> OU,lets try to <code>ldapsearch</code> the users within the OU as admin</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">display users of an OU as admin</div><div id="code-block-15"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ldapsearch -D <span class="s2">&#34;cn=admin,dc=vinay,dc=com&#34;</span> -w vinay.com -b <span class="s2">&#34;ou=People,dc=vinay,dc=com&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># extended LDIF</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># LDAPv3</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># base &lt;ou=People,dc=vinay,dc=com&gt; with scope subtree</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># filter: (objectclass=*)</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># requesting: ALL</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># People, vinay.com</span>
-</span></span><span class="line"><span class="cl">dn: <span class="nv">ou</span><span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">cn: people
-</span></span><span class="line"><span class="cl">sn: people
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># john, People, vinay.com</span>
-</span></span><span class="line"><span class="cl">dn: <span class="nv">uid</span><span class="o">=</span>john,ou<span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">uid: john
-</span></span><span class="line"><span class="cl">cn: john
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">ou: Support
-</span></span><span class="line"><span class="cl">sn: abraham
-</span></span><span class="line"><span class="cl">mail: john@vinay.com
-</span></span><span class="line"><span class="cl">userPassword:: <span class="nv">am9obg</span><span class="o">==</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-15"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<h4>Read entries within OU as normal user.<span class="absolute -mt-20" id="read-entries-within-ou-as-normal-user"></span>
-    <a href="#read-entries-within-ou-as-normal-user" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-16"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ldapsearch -D <span class="s2">&#34;uid=john,ou=People,dc=vinay,dc=com&#34;</span> -w john -b <span class="s2">&#34;ou=People,dc=vinay,dc=com&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># extended LDIF</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># LDAPv3</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># base &lt;ou=People,dc=vinay,dc=com&gt; with scope subtree</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># filter: (objectclass=*)</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># requesting: ALL</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># People, vinay.com</span>
-</span></span><span class="line"><span class="cl">dn: <span class="nv">ou</span><span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">cn: people
-</span></span><span class="line"><span class="cl">sn: people
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># john, People, vinay.com</span>
-</span></span><span class="line"><span class="cl">dn: <span class="nv">uid</span><span class="o">=</span>john,ou<span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">uid: john
-</span></span><span class="line"><span class="cl">cn: john
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">ou: Support
-</span></span><span class="line"><span class="cl">sn: abraham
-</span></span><span class="line"><span class="cl">mail: john@vinay.com
-</span></span><span class="line"><span class="cl">userPassword:: <span class="nv">am9obg</span><span class="o">==</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-16"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<h4>Modifying existing entries<span class="absolute -mt-20" id="modifying-existing-entries"></span>
-    <a href="#modifying-existing-entries" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ol>
-<li>Using <code>ldapmodify</code> to update entries.</li>
-</ol>
-<p>Now to modify an already added record we use ldapmodify and the attributes that are to be modified are put into a separate file,here <code>john-modify.ldif</code> and to demonstrate here an OU <code>Support</code>
-is added to the existing entry,along with <code>People</code> OU.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">john-modify.ldif</div><div id="code-block-17"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$  cat /etc/ldap/ldif/john-modify.ldif 
-</span></span><span class="line"><span class="cl">dn: <span class="nv">uid</span><span class="o">=</span>john,ou<span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">changetype: modify
-</span></span><span class="line"><span class="cl">add: ou
-</span></span><span class="line"><span class="cl">ou: Support</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-17"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">ldapmodify command for john-modify.ldif</div><div id="code-block-18"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ldapmodify -D <span class="s2">&#34;cn=admin,dc=vinay,dc=com&#34;</span> -W -f john-modify.ldif
-</span></span><span class="line"><span class="cl">Enter LDAP Password: 
-</span></span><span class="line"><span class="cl">modifying entry <span class="s2">&#34;uid=john,ou=People,dc=vinay,dc=com&#34;</span></span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-18"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>Now running a slapcat command shows the updated OU <code>Support</code></p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div id="code-block-19"><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dn: <span class="nv">uid</span><span class="o">=</span>john,ou<span class="o">=</span>People,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">objectClass: top
-</span></span><span class="line"><span class="cl">objectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">uid: john
-</span></span><span class="line"><span class="cl">cn: john
-</span></span><span class="line"><span class="cl">ou: People
-</span></span><span class="line"><span class="cl">ou: Support
-</span></span><span class="line"><span class="cl">sn: abraham
-</span></span><span class="line"><span class="cl">mail: john@vinay.com
-</span></span><span class="line"><span class="cl">userPassword:: <span class="nv">am9obg</span><span class="o">==</span>
-</span></span><span class="line"><span class="cl">structuralObjectClass: inetOrgPerson
-</span></span><span class="line"><span class="cl">entryUUID: 50ea0ea8-f23d-103d-816b-4d9c39504958
-</span></span><span class="line"><span class="cl">creatorsName: <span class="nv">cn</span><span class="o">=</span>admin,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">createTimestamp: 20230928112421Z
-</span></span><span class="line"><span class="cl">entryCSN: 20230928120656.291224Z#000000#000#000000
-</span></span><span class="line"><span class="cl">modifiersName: <span class="nv">cn</span><span class="o">=</span>admin,dc<span class="o">=</span>vinay,dc<span class="o">=</span>com
-</span></span><span class="line"><span class="cl">modifyTimestamp: 20230928120656Z</span></span></code></pre></td></tr></table>
-</div>
-</div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-19"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>2.Using <code>ldapvi</code> to update LDAP entries with a text editor.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">ldapvi example</div><div id="code-block-20"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$  ldapvi -d --host vinay.im </span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-20"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p><code>ldapvi</code>  is a ldap client using which we can search,modify and delete entries which is easier than <code>ldapmodify</code>  instead of adding the updated records in a separate <code>ldif</code> file.
-ldapvi prompts to open text editor to modify entries,just similar to text editor.</p>
-<p>The above command will bind anonmously to hostname, here the hostname is <code>vinay.im</code>.After making necessary changes in the entry save from the text editor.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-21"># ldapvi -d --host nextcloud.vinay.com
-      3 entries read                                                                                                                                                                        
-add: 0, rename: 0, modify: 1, delete: 0
-Action? [yYqQvVebB*rsf&#43;?] b
-
-
---- Login
-
---- Login
-
---- Login
-Type M-h for help on key bindings.
-
-Filter or DN: cn=admin,dc=vinay,dc=im
-
-    Password: *****
-
-Bound as cn=admin,dc=vinay,dc=im.
-add: 0, rename: 0, modify: 1, delete: 0
-Action? [yYqQvVebB*rsf&#43;?] y
-Done.</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-21"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p>after saving and exiting from text editor, an interactive bash prompt <code> [yYqQvVebB*rsf+?]</code></p>
-<p><code>y</code> to commit changes.</p>
-<p><code>e</code> to edit changes.</p>
-<p><code>v</code> to view changes as LDIF change records.</p>
-<p><code>b</code> to show login and rebind - we are trying to auth from admin and save the changes to LDAP entries.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-22">[Reference serverfault] https://serverfault.com/questions/290296/ldapadd-ldapmodify-clarifications-needed-about-these-commands
-
-#### Verifying the ```slapd.conf``` Configuration file
-
-```bash
-$sudo  slaptest -v -f /etc/ldap/slapd.conf 
-config file testing succeeded</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
-    <button
-      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
-      title="Copy code"
-      data-clipboard-target="#code-block-22"
-    >
-      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
-      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
-    </button>
-  </div>
-</div>
-<p><code>-f</code> : Specifying an alternative configuration file.</p>
-<p><code>-v</code> : enable verbose mode.</p>
-<h4>Conventions in OpenLDAP<span class="absolute -mt-20" id="conventions-in-openldap"></span>
-    <a href="#conventions-in-openldap" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>dn - Distinguished Name<br>
-RDN - Relative Distinguished Name<br>
-cn - Common Name<br>
-dc - Domain Component<br>
-mail - Email Address<br>
-ou - Organization Unit<br>
-ldif - LDAP Data Interchange Format<br>
-ldap - Lightweight Directory Access Protocol</p>
-<h3>References<span class="absolute -mt-20" id="references"></span>
-    <a href="#references" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ol>
-<li>
-<p><a href="https://access.redhat.com/documentation/en-us/red_hat_directory_server/11/html/deployment_guide/introduction_to_directory_services" target="_blank" rel="noopener">https://access.redhat.com/documentation/en-us/red_hat_directory_server/11/html/deployment_guide/introduction_to_directory_services</a></p>
-</li>
-<li>
-<p><a href="https://www.zytrax.com/books/ldap" target="_blank" rel="noopener">https://www.zytrax.com/books/ldap</a></p>
-</li>
-<li>
-<p><a href="https://tylersguides.com/guides/openldap-how-to-add-a-user/" target="_blank" rel="noopener">https://tylersguides.com/guides/openldap-how-to-add-a-user/</a></p>
-</li>
-<li>
-<p><a href="https://www.zytrax.com/books/ldap/" target="_blank" rel="noopener">https://www.zytrax.com/books/ldap/</a></p>
-</li>
-</ol>
+          <p>Documenting stuff learning about OpenLDAP with two types of configuration, the traditional slapd.conf and slapd.d way of configuring.</p>
 
         </div>
         <div class="mt-16"></div>
         <div class="mb-8 flex items-center border-t pt-8 dark:border-neutral-800 contrast-more:border-neutral-400 dark:contrast-more:border-neutral-400 print:hidden"><a
-        href="/docs/interception-vimproved/"
-        title="Interception Vimproved"
-        class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:pr-4 rtl:pl-4"
-      ><svg class="inline h-5 shrink-0 ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Interception Vimproved</a><a
-        href="/docs/selfhosting/nextcloud/"
-        title="NextCloud"
+        href="/docs/openldap/"
+        title="OpenLDAP"
         class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:ml-auto ltr:pl-4 ltr:text-right rtl:mr-auto rtl:pr-4 rtl:text-left"
-      >NextCloud<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+      >OpenLDAP<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
         
       </main>
     </article>

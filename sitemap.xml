@@ -93,6 +93,10 @@
   </url><url>
     <loc>/docs/openldap/</loc>
   </url><url>
+    <loc>/docs/openldap/slapd-conf/</loc>
+  </url><url>
+    <loc>/docs/openldap/slapd/</loc>
+  </url><url>
     <loc>/docs/selfhosting/</loc>
   </url>
 </urlset>
