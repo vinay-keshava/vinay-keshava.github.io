@@ -671,9 +671,8 @@ development tools to package software.</p>
 <p>-&gt;  <code>mode </code> describes about the file permission in unix style also mentioning the user and the group level access</p>
 <p>-&gt; <code>destination</code> &amp;  <code>source</code> specifies which file or directory to be put,here  <code>/usr/local/bin/prometheus</code>  is the destination and the binary  <code>prometheus </code>
 in the current directory is the source</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">prometheus systemd service file</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Below is the prometheus systemd service file example to <span class="nb">enable</span> systemd <span class="k">for</span> prometheus and hence we use   <span class="sb">```</span>%postinstall<span class="sb">```</span> to reload the systemd daemon and setup the systemd service.
-</span></span><span class="line"><span class="cl">$ cat prometheus-systemd-service 
+<p>Below is the prometheus systemd service file example to enable systemd for prometheus and hence we use   <code>%postinstall</code> to reload the systemd daemon and setup the systemd service.</p>
+<div class="code-block relative mt-6 first:mt-0 group/code"><div class="filename">prometheus systemd service file</div><div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> $ cat prometheus-systemd-service 
 </span></span><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
 </span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>Prometheus Time Series Collection and Processing Server
 </span></span><span class="line"><span class="cl"><span class="nv">Wants</span><span class="o">=</span>network-online.target
@@ -681,8 +680,8 @@ in the current directory is the source</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
 </span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/usr/local/bin/prometheus    --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/lib/prometheus/ <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --web.console.templates<span class="o">=</span>/etc/prometheus/consoles <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --web.console.libraries<span class="o">=</span>/etc/prometheus/console_libraries
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --web.console.templates<span class="o">=</span>/etc/prometheus/consoles <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --web.console.libraries<span class="o">=</span>/etc/prometheus/console_libraries
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
 </span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target</span></span></code></pre></div></div><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8">
