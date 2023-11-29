@@ -38,11 +38,10 @@
 &lt;li&gt;Increase size of .qcow2 disk image.
 By default the size of Debian Generic Cloud is 2GB, using qemu-img we can resize the disk image.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-0&#34;&gt;qemu-img resize image.qcow2 &amp;#43;SIZE &lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;qemu-img resize image.qcow2 &amp;#43;SIZE &lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-0&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -54,11 +53,10 @@ By default the size of Debian Generic Cloud is 2GB, using qemu-img we can resize
 &lt;/ol&gt;
 &lt;p&gt;Copy the image to &lt;code&gt;/var/lib/vz/template/qemu/&lt;/code&gt;.
 Create a VM on Proxmox VE without any media (do not attach any physical media) and delete any existing disk on proxmox.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-1&#34;&gt;qm importdisk 114 /var/lib/vz/template/qemu/debian-12-genericcloud-amd64-20230910-1499.qcow2 amogha -format qcow2&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;qm importdisk 114 /var/lib/vz/template/qemu/debian-12-genericcloud-amd64-20230910-1499.qcow2 amogha -format qcow2&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-1&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -74,7 +72,7 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
 &lt;li&gt;Creating a new VM&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Creating a vm using command line on proxmox without using using the WEB-UI&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div id=&#34;code-block-2&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; newqemu_vm
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
@@ -103,7 +101,6 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-2&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -111,11 +108,10 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;:wq #for now&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-3&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-3&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -136,7 +132,7 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
         
         
         &lt;h2&gt;How to Map Physical USB ports to Device Names on GNU/Linux&lt;span class=&#34;absolute -mt-20&#34; id=&#34;how-to-map-physical-usb-ports-to-device-names-on-gnulinux&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#how-to-map-physical-usb-ports-to-device-names-on-gnulinux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;lsusb command&lt;/div&gt;&lt;div id=&#34;code-block-0&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsusb
+    &lt;a href=&#34;#how-to-map-physical-usb-ports-to-device-names-on-gnulinux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;lsusb command&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsusb
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Bus &lt;span class=&#34;m&#34;&gt;002&lt;/span&gt; Device 004: ID 04b3:3025 IBM Corp. NetVista Full Width Keyboard
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Bus &lt;span class=&#34;m&#34;&gt;002&lt;/span&gt; Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Bus &lt;span class=&#34;m&#34;&gt;003&lt;/span&gt; Device 123: ID 0951:1666 Kingston Technology DataTraveler &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; G3/G4/SE9 G2/50
@@ -159,7 +155,6 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-0&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -168,7 +163,7 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&amp;ldquo;lsusb&amp;rdquo; is a utility of &amp;ldquo;usbutils&amp;rdquo; in GNU/Linux to display information about the USB Buses and the USB&amp;rsquo;s attached to the buses.The output of the command displays the VendorID:ProductID and to which bus it is attached,the &amp;ldquo;Kingston Technology DataTraveler&amp;rdquo; bearing the VendorID:ProductID (0951:1666) attached to bus 003, the lsusb command with option &amp;ldquo;-t&amp;rdquo; provides a tree like output in a hierarchial structure.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;lsblk&amp;rdquo; is a tree-like structure to identify devices and their partitions,and also displays device name (/dev/sd* if its a hard disk,/dev/nvme0n1 in case of SSD),size of the drive/partition,  whether it is a disk/partition and the device&amp;rsquo;s mountpoints,here the /dev/sda* is the hard disk and sda1/2/5 are the partitions of the hard disk and /dev/sdb is the Kingston USB drive connected.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div id=&#34;code-block-1&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsblk
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsblk
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sda      8:0    &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; 119.2G  &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; disk 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─sda1   8:1    &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; 118.3G  &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; part /
@@ -179,7 +174,6 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-1&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -190,7 +184,7 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
 &lt;p&gt;If there are multiple USB&amp;rsquo;s attached how do we get to know USB drive&amp;rsquo;s device file and to which port that USB is connected ?&lt;/p&gt;
 &lt;p&gt;The answer is by /dev/disk/*
 Everything in GNU/Linux is either a file or a directory,so even the disk are represented as files in GNU/Linux.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div id=&#34;code-block-2&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$  ls -ltrh /dev/disk/
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$  ls -ltrh /dev/disk/
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;total &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;drwxr-xr-x &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; root root &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; Aug &lt;span class=&#34;m&#34;&gt;28&lt;/span&gt; 12:28 by-partuuid
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;drwxr-xr-x &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; root root &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; Aug &lt;span class=&#34;m&#34;&gt;29&lt;/span&gt; 09:49 by-uuid
@@ -201,7 +195,6 @@ Everything in GNU/Linux is either a file or a directory,so even the disk are rep
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-2&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -210,7 +203,7 @@ Everything in GNU/Linux is either a file or a directory,so even the disk are rep
 &lt;/div&gt;
 &lt;p&gt;The USB disks can be identified by the Partition UUID, UUID of the disk, by path, by label of the disk and also by disk sequence.&lt;/p&gt;
 &lt;h3&gt;By UUID(Universally Unique Identifier)&lt;span class=&#34;absolute -mt-20&#34; id=&#34;by-uuiduniversally-unique-identifier&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#by-uuiduniversally-unique-identifier&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;by uuid&lt;/div&gt;&lt;div id=&#34;code-block-3&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cat /etc/fstab 
+    &lt;a href=&#34;#by-uuiduniversally-unique-identifier&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;by uuid&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cat /etc/fstab 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;UUID&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;3341b336-0c26-4079-b3aa-faca8e2dd8b6 /               ext4    &lt;span class=&#34;nv&#34;&gt;errors&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;remount-ro &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;       &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;UUID&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;53b53d97-b5e4-43fe-b560-2a01f119b6cf none            swap    sw              &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;       &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;       &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
@@ -223,7 +216,6 @@ Everything in GNU/Linux is either a file or a directory,so even the disk are rep
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-3&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -232,13 +224,12 @@ Everything in GNU/Linux is either a file or a directory,so even the disk are rep
 &lt;/div&gt;
 &lt;p&gt;The device /dev/disk/by-uuid/3341b336-0c26-4079-b3aa-faca8e2dd8b6 is simply a symbolic link to actual an device,the reason being this is device name may change depending whether disk is attached or not,whereas these links will point to the same drive,so henceforth safer to use.&lt;/p&gt;
 &lt;h3&gt;By-Label&lt;span class=&#34;absolute -mt-20&#34; id=&#34;by-label&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#by-label&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;by-label&lt;/div&gt;&lt;div id=&#34;code-block-4&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ls -ltrh /dev/disk/by-label/
+    &lt;a href=&#34;#by-label&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;by-label&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ls -ltrh /dev/disk/by-label/
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;total &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lrwxrwxrwx &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; root root &lt;span class=&#34;m&#34;&gt;9&lt;/span&gt; Aug &lt;span class=&#34;m&#34;&gt;29&lt;/span&gt; 09:49 VINAY-USB -&amp;gt; ../../sdb&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-4&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -247,7 +238,7 @@ Everything in GNU/Linux is either a file or a directory,so even the disk are rep
 &lt;/div&gt;
 &lt;p&gt;Labels are easy, it avoids confusion in identifying disk, instead of remembering /dev/sda device file names.&lt;/p&gt;
 &lt;h3&gt;By-Path&lt;span class=&#34;absolute -mt-20&#34; id=&#34;by-path&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#by-path&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;by-path&lt;/div&gt;&lt;div id=&#34;code-block-5&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ls -ltrh /dev/disk/by-path/
+    &lt;a href=&#34;#by-path&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;by-path&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ls -ltrh /dev/disk/by-path/
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;total &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lrwxrwxrwx &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; root root  &lt;span class=&#34;m&#34;&gt;9&lt;/span&gt; Aug &lt;span class=&#34;m&#34;&gt;22&lt;/span&gt; 10:40 pci-0000:00:1f.2-ata-2.0 -&amp;gt; ../../sda
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;lrwxrwxrwx &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; root root  &lt;span class=&#34;m&#34;&gt;9&lt;/span&gt; Aug &lt;span class=&#34;m&#34;&gt;22&lt;/span&gt; 10:40 pci-0000:00:1f.2-ata-2 -&amp;gt; ../../sda
@@ -263,7 +254,6 @@ Everything in GNU/Linux is either a file or a directory,so even the disk are rep
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-5&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -272,11 +262,10 @@ Everything in GNU/Linux is either a file or a directory,so even the disk are rep
 &lt;/div&gt;
 &lt;p&gt;Here /dev/sdb is the USB device attached and &amp;ldquo;pci-0000:00:14.0-usb-0:4.2:1.0-scsi-0:0:0:0&amp;rdquo; file which represents the USB device describes that the USB device is connected from PCI bus to SCSI adapter.&amp;ldquo;by-path&amp;rdquo; is the pci path of the disk device. this device file name is created depending on the shortest physical path to the device.
 &amp;ldquo;/dev/sda&amp;rdquo; the first SCSI drive on the first SCSI bus,/dev/sdb is the second SCSI drive and /dev/sdc is the third SCSI drive and so on.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-6&#34;&gt;:wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;:wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-6&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;

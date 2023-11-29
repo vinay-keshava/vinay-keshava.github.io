@@ -27,8 +27,8 @@
 <meta name="twitter:title" content="Dreams drives deeds,words!"/>
 <meta name="twitter:description" content=""/>
 
-    <link rel="preload" href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" as="style" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
-    <link href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" rel="stylesheet" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
+    <link rel="preload" href="/css/compiled/main.min.2fd8982815d4baf33b6acf949e788eafe9a3ff0490ac38a7a749fe9d8f292278.css" as="style" integrity="sha256-L9iYKBXUuvM7as&#43;UnniOr&#43;mj/wSQrDinp0n&#43;nY8pIng=" />
+    <link href="/css/compiled/main.min.2fd8982815d4baf33b6acf949e788eafe9a3ff0490ac38a7a749fe9d8f292278.css" rel="stylesheet" integrity="sha256-L9iYKBXUuvM7as&#43;UnniOr&#43;mj/wSQrDinp0n&#43;nY8pIng=" />
 
 
 
@@ -41,12 +41,24 @@
 
   <script>
      
-    if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    const defaultTheme = 'system';
+
+    const setDarkTheme = () => {
       document.documentElement.classList.add("dark");
       document.documentElement.style.colorScheme = "dark";
-    } else {
+    }
+    const setLightTheme = () => {
       document.documentElement.classList.remove("dark");
       document.documentElement.style.colorScheme = "light";
+    }
+
+    if ("color-theme" in localStorage) {
+      localStorage.getItem("color-theme") === "dark" ? setDarkTheme() : setLightTheme();
+    } else {
+      defaultTheme === "dark" ? setDarkTheme() : setLightTheme();
+      if (defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? setDarkTheme() : setLightTheme();
+      }
     }
   </script>
 
@@ -62,21 +74,21 @@
         <span class="mx-2 font-extrabold inline select-none" title="Vinay Keshava">Vinay Keshava</span>
     </a><a
             title="About"
-            href="/about/"
+            href="/about"
             
             class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
           >
             <span class="text-center">About</span>
           </a><a
             title="Docs"
-            href="/docs/"
+            href="/docs"
             
             class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
           >
             <span class="text-center">Docs</span>
           </a><a
             title="Blog"
-            href="/blog/"
+            href="/blog"
             
             class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
           >
@@ -109,7 +121,8 @@
 </div>
 
   <div class='mx-auto flex max-w-screen-xl'>
-    <aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:hidden xl:block">
+    <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] fixed inset-0 z-10 bg-black/80 dark:bg-black/60 hidden"></div>
+<aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:hidden xl:block">
   
   <div class="px-4 pt-4 md:hidden">
     <div class="search-wrapper relative md:w-64">
@@ -141,15 +154,15 @@
     <ul class="flex flex-col gap-1 md:hidden">
       
       
-        <li class=""><a
+          <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/"
     
   >Blog
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
-    </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/debian-maintainer/"
@@ -157,7 +170,7 @@
   >Debian Maintainer Now !!!!
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/software-freedom-camp-2021/"
@@ -165,7 +178,7 @@
   >Software Freedom Camp 2021 Snikket
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/git-fosscommunity-in-update/"
@@ -173,7 +186,7 @@
   >git.fosscommunity.in Server Update
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/debconf23/"
@@ -181,7 +194,7 @@
   >DebConf 23,Kochi India
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/i-should-write-more/"
@@ -189,7 +202,7 @@
   >I Should Write more!
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/automating-debian-installer/"
@@ -197,7 +210,7 @@
   > Automating the Debian Installer
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/contributing-to-debian/"
@@ -207,29 +220,29 @@
               
             </li></ul>
       </div></li>
-        <li class=""><a
+          <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/about/"
     
   >About
     </a></li>
-        <li class=""><a
+          <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/"
     
   >Blog Post&#39;s
     </a></li>
-        <li class=""><a
+          <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/"
     
   >Documentation
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
-    </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 open"><a
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/debian/"
@@ -237,7 +250,15 @@
   >Debian Packaging
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/epm/"
+    
+  >EPM (ESP Package Manager)
+    </a>
+              
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/"
@@ -245,8 +266,8 @@
   >Hacks
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
-              <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/customize-qcow2-disk-image/"
@@ -254,7 +275,7 @@
   >Customize .qcow2 image
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/mapping-of-physical-usb-ports-to-device-names/"
@@ -264,7 +285,7 @@
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/interception-vimproved/"
@@ -272,34 +293,42 @@
   >Interception Vimproved
     </a>
               
-            </li><li class="flex flex-col gap-1 open"><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/openldap/"
+    href="/docs/ldap/"
     
-  >OpenLDAP
+  >LDAP
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
-              <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/openldap/slapd-conf/"
+    href="/docs/ldap/introduction/"
+    
+  >Introduction
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/ldap/slapd-conf/"
     
   >OpenLDAP (slapd.conf)
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/openldap/slapd/"
+    href="/docs/ldap/terminology/"
     
-  >OpenLDAP (slapd.d)
+  >Terminology
     </a>
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col gap-1 open"><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/selfhosting/"
@@ -307,8 +336,8 @@
   >Self Hosting
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
-              <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/selfhosting/nextcloud/"
@@ -343,21 +372,16 @@
     <div class="max-xl:hidden h-0 w-64 shrink-0"></div></div>
   
   
-  <div class="md:hidden  sticky bottom-0 bg-white dark:bg-dark mx-4 py-4 shadow-[0_-12px_16px_#fff] flex items-center gap-2 dark:border-neutral-800 dark:shadow-[0_-12px_16px_#111] contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:shadow-none border-t" data-toggle-animation="show">
-      <div class="flex grow flex-col">
-        <button
+    <div class="md:hidden  sticky bottom-0 bg-white dark:bg-dark mx-4 py-4 shadow-[0_-12px_16px_#fff] flex items-center gap-2 dark:border-neutral-800 dark:shadow-[0_-12px_16px_#111] contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:shadow-none border-t" data-toggle-animation="show"><div class="flex grow flex-col"><button
   title="Change theme"
   data-theme="light"
   class="theme-toggle group h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50"
   type="button"
-  aria-label="Toggle Dark Mode"
+  aria-label="Change theme"
 >
   <div class="flex items-center gap-2 capitalize"><svg height=12 class="group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hidden">Light</span><svg height=12 class="group-data-[theme=dark]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hidden">Dark</span></div>
 </button>
-
-      </div>
-    </div>
-</aside>
+</div></div></aside>
     
 <nav class="hextra-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents"></nav>
 
@@ -372,28 +396,16 @@
     <a href="#recent-posts" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
 
 <div class="hextra-cards mt-4 gap-4 grid not-prose" style="--rows: 3;">
-  
     <a
-      class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-      href="/blog/i-should-write-more/"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>I Should Write more!! </span></a>
-
+      class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="/blog/i-should-write-more/" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>I Should Write more!! </span></a>
      <a
-       class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-       href="/blog/debconf23/"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>DebConf-23!! </span></a>
-
+       class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="/blog/debconf23/" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>DebConf-23!! </span></a>
     <a
-      class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-      href="/blog/automating-debian-installer/"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Automating Debian Installer!! </span></a>
-
+      class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="/blog/automating-debian-installer/" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Automating Debian Installer!! </span></a>
     <a
-      class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-      href="/blog/debian-maintainer/"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Debian Maintainer Now!! </span></a>
-
+      class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="/blog/debian-maintainer/" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Debian Maintainer Now!! </span></a>
   <a
-    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-    href="/blog/contributing-to-debian/"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Contributing to Debian !!</span></a>
-
-
+    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="/blog/contributing-to-debian/" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Contributing to Debian !!</span></a>
 
 </div>
 
@@ -401,28 +413,16 @@
     <a href="#explore" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
 
 <div class="hextra-cards mt-4 gap-4 grid not-prose" style="--rows: 3;">
-  
   <a
-    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-    href="about"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>About</span></a>
-
+    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="about" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>About</span></a>
   <a
-    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-    href="docs"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>Docs</span></a>
-
+    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="docs" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>Docs</span></a>
   <a
-    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-    href="blog/"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Blog</span></a>
-
+    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="blog/" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Blog</span></a>
   <a
-    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-    href="/captures"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Captures</span></a>
-
+    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="/captures" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Captures</span></a>
   <a
-    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
-    href="/blog/index.xml/"><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>RSS</span></a>
-
-
+    class="hextra-card group flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200 hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-800 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-700 dark:hover:bg-neutral-900"href="/blog/index.xml/" ><span class="flex font-semibold items-start gap-2 p-4 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>RSS</span></a>
 </div>
 
 
@@ -431,6 +431,8 @@
 
 
   
+
+
 
 
 
@@ -442,11 +444,14 @@
 
 
 <div class="overflow-x-auto mt-6 flex rounded-lg border py-2 ltr:pr-4 rtl:pl-4 contrast-more:border-current contrast-more:dark:border-current border-blue-200 bg-blue-100 text-blue-900 dark:border-blue-200/30 dark:bg-blue-900/30 dark:text-blue-200">
-  <div class="select-none text-xl ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2" style='font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>ℹ️</div>
+  <div class="ltr:pl-3 ltr:pr-2 rtl:pr-3 rtl:pl-2"><div class="select-none text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+        ℹ️
+      </div></div>
+
   <div class="w-full min-w-0 leading-7">
-    <p class="mt-6 leading-7 first:mt-0">
+    <div class="mt-6 leading-7 first:mt-0">
       Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International license.</a>
-    </p>
+    </div>
   </div>
 </div>
 
@@ -456,34 +461,31 @@
     </article>
   </div>
 
-      <footer class="hextra-footer bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent">
-    <div class='mx-auto flex gap-2 py-2 px-4 max-w-screen-xl'><button
+      <footer class="hextra-footer bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent"><div class="mx-auto flex gap-2 py-2 px-4 max-w-screen-xl"><button
   title="Change theme"
   data-theme="light"
   class="theme-toggle group h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50"
   type="button"
-  aria-label="Toggle Dark Mode"
+  aria-label="Change theme"
 >
   <div class="flex items-center gap-2 capitalize"><svg height=12 class="group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hidden">Light</span><svg height=12 class="group-data-[theme=dark]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hidden">Dark</span></div>
 </button>
-</div>
-  <hr class="dark:border-neutral-800" />
-  <div
-    class='max-w-screen-xl mx-auto flex justify-center py-12 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)] text-gray-600 dark:text-gray-400 md:justify-start'
+</div><hr class="dark:border-neutral-800" /><div
+    class="max-w-screen-xl mx-auto flex justify-center py-12 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)] text-gray-600 dark:text-gray-400 md:justify-start"
   >
     <div class="flex w-full flex-col items-center sm:items-start"><div class="font-semibold"><a class="flex text-sm items-center gap-1 text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
-    <span
-      >Powered by Hextra<svg height=1em class="inline-block ml-1 align-text-bottom" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+    <span>Powered by Hextra<svg height=1em class="inline-block ml-1 align-text-bottom" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
   </a></div>
     </div>
   </div>
 </footer>
     
   </body>
-  <script defer src="/js/main.min.8d7e023a427b8d9aacbe078702dc3d651e4c05824555138ebe4215801fcbaf41.js" integrity="sha256-jX4COkJ7jZqsvgeHAtw9ZR5MBYJFVROOvkIVgB/Lr0E="></script>
+  <script defer src="/js/main.min.a0311b78f3a0a229e5789d65bad5f0d6127911b5a7643b3f83714b8de2f52e03.js" integrity="sha256-oDEbePOgoinleJ1lutXw1hJ5EbWnZDs/g3FLjeL1LgM="></script>
+
 
 <script defer src="/lib/flexsearch/flexsearch.bundle.min.0425860527cc9968f9f049421c7a56b39327d475e2e3a8f550416be3a9134327.js" integrity="sha256-BCWGBSfMmWj58ElCHHpWs5Mn1HXi46j1UEFr46kTQyc="></script>
-  <script defer src="/en.search.min.9afdc7c586c6f971dd94df10b989f10faaf38e5702571fd8cfc9ff9135c2d495.js" integrity="sha256-mv3HxYbG&#43;XHdlN8QuYnxD6rzjlcCVx/Yz8n/kTXC1JU="></script>
+    <script defer src="/en.search.min.9afdc7c586c6f971dd94df10b989f10faaf38e5702571fd8cfc9ff9135c2d495.js" integrity="sha256-mv3HxYbG&#43;XHdlN8QuYnxD6rzjlcCVx/Yz8n/kTXC1JU="></script>
 
 
 </html>

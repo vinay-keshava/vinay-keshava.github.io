@@ -31,8 +31,8 @@
 <meta name="twitter:title" content="Software Freedom Camp 2021 Snikket"/>
 <meta name="twitter:description" content="Learnings from software freedom camp"/>
 
-    <link rel="preload" href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" as="style" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
-    <link href="/css/compiled/main.min.16b68a354e65cf45bc12a9b9a023854fe5d743c179103958df82062ebdb2af3a.css" rel="stylesheet" integrity="sha256-FraKNU5lz0W8Eqm5oCOFT&#43;XXQ8F5EDlY34IGLr2yrzo=" />
+    <link rel="preload" href="/css/compiled/main.min.2fd8982815d4baf33b6acf949e788eafe9a3ff0490ac38a7a749fe9d8f292278.css" as="style" integrity="sha256-L9iYKBXUuvM7as&#43;UnniOr&#43;mj/wSQrDinp0n&#43;nY8pIng=" />
+    <link href="/css/compiled/main.min.2fd8982815d4baf33b6acf949e788eafe9a3ff0490ac38a7a749fe9d8f292278.css" rel="stylesheet" integrity="sha256-L9iYKBXUuvM7as&#43;UnniOr&#43;mj/wSQrDinp0n&#43;nY8pIng=" />
 
 
 
@@ -45,12 +45,24 @@
 
   <script>
      
-    if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    const defaultTheme = 'system';
+
+    const setDarkTheme = () => {
       document.documentElement.classList.add("dark");
       document.documentElement.style.colorScheme = "dark";
-    } else {
+    }
+    const setLightTheme = () => {
       document.documentElement.classList.remove("dark");
       document.documentElement.style.colorScheme = "light";
+    }
+
+    if ("color-theme" in localStorage) {
+      localStorage.getItem("color-theme") === "dark" ? setDarkTheme() : setLightTheme();
+    } else {
+      defaultTheme === "dark" ? setDarkTheme() : setLightTheme();
+      if (defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? setDarkTheme() : setLightTheme();
+      }
     }
   </script>
 
@@ -66,21 +78,21 @@
         <span class="mx-2 font-extrabold inline select-none" title="Vinay Keshava">Vinay Keshava</span>
     </a><a
             title="About"
-            href="/about/"
+            href="/about"
             
             class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
           >
             <span class="text-center">About</span>
           </a><a
             title="Docs"
-            href="/docs/"
+            href="/docs"
             
             class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
           >
             <span class="text-center">Docs</span>
           </a><a
             title="Blog"
-            href="/blog/"
+            href="/blog"
             
             class="text-sm contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-2 md:inline-block font-medium"
           >
@@ -112,8 +124,9 @@
   </nav>
 </div>
 
-  <div class='mx-auto flex max-w-screen-xl'>
-    <aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:hidden xl:block">
+  <div class="mx-auto flex max-w-screen-xl">
+    <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] fixed inset-0 z-10 bg-black/80 dark:bg-black/60 hidden"></div>
+<aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:hidden xl:block">
   
   <div class="px-4 pt-4 md:hidden">
     <div class="search-wrapper relative md:w-64">
@@ -145,15 +158,15 @@
     <ul class="flex flex-col gap-1 md:hidden">
       
       
-        <li class="open"><a
+          <li class="open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/"
     
   >Blog
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
-    </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/debian-maintainer/"
@@ -161,7 +174,7 @@
   >Debian Maintainer Now !!!!
     </a>
               
-            </li><li class="flex flex-col gap-1 open"><a
+            </li><li class="flex flex-col open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
     href="/blog/software-freedom-camp-2021/"
@@ -172,7 +185,7 @@
     <ul class='flex flex-col gap-1 relative before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] dark:before:bg-neutral-800 ltr:pl-3 ltr:before:left-0 rtl:pr-3 rtl:before:right-0 ltr:ml-3 rtl:mr-3'></ul>
   
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/git-fosscommunity-in-update/"
@@ -180,7 +193,7 @@
   >git.fosscommunity.in Server Update
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/debconf23/"
@@ -188,7 +201,7 @@
   >DebConf 23,Kochi India
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/i-should-write-more/"
@@ -196,7 +209,7 @@
   >I Should Write more!
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/automating-debian-installer/"
@@ -204,7 +217,7 @@
   > Automating the Debian Installer
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/contributing-to-debian/"
@@ -214,29 +227,29 @@
               
             </li></ul>
       </div></li>
-        <li class=""><a
+          <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/about/"
     
   >About
     </a></li>
-        <li class=""><a
+          <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/blog/"
     
   >Blog Post&#39;s
     </a></li>
-        <li class=""><a
+          <li class=""><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/"
     
   >Documentation
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
-    </a><div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 open"><a
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col open"><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/debian/"
@@ -244,7 +257,15 @@
   >Debian Packaging
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/epm/"
+    
+  >EPM (ESP Package Manager)
+    </a>
+              
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/"
@@ -252,8 +273,8 @@
   >Hacks
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
-              <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/customize-qcow2-disk-image/"
@@ -261,7 +282,7 @@
   >Customize .qcow2 image
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/hacks/mapping-of-physical-usb-ports-to-device-names/"
@@ -271,7 +292,7 @@
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/interception-vimproved/"
@@ -279,34 +300,42 @@
   >Interception Vimproved
     </a>
               
-            </li><li class="flex flex-col gap-1 open"><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/openldap/"
+    href="/docs/ldap/"
     
-  >OpenLDAP
+  >LDAP
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
-              <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/openldap/slapd-conf/"
+    href="/docs/ldap/introduction/"
+    
+  >Introduction
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/ldap/slapd-conf/"
     
   >OpenLDAP (slapd.conf)
     </a>
               
-            </li><li class="flex flex-col gap-1 "><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/docs/openldap/slapd/"
+    href="/docs/ldap/terminology/"
     
-  >OpenLDAP (slapd.d)
+  >Terminology
     </a>
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col gap-1 open"><a
+            </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/selfhosting/"
@@ -314,8 +343,8 @@
   >Self Hosting
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
     </a>
-              <div class="pt-1 ltr:pr-0 overflow-hidden transition-all ease-in-out duration-200">
-        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col gap-1 "><a
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
     href="/docs/selfhosting/nextcloud/"
@@ -350,21 +379,16 @@
     <div class="max-xl:hidden h-0 w-64 shrink-0"></div></div>
   
   
-  <div class="md:hidden  sticky bottom-0 bg-white dark:bg-dark mx-4 py-4 shadow-[0_-12px_16px_#fff] flex items-center gap-2 dark:border-neutral-800 dark:shadow-[0_-12px_16px_#111] contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:shadow-none border-t" data-toggle-animation="show">
-      <div class="flex grow flex-col">
-        <button
+    <div class="md:hidden  sticky bottom-0 bg-white dark:bg-dark mx-4 py-4 shadow-[0_-12px_16px_#fff] flex items-center gap-2 dark:border-neutral-800 dark:shadow-[0_-12px_16px_#111] contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:shadow-none border-t" data-toggle-animation="show"><div class="flex grow flex-col"><button
   title="Change theme"
   data-theme="light"
   class="theme-toggle group h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50"
   type="button"
-  aria-label="Toggle Dark Mode"
+  aria-label="Change theme"
 >
   <div class="flex items-center gap-2 capitalize"><svg height=12 class="group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hidden">Light</span><svg height=12 class="group-data-[theme=dark]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hidden">Dark</span></div>
 </button>
-
-      </div>
-    </div>
-</aside>
+</div></div></aside>
     
 <nav class="hextra-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
     <div class="hextra-scrollbar sticky top-16 overflow-y-auto pr-4 pt-6 text-sm [hyphens:auto] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:-mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul></ul><ul></ul><ul></ul>
@@ -389,10 +413,13 @@
 </div>
 
         <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Software Freedom Camp 2021 Snikket</h1>
-        
-          <div class="mt-4 mb-16 text-gray-500 text-sm">
-            March 29, 2022&nbsp;by&nbsp;<a href="https://blog.vinay.im/about" target="_blank" class="mx-1 text-current underline [text-underline-position:from-font] decoration-from-font">Vinay Keshava</a></div>
-        
+        <div class="mt-4 mb-16 text-gray-500 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">March 29, 2022</span><span class="mx-1">·</span><a
+                  href="https://blog.vinay.im/about" target="_blank"
+                  class="group inline-flex items-center text-current gap-x-1.5 mx-1"
+                  title="Vinay Keshava"
+                ><img src="https://blog.vinay.im/images/vinay.png" alt="Vinay Keshava" class="inline-block h-4 w-4 rounded-full" loading="lazy" />
+                  <div class="group-hover:underline">Vinay Keshava</div>
+                </a></div>
         <div class="content">
           <p>Back to writing after a 2-month long Semester End Exam !!!!.<br>
 Everyone uses messaging platforms like WhatsApp, Facebook, Signal, Telegram, and various other applications to communicate with people, in this blog post I would like to introduce to XMPP Protocol( Extensible Messaging and Presence Protocol), <strong>XMPP</strong> is an open, decentralized universal messaging standard for instant messaging, voice/video calls.   Many Applications or Clients are built using the XMPP protocol due to its open nature. Platforms like WhatsApp, Telegram, Signal impose vendor lock-in wherein the user using the product or service cannot transit to the competitor’s product/service. To overcome vendor lock-in issues and privacy issues one of the minimal, simple best solutions is to set up a Snikket server of your own, where you can own your data.</p>
@@ -401,14 +428,13 @@ Snikket is free software, a privacy-friendly messaging platform based on XMPP pr
 <h1>Experience of Running Snikket Server</h1><p>Snikket is my first self-hosted service, before talking about the experience of running the snikket server I would like to talk about <a href="https://camp.fsci.in/" target="_blank" rel="noopener">Software Freedom camp 2021 </a>,the camp is organized by the Free Software Community of India. As a part of the camp initially, learners were made to understand the philosophy and intention behind free software. Later during the project phase, learners were allowed to choose certain available topics proposed by the mentor. <br>
 After joining the sfcamp as a learner, I choose to learn system administration and Debian packaging, under system administration one of the deliverables was to set up a Snikket server of my own.<br>
 To run any snikket server basic requirements are a domain name and a VPS (Virtual Private Server )to run your snikket server. I had signed up for the Github Student Developer pack through the pack got the free domain from name.com and I choose Amazon Web Services Free Tier as my VPS.</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-0">  Snikket is all about the
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code>  Snikket is all about the
         DNS
         Docker
         Daemons</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
     <button
       class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
       title="Copy code"
-      data-clipboard-target="#code-block-0"
     >
       <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
       <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
@@ -424,11 +450,10 @@ Snikket Source code <a href="https://github.com/snikket-im" target="_blank" rel=
 <p>Thanks to <a href="https://ravish0007.github.io" target="_blank" rel="noopener">Ravish</a> and <a href="https://blog.sahilister.in" target="_blank" rel="noopener">Sahil</a> for helping to set up the Snikket server.</p>
 <h1>Next Goals</h1> - Reverse Proxy by Nginx .
 <p>Bye for now .</p>
-<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code id="code-block-1">    :wq</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+<div class="code-block relative mt-6 first:mt-0 group/code"><pre><code>    :wq</code></pre><div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
     <button
       class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
       title="Copy code"
-      data-clipboard-target="#code-block-1"
     >
       <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
       <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
@@ -506,34 +531,31 @@ Snikket Source code <a href="https://github.com/snikket-im" target="_blank" rel=
     </article>
   </div>
 
-      <footer class="hextra-footer bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent">
-    <div class='mx-auto flex gap-2 py-2 px-4 max-w-screen-xl'><button
+      <footer class="hextra-footer bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent"><div class="mx-auto flex gap-2 py-2 px-4 max-w-screen-xl"><button
   title="Change theme"
   data-theme="light"
   class="theme-toggle group h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50"
   type="button"
-  aria-label="Toggle Dark Mode"
+  aria-label="Change theme"
 >
   <div class="flex items-center gap-2 capitalize"><svg height=12 class="group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hidden">Light</span><svg height=12 class="group-data-[theme=dark]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hidden">Dark</span></div>
 </button>
-</div>
-  <hr class="dark:border-neutral-800" />
-  <div
-    class='max-w-screen-xl mx-auto flex justify-center py-12 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)] text-gray-600 dark:text-gray-400 md:justify-start'
+</div><hr class="dark:border-neutral-800" /><div
+    class="max-w-screen-xl mx-auto flex justify-center py-12 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)] text-gray-600 dark:text-gray-400 md:justify-start"
   >
     <div class="flex w-full flex-col items-center sm:items-start"><div class="font-semibold"><a class="flex text-sm items-center gap-1 text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
-    <span
-      >Powered by Hextra<svg height=1em class="inline-block ml-1 align-text-bottom" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+    <span>Powered by Hextra<svg height=1em class="inline-block ml-1 align-text-bottom" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
   </a></div>
     </div>
   </div>
 </footer>
     
   </body>
-  <script defer src="/js/main.min.8d7e023a427b8d9aacbe078702dc3d651e4c05824555138ebe4215801fcbaf41.js" integrity="sha256-jX4COkJ7jZqsvgeHAtw9ZR5MBYJFVROOvkIVgB/Lr0E="></script>
+  <script defer src="/js/main.min.a0311b78f3a0a229e5789d65bad5f0d6127911b5a7643b3f83714b8de2f52e03.js" integrity="sha256-oDEbePOgoinleJ1lutXw1hJ5EbWnZDs/g3FLjeL1LgM="></script>
+
 
 <script defer src="/lib/flexsearch/flexsearch.bundle.min.0425860527cc9968f9f049421c7a56b39327d475e2e3a8f550416be3a9134327.js" integrity="sha256-BCWGBSfMmWj58ElCHHpWs5Mn1HXi46j1UEFr46kTQyc="></script>
-  <script defer src="/en.search.min.9afdc7c586c6f971dd94df10b989f10faaf38e5702571fd8cfc9ff9135c2d495.js" integrity="sha256-mv3HxYbG&#43;XHdlN8QuYnxD6rzjlcCVx/Yz8n/kTXC1JU="></script>
+    <script defer src="/en.search.min.9afdc7c586c6f971dd94df10b989f10faaf38e5702571fd8cfc9ff9135c2d495.js" integrity="sha256-mv3HxYbG&#43;XHdlN8QuYnxD6rzjlcCVx/Yz8n/kTXC1JU="></script>
 
 
 </html>

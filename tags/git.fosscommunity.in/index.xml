@@ -31,14 +31,13 @@ Snikket is free software, a privacy-friendly messaging platform based on XMPP pr
 &lt;h1&gt;Experience of Running Snikket Server&lt;/h1&gt;&lt;p&gt;Snikket is my first self-hosted service, before talking about the experience of running the snikket server I would like to talk about &lt;a href=&#34;https://camp.fsci.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Software Freedom camp 2021 &lt;/a&gt;,the camp is organized by the Free Software Community of India. As a part of the camp initially, learners were made to understand the philosophy and intention behind free software. Later during the project phase, learners were allowed to choose certain available topics proposed by the mentor. &lt;br&gt;
 After joining the sfcamp as a learner, I choose to learn system administration and Debian packaging, under system administration one of the deliverables was to set up a Snikket server of my own.&lt;br&gt;
 To run any snikket server basic requirements are a domain name and a VPS (Virtual Private Server )to run your snikket server. I had signed up for the Github Student Developer pack through the pack got the free domain from name.com and I choose Amazon Web Services Free Tier as my VPS.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-0&#34;&gt;  Snikket is all about the
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;  Snikket is all about the
         DNS
         Docker
         Daemons&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-0&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
@@ -54,11 +53,10 @@ Snikket Source code &lt;a href=&#34;https://github.com/snikket-im&#34; target=&#
 &lt;p&gt;Thanks to &lt;a href=&#34;https://ravish0007.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ravish&lt;/a&gt; and &lt;a href=&#34;https://blog.sahilister.in&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sahil&lt;/a&gt; for helping to set up the Snikket server.&lt;/p&gt;
 &lt;h1&gt;Next Goals&lt;/h1&gt; - Reverse Proxy by Nginx .
 &lt;p&gt;Bye for now .&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code id=&#34;code-block-1&#34;&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
     &lt;button
       class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
       title=&#34;Copy code&#34;
-      data-clipboard-target=&#34;#code-block-1&#34;
     &gt;
       &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
       &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
