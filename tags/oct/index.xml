@@ -1,0 +1,120 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – oct</title>
+    <link>/tags/oct/</link>
+    <description>Recent content in oct on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/oct/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Foss activities - Nov 2023</title>
+      <link>/blog/foss-activities-nov-2023/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/foss-activities-nov-2023/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/javamorph/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;javamorph&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added compilation support for JDK 21 with the help of Vladimir Petko.&lt;/li&gt;
+&lt;li&gt;Link to &lt;a href=&#34;https://salsa.debian.org/java-team/javamorph/-/merge_requests/2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1483592/accepted-ruby-pry-byebug-3101-1-source-into-unstable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ruby-pry-byebug&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My first QA upload to Debian&lt;/li&gt;
+&lt;li&gt;Closing the bug &lt;a href=&#34;https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1054747&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#1054747&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Link to &lt;a href=&#34;https://salsa.debian.org/debian/ruby-pry-byebug/-/merge_requests/4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New Upstream release 3.10.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Abhijith pointed out this bug to me, to prevent ruby-octokit from being removed from the archive.
+Thanks to Miguel Landaeta for sponsoring this package upload.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Foss activities - Oct 2023</title>
+      <link>/blog/foss-activities-oct-2023/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/foss-activities-oct-2023/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Post DebConf Month&lt;/p&gt;
+&lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1470252/accepted-ruby-aws-sdk-core-31780-1-source-into-experimental/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ruby-aws-sdk-core&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New upstream release 3.178.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1472143/accepted-rofi-175-01-source-amd64-into-unstable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rofi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My first NMU( Non Maintainer Upload) to debian&lt;/p&gt;
+&lt;p&gt;Sponsorer: Abhijith PA,also thanks to karthik for mentioning to update rofi,because it was no longer maintained also fixed the bug &lt;a href=&#34;https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1043483&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1043483&lt;/a&gt; for d/watch&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;New Upstream version 1.7.5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;d/watch update closes &lt;a href=&#34;https://bugs.debian.org/1043483&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bug&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Refreshing Patch to fix &lt;a href=&#34;https://salsa.debian.org/karthik/rofi/-/commit/1e10fc056cf0a151cad91839fb55d79b72c7f1fe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;man pages&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixing Build Depends on &lt;a href=&#34;https://salsa.debian.org/karthik/rofi/-/commit/e234982e41fb05b023f1641e4f877db5d2f6890d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;obsolute package&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1474830/accepted-ruby-aws-sigv4-161-1-source-into-experimental/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ruby-aws-sigv4&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New Upstream release 1.6.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1475369/accepted-ruby-aws-sdk-s3-11300-1-source-into-experimental/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ruby-aws-sdk-s3&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New Upstream release 1.130.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Open Street Map&lt;span class=&#34;absolute -mt-20&#34; id=&#34;open-street-map&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#open-street-map&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;My edits on open street Map for October in and around Bangalore and Pavagada.
+&lt;a href=&#34;https://www.openstreetmap.org/user/vinay-keshava/history&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.openstreetmap.org/user/vinay-keshava/history&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
