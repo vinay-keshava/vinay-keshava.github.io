@@ -89,6 +89,8 @@
     <loc>/tags/git.fosscommunity.in/</loc>
     <lastmod>2022-03-29T20:01:24+05:30</lastmod>
   </url><url>
+    <loc>/wily/jan-2024/20240104/</loc>
+  </url><url>
     <loc>/wily/dec-2023/20231214/</loc>
   </url><url>
     <loc>/wily/dec-2023/20231215/</loc>
@@ -104,6 +106,8 @@
     <loc>/wily/dec-2023/20231227/</loc>
   </url><url>
     <loc>/wily/jan-2024/20240102/</loc>
+  </url><url>
+    <loc>/wily/jan-2024/20240103/</loc>
   </url><url>
     <loc>/about/</loc>
   </url><url>
@@ -121,6 +125,8 @@
   </url><url>
     <loc>/docs/epm/</loc>
   </url><url>
+    <loc>/docs/golang/</loc>
+  </url><url>
     <loc>/docs/rust/guessing-game/</loc>
   </url><url>
     <loc>/docs/hacks/</loc>
@@ -129,15 +135,21 @@
   </url><url>
     <loc>/docs/ldap/introduction/</loc>
   </url><url>
+    <loc>/docs/golang/introduction/</loc>
+  </url><url>
     <loc>/wily/jan-2024/</loc>
   </url><url>
     <loc>/docs/ldap/</loc>
+  </url><url>
+    <loc>/docs/lvm/</loc>
   </url><url>
     <loc>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</loc>
   </url><url>
     <loc>/captures/</loc>
   </url><url>
     <loc>/docs/selfhosting/nextcloud/</loc>
+  </url><url>
+    <loc>/docs/nfs/</loc>
   </url><url>
     <loc>/docs/ldap/slapd-conf/</loc>
   </url><url>
