@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vinay Keshava – oct</title>
-    <link>/tags/oct/</link>
-    <description>Recent content in oct on Vinay Keshava</description>
+    <title>Vinay Keshava – Debian</title>
+    <link>/wily/debian/</link>
+    <description>Recent content in Debian on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="/tags/oct/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/wily/debian/index.xml" rel="self" type="application/rss+xml" />
     
     
       
