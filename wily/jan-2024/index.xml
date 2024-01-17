@@ -15,35 +15,6 @@
     
     
     <item>
-      <title>2023-01-04</title>
-      <link>/wily/jan-2024/20240104/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/wily/jan-2024/20240104/</guid>
-      <description>
-        
-        
-        &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Network File System(NFS)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Here is the link to the &lt;a href=&#34;/docs/nfs&#34; &gt;document&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Installing NFS server and setting directory permissions to 777&lt;/li&gt;
-&lt;li&gt;Configuring Export directory by editing the file &lt;code&gt;/etc/exports&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Options to configure the NFS server,either readonly or read write, sync or async,subtree check.&lt;/li&gt;
-&lt;li&gt;Exporting the shared directory using &lt;code&gt;exportfs&lt;/code&gt; command&lt;/li&gt;
-&lt;li&gt;Configuring firewall &lt;code&gt;ufw&lt;/code&gt; to allow clients to access the shared folder.&lt;/li&gt;
-&lt;li&gt;Configuring client using nfs-common package&lt;/li&gt;
-&lt;li&gt;Creating mountpoints on the client side to access the shared folder.&lt;/li&gt;
-&lt;li&gt;Mounting the folder using mount command or adding the entry to &lt;code&gt;/etc/fstab&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>2024-01-02</title>
       <link>/wily/jan-2024/20240102/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -230,6 +201,91 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-01-04</title>
+      <link>/wily/jan-2024/20240104/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/jan-2024/20240104/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Network File System(NFS)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is the link to the &lt;a href=&#34;/docs/nfs&#34; &gt;document&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Installing NFS server and setting directory permissions to 777&lt;/li&gt;
+&lt;li&gt;Configuring Export directory by editing the file &lt;code&gt;/etc/exports&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Options to configure the NFS server,either readonly or read write, sync or async,subtree check.&lt;/li&gt;
+&lt;li&gt;Exporting the shared directory using &lt;code&gt;exportfs&lt;/code&gt; command&lt;/li&gt;
+&lt;li&gt;Configuring firewall &lt;code&gt;ufw&lt;/code&gt; to allow clients to access the shared folder.&lt;/li&gt;
+&lt;li&gt;Configuring client using nfs-common package&lt;/li&gt;
+&lt;li&gt;Creating mountpoints on the client side to access the shared folder.&lt;/li&gt;
+&lt;li&gt;Mounting the folder using mount command or adding the entry to &lt;code&gt;/etc/fstab&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-01-09</title>
+      <link>/wily/jan-2024/20240109/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/jan-2024/20240109/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ruby Learning&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#data-types&#34; &gt;Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#type-conversion&#34; &gt;Type Conversion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#string-interpolation&#34; &gt;String Interpolation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#strings&#34; &gt;Strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#basic-data-structures-arrays-and-hashes&#34; &gt;Basic Data Structures and Hashes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#symbols&#34; &gt;Symbols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#variables&#34; &gt;Variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#input--output&#34; &gt;Input Output&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solved exercises of Odin Project for the &lt;a href=&#34;https://github.com/vinay-keshava/ruby-learning/commit/94b3203524badc98ba8c822d362b8fbe2f5ba2ea&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;String Exercices&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/vinay-keshava/ruby-learning/commit/a5801bada579481177c4a2a42c28553dcbd74fb5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Data Types&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-01-10</title>
+      <link>/wily/jan-2024/20240110/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/jan-2024/20240110/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ruby Learning Cont.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#conditional-logic&#34; &gt;Conditional Logic&lt;/a&gt;, &lt;code&gt;if&lt;/code&gt;,&lt;code&gt;elsif&lt;/code&gt;,&lt;code&gt;else&lt;/code&gt;,&lt;code&gt;unless&lt;/code&gt;,&lt;code&gt;case&lt;/code&gt; statements and &lt;code&gt;ternary&lt;/code&gt; operator.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#loops&#34; &gt;Loops&lt;/a&gt; -&lt;code&gt;loop&lt;/code&gt;,&lt;code&gt;while&lt;/code&gt;,&lt;code&gt;for&lt;/code&gt;,&lt;code&gt;until&lt;/code&gt; loops and &lt;code&gt;upto and downto&lt;/code&gt; loops,&lt;code&gt;times&lt;/code&gt; and &lt;code&gt;iterators&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Blocks - single line blocks and multi line blocks&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#arrays&#34; &gt;Arrays&lt;/a&gt; &lt;code&gt;Array.new&lt;/code&gt;, &lt;code&gt;.first&lt;/code&gt; &amp;amp; &lt;code&gt;.last&lt;/code&gt; functions , &lt;code&gt;push &amp;amp; pop&lt;/code&gt; of elements, &lt;code&gt;shift and unshift&lt;/code&gt; of elements.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#hashes&#34; &gt;Hashes&lt;/a&gt; &lt;code&gt;Hash.new&lt;/code&gt;,Accessing values from key, adding and updating values, merging two hashes and hashes with symbols&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#methods&#34; &gt;Methods&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solved exercises of Odin Project for the &lt;a href=&#34;https://github.com/vinay-keshava/ruby-learning/commit/505be75378b454ac19125dd5e5e4e093533e725f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Arrays&lt;/a&gt;, &lt;a href=&#34;https://github.com/vinay-keshava/ruby-learning/commit/dc4b1fa60724876cec834e761c21926230aa64f1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hashes&lt;/a&gt;,&lt;a href=&#34;https://github.com/vinay-keshava/ruby-learning/commit/0c4c21dc76e060e5c9d2be99cf786e7827b8fb20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Methods&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

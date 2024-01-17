@@ -5,7 +5,7 @@
     <description>Recent content in Blog on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -108,6 +108,22 @@ FSCI also hosts and maintains a lot of services for the community, you can check
 &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Along with &lt;a href=&#34;https://ravish0007.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ravish&lt;/a&gt; and &lt;a href=&#34;https://blog.sahilister.in&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sahilister&lt;/a&gt;  we all updated it from GitLab v14.4.2 to Gitlab v14.4.4 it was a Security update, it took a lot of my time to update and upgrade the instance.&lt;/p&gt;
 &lt;p&gt;All thanks to  &lt;a href=&#34;https://ravish0007.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ravish&lt;/a&gt; and &lt;a href=&#34;https://blog.sahilister.in&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sahilister&lt;/a&gt; for helping and teaching me.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>New Domains</title>
+      <link>/blog/new-domains/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/new-domains/</guid>
+      <description>
+        
+        
+        &lt;p&gt;So finally i bought two new domains,one for myself and another one for my dad.After  days of hunting for the most creative domains and its availability,i have registered &lt;code&gt;winay dot in&lt;/code&gt; from gandi.net
+inspired from &lt;a href=&#34;https://wisharya.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vishal Arya&lt;/a&gt;,i always wanted to buy a domain for myself,had been hunting for the creative one since college, and finally i registered one.
+i have also bought another domain for my dad &lt;code&gt;smpdiesel dot in&lt;/code&gt;,which is a diesel generator service based company.I was able to convince my dad to use GNU/Linux, he now uses Debian 12 on this PC, and its super speed with low specs.In coming days i will configure the DNS to this site, and self host few applications for my personal use.&lt;/p&gt;
 
       </description>
     </item>
