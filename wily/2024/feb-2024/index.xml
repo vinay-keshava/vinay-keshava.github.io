@@ -1,0 +1,226 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – Feb</title>
+    <link>/wily/2024/feb-2024/</link>
+    <description>Recent content in Feb on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/wily/2024/feb-2024/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>2024-02-12</title>
+      <link>/wily/2024/feb-2024/20240212/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/feb-2024/20240212/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/java/ant/&#34; &gt;Ant&lt;/a&gt; : Java based make tool&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating a simple ant build system for HelloWorld project.&lt;/li&gt;
+&lt;li&gt;Understanding of &lt;code&gt;build.xml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Build commands of ant like &lt;code&gt;ant compile&lt;/code&gt;, &lt;code&gt;ant jar&lt;/code&gt;, &lt;code&gt;ant run&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Java 17 features&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JEP: Pseudo Random Generator&lt;/li&gt;
+&lt;li&gt;JEP: Switch Expressions&lt;/li&gt;
+&lt;li&gt;JEP: Records - for creating immutable object without the use of lombok&lt;/li&gt;
+&lt;li&gt;JEP: Usage of Objects in &lt;code&gt;switch&lt;/code&gt; statement.&lt;/li&gt;
+&lt;li&gt;JEP: Updated &lt;code&gt;instanceof&lt;/code&gt; method to avoid redundant casting&lt;/li&gt;
+&lt;li&gt;JEP: Local Variable Type Inference&lt;/li&gt;
+&lt;li&gt;JEP: Sealed Classes using &lt;code&gt;sealed&lt;/code&gt; and &lt;code&gt;permits&lt;/code&gt; keyword, to restrict the implementation and extension of classes and interfaces in java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(JEP) - JDK Enhanced Proposal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-02-14</title>
+      <link>/wily/2024/feb-2024/20240214/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/feb-2024/20240214/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Termux Learnings&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;installing packages in termux &lt;code&gt;pkg install git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg update&lt;/code&gt; for package updates.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg upgrade&lt;/code&gt; for package upgrades.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg edit-sources&lt;/code&gt; command to edit sources.list alike files,to change the default mirror&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-02-15</title>
+      <link>/wily/2024/feb-2024/20240215/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/feb-2024/20240215/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;Java 17 Features&lt;span class=&#34;absolute -mt-20&#34; id=&#34;java-17-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#java-17-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;/docs/Java/java17.md&#34; &gt;Link to the Java 17 docs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sealed Classes &amp;amp; Interfaces&lt;/li&gt;
+&lt;li&gt;Switch Statements&lt;/li&gt;
+&lt;li&gt;InstanceOf Pattern Matching&lt;/li&gt;
+&lt;li&gt;Switch Expressions&lt;/li&gt;
+&lt;li&gt;Record Classes&lt;/li&gt;
+&lt;li&gt;TextBlocks&lt;/li&gt;
+&lt;li&gt;Strong Encapsulation of JDK Internal API’s&lt;/li&gt;
+&lt;li&gt;Local Variable Type Inference&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-02-18</title>
+      <link>/wily/2024/feb-2024/20240218/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/feb-2024/20240218/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Nginx
+&lt;ul&gt;
+&lt;li&gt;To list files in nginx web server
+use &lt;code&gt;autoindex on&lt;/code&gt; within the server block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-02-19</title>
+      <link>/wily/2024/feb-2024/20240219/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/feb-2024/20240219/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Conventional Commits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Defining a standard format for commit changes,which can be processed by automated tools to produce documentation.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;type&amp;gt;&lt;span class=&#34;o&#34;&gt;[(&lt;/span&gt;optional &amp;lt;scope&amp;gt;&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;: &amp;lt;description&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;optional &amp;lt;body&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;optional &amp;lt;footer&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Link to &lt;a href=&#34;/docs/hacks/conventional-commit/&#34; &gt;docs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Descriptive git commit messages.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;Tittle&amp;quot; -m &amp;quot;Description&amp;quot;&lt;/code&gt; , a descriptive git commit can be written by using the option -m twice&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-02-19</title>
+      <link>/wily/2024/feb-2024/20240220/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/feb-2024/20240220/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Project Lombok
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/java/lombok&#34; &gt;Link to the docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;common annotations used in lombok&lt;/li&gt;
+&lt;li&gt;avoiding boilerplate code with lombok annotations&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@Getter&lt;/code&gt;,&lt;code&gt;@Setter&lt;/code&gt;,&lt;code&gt;@RequiredArgsConstructor&lt;/code&gt;,&lt;code&gt;@Builder&lt;/code&gt;,&lt;code&gt;@Data&lt;/code&gt;,&lt;code&gt;@AllArgsConstructor&lt;/code&gt;,&lt;code&gt;@NoArgsConstructor&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-02-26</title>
+      <link>/wily/2024/feb-2024/20240226/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/feb-2024/20240226/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;FFMPEG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ffmpeg is a suite of libraries and programs to handle video,audio &amp;amp; other multimedia files and streams.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;Joining multiple videos using ffmpeg&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ffmpeg -f concat -safe &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; -i joinvideo.txt -c copy episode2.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vinay@falcon:~/Documents/blog$ cat ../KumaraParvathaVideo/joinvideo.txt 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;file kp-peak-rest.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;file thick-forest.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;file rohan_vlog.mp4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Rotating a video by a certain degree using ffmpeg&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i inputfile.mp4 -vf &lt;span class=&#34;s2&#34;&gt;&amp;#34;transpose=1&amp;#34;&lt;/span&gt; outputfile.mp4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

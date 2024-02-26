@@ -12,24 +12,30 @@
     <lastmod>2021-12-10T20:01:24+05:30</lastmod>
   </url><url>
     <loc>/tags/blog/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/kumara-parvatha/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/trek/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/writing/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/new-domains/</loc>
     <lastmod>2024-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/posts/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/writing/</loc>
     <lastmod>2024-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/debian/</loc>
@@ -98,45 +104,71 @@
     <loc>/tags/git.fosscommunity.in/</loc>
     <lastmod>2022-03-29T20:01:24+05:30</lastmod>
   </url><url>
-    <loc>/wily/dec-2023/20231214/</loc>
+    <loc>/wily/2023/dec-2023/</loc>
   </url><url>
-    <loc>/wily/dec-2023/20231215/</loc>
+    <loc>/wily/2023/</loc>
   </url><url>
-    <loc>/wily/dec-2023/20231218/</loc>
+    <loc>/wily/2023/dec-2023/20231214/</loc>
   </url><url>
-    <loc>/wily/dec-2023/20231219/</loc>
+    <loc>/wily/2023/dec-2023/20231215/</loc>
   </url><url>
-    <loc>/wily/dec-2023/20231221/</loc>
+    <loc>/wily/2023/dec-2023/20231218/</loc>
   </url><url>
-    <loc>/wily/dec-2023/20231222/</loc>
+    <loc>/wily/2023/dec-2023/20231219/</loc>
   </url><url>
-    <loc>/wily/dec-2023/20231227/</loc>
+    <loc>/wily/2023/dec-2023/20231221/</loc>
   </url><url>
-    <loc>/wily/jan-2024/20240102/</loc>
+    <loc>/wily/2023/dec-2023/20231222/</loc>
   </url><url>
-    <loc>/wily/jan-2024/20240103/</loc>
+    <loc>/wily/2023/dec-2023/20231227/</loc>
   </url><url>
-    <loc>/wily/jan-2024/20240104/</loc>
+    <loc>/wily/2024/</loc>
   </url><url>
-    <loc>/wily/jan-2024/20240109/</loc>
+    <loc>/wily/2024/jan-2024/20240102/</loc>
   </url><url>
-    <loc>/wily/jan-2024/20240110/</loc>
+    <loc>/wily/2024/jan-2024/20240103/</loc>
+  </url><url>
+    <loc>/wily/2024/jan-2024/20240104/</loc>
+  </url><url>
+    <loc>/wily/2024/jan-2024/20240109/</loc>
+  </url><url>
+    <loc>/wily/2024/jan-2024/20240110/</loc>
+  </url><url>
+    <loc>/wily/2024/jan-2024/20240118/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/20240212/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/20240214/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/20240215/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/20240218/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/20240219/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/20240220/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/20240226/</loc>
   </url><url>
     <loc>/about/</loc>
+  </url><url>
+    <loc>/docs/java/ant/</loc>
   </url><url>
     <loc>/blog/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
+    <loc>/docs/hacks/conventional-commit/</loc>
+  </url><url>
     <loc>/docs/hacks/customize-qcow2-disk-image/</loc>
   </url><url>
     <loc>/docs/debian/</loc>
   </url><url>
-    <loc>/wily/dec-2023/</loc>
-  </url><url>
     <loc>/docs/</loc>
   </url><url>
     <loc>/docs/epm/</loc>
+  </url><url>
+    <loc>/wily/2024/feb-2024/</loc>
   </url><url>
     <loc>/docs/golang/</loc>
   </url><url>
@@ -152,11 +184,19 @@
   </url><url>
     <loc>/docs/ruby/introduction/</loc>
   </url><url>
-    <loc>/wily/jan-2024/</loc>
+    <loc>/wily/2024/jan-2024/</loc>
+  </url><url>
+    <loc>/docs/java/</loc>
+  </url><url>
+    <loc>/docs/java/java17/</loc>
+  </url><url>
+    <loc>/docs/java/java8/</loc>
   </url><url>
     <loc>/docs/ldap/</loc>
   </url><url>
     <loc>/docs/lvm/</loc>
+  </url><url>
+    <loc>/docs/java/lombok/</loc>
   </url><url>
     <loc>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</loc>
   </url><url>
@@ -168,11 +208,19 @@
   </url><url>
     <loc>/docs/ldap/slapd-conf/</loc>
   </url><url>
+    <loc>/docs/powerdns/</loc>
+  </url><url>
+    <loc>/docs/python/</loc>
+  </url><url>
+    <loc>/docs/python/introduction/</loc>
+  </url><url>
     <loc>/docs/ruby/</loc>
   </url><url>
     <loc>/docs/rust/</loc>
   </url><url>
     <loc>/docs/selfhosting/</loc>
+  </url><url>
+    <loc>/docs/java/springcore/</loc>
   </url><url>
     <loc>/docs/ldap/terminology/</loc>
   </url>
