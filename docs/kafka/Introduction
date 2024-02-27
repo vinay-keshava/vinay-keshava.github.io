@@ -1,0 +1,41 @@
+---
+type: docs
+title: "Introduction to Apache Kafka"
+---
+
+### What is Apache Kafka 
+
+Kafka is a stream processing system used for messaging,website activity tracking,metrics collections,monitoring,logging,event sourcing and real time analytics.
+Kafka is event streaming platform that can transport huge volumes of data at very low latency.
+
+Kafka is mainly used by data engineers
+
+- Publish and Subscribe to stream of events
+- Store streams of events in the same order they happened.
+- Process streams of events in real time
+
+[Kafka](/images/pasted-image-0.webp)
+
+### Core Concepts
+
+    - Event Messages: When data is written to kafka or read from kafka, it is done in the form of messages,also called events or records. A event message consists of key,value,timestamp,compression type,headers,partition and offset id.
+
+    - Topics: Kafka stores messages in topic,an ordered sequence of events,also called event log,different types of topics are identified by their topic names.[Example an social media application might have likes,posts,comments topic to record everytime a user creates a post,likes and comments,say a user liked a picture, a event message for liking the picture is appended in 'like' topic ]
+
+    - Partitions: Topics can be divided into multiple partitions,this breaks up the event log into multiple logs,each of which store in a separate node in kafka cluster.During the topic creation,number of partitions are to be defined.Event messages with key are will be sent to the same partition, and in same order.If event messages has no key they are stored in round robin fashion starting from 0.Messages with keys are easy to identified,by the type of keys.
+
+    - Offsets: Each message in a partition gets a id,which is an incrementing integer.This number is incremented whenever kafka writes a message to a partition,offsets are not reused even when older messages are deleted,it is just like a incrementing number in a partition.
+
+    - Brokers: A single server running kafka is called broker,one single kafka server is called broker, and a combination of multiple kafka brokers is called kafka cluster.Kafka becomes scalable and more efficient due to implementation of kafka cluster.Each broker manages a set of partitions and handles requests like read and write data from partitions,which helps in load balancing.Brokers also manage replicating partitions to back up data.
+
+    - Replication: To protect data loss,even if a broker fails,kafka writes the same data to multiple copies of a partition on multiple brokers.This is called replication.Main copy is called leaders and copies are called followers.
+
+    - Producers: producers are client applications that write events to kafka topics.
+
+    - Consumers: consumers are client applications that read events from kafka topics.
+
+    Producers and Consumers are decoupled from each other,even if a producer is down it doesn't affect the consumer and vice versa.Producer writes to kafka and consumers read from kafka.Producers take a key value pair,generate that into a kafka message, serialize it into binary for transmission across network.Its the producer which decides which message has to be sent to which partition of the topic. 
+
+    - Consumer groups: An application that reads from kafka can create multiple instances of a same consumer to split up work of reading from different partitions in a topic.These consumers work together as a consumer group.
+
+    - Kafka Zookeeper: How Kafka clusters are managed?,this is done by using zookeeper, a service for managing and synchronizing distributed systems.Kafka uses zookeeper to manage brokers in a kafka cluster.Zookeeper keeps track of things like which is the leader for a given partition,which brokers are part of kafka cluster,consumer groups and its members, Access Control Lists- who is allowed to read and write from each topic.
