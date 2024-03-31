@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vinay Keshava – posts</title>
+    <title>Vinay Keshava – Posts</title>
     <link>/tags/posts/</link>
-    <description>Recent content in posts on Vinay Keshava</description>
+    <description>Recent content in Posts on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate>
@@ -26,7 +26,9 @@
         
         &lt;p&gt;So finally i bought two new domains,one for myself and another one for my dad.After  days of hunting for the most creative domains and its availability,i have registered &lt;code&gt;winay dot in&lt;/code&gt; from gandi.net
 inspired from &lt;a href=&#34;https://wisharya.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vishal Arya&lt;/a&gt;,i always wanted to buy a domain for myself,had been hunting for the creative one since college, and finally i registered one.
-i have also bought another domain for my dad &lt;code&gt;smpdiesel dot in&lt;/code&gt;,which is a diesel generator service based company.I was able to convince my dad to use GNU/Linux, he now uses Debian 12 on this PC, and its super speed with low specs.In coming days i will configure the DNS to this site, and self host few applications for my personal use.&lt;/p&gt;
+I have also bought another domain for my dad &lt;code&gt;smpdiesel dot in&lt;/code&gt;,which is a diesel generator service based company.I was able to convince my dad to use GNU/Linux, he now uses Debian 12 on this PC, and its super speed with low specs.In coming days i will configure the DNS to this site, and self host few applications for my personal use.&lt;/p&gt;
+&lt;p&gt;[Update: Feb 27,2024 the interesting part of the domain winay.in was the &lt;code&gt;w&lt;/code&gt; consists of two &lt;code&gt;v&lt;/code&gt;&amp;rsquo;s ,so its &lt;code&gt;vvinay.in&lt;/code&gt; ]&lt;/p&gt;
+&lt;p&gt;[Update March 28,2024 https://smpdiesel.in is up and running built with hugo static theme,and finally i&amp;rsquo;ve setup a website for my dad yayyyy!  ]&lt;/p&gt;
 
       </description>
     </item>

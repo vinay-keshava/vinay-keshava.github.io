@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – Learnings</title>
+    <link>/tags/learnings/</link>
+    <description>Recent content in Learnings on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/learnings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>WILY</title>
+      <link>/blog/wily/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/wily/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;What I Learnt Yesterday(WILY)&lt;span class=&#34;absolute -mt-20&#34; id=&#34;what-i-learnt-yesterdaywily&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-i-learnt-yesterdaywily&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;WILY is a name I rephrased to log all my daily learnings.I started this two months ago, where I log about what I learnt yesterday.Everyday is a learning day it can be tech, some commands or some life lessons experienced throughout the day.&lt;/p&gt;
+&lt;p&gt;Inspired from  &lt;a href=&#34;https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zettelkasten&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At some point of time in our lives we would want to relearn a few things after a few days/weeks but the effort to find resources for a specific topic can be time consuming.
+I learnt a lot of stuff during engineering but I don&amp;rsquo;t remember any thing now.&lt;/p&gt;
+&lt;p&gt;I was using Notion as my documentation app, used to make notes within a notion workspace,it has an option to export to PDF and also share an article with a public link.
+Then I found this beautiful hextra hugo theme, where i can design to my custom look and needs. Took a few weeks to setup this theme locally,with the help of the hextra  theme maintainer on GitHub.
+Now everytime I learn something new i write and save it in a markdown file, so thats its easy to add back to the docs.
+I also love the &lt;code&gt;docs&lt;/code&gt; feature of this theme,making it beautiful and easy to search.&lt;/p&gt;
+&lt;p&gt;I wish to log all my daily learnings with more sincere effort.&lt;/p&gt;
+&lt;p&gt;See you until next time.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

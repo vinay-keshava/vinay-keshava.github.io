@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vinay Keshava – blog</title>
+    <title>Vinay Keshava – Blog</title>
     <link>/tags/blog/</link>
-    <description>Recent content in blog on Vinay Keshava</description>
+    <description>Recent content in Blog on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,6 +14,30 @@
         
       
     
+    
+    <item>
+      <title>WILY</title>
+      <link>/blog/wily/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/wily/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;What I Learnt Yesterday(WILY)&lt;span class=&#34;absolute -mt-20&#34; id=&#34;what-i-learnt-yesterdaywily&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-i-learnt-yesterdaywily&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;WILY is a name I rephrased to log all my daily learnings.I started this two months ago, where I log about what I learnt yesterday.Everyday is a learning day it can be tech, some commands or some life lessons experienced throughout the day.&lt;/p&gt;
+&lt;p&gt;Inspired from  &lt;a href=&#34;https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zettelkasten&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At some point of time in our lives we would want to relearn a few things after a few days/weeks but the effort to find resources for a specific topic can be time consuming.
+I learnt a lot of stuff during engineering but I don&amp;rsquo;t remember any thing now.&lt;/p&gt;
+&lt;p&gt;I was using Notion as my documentation app, used to make notes within a notion workspace,it has an option to export to PDF and also share an article with a public link.
+Then I found this beautiful hextra hugo theme, where i can design to my custom look and needs. Took a few weeks to setup this theme locally,with the help of the hextra  theme maintainer on GitHub.
+Now everytime I learn something new i write and save it in a markdown file, so thats its easy to add back to the docs.
+I also love the &lt;code&gt;docs&lt;/code&gt; feature of this theme,making it beautiful and easy to search.&lt;/p&gt;
+&lt;p&gt;I wish to log all my daily learnings with more sincere effort.&lt;/p&gt;
+&lt;p&gt;See you until next time.&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>Kumara Parvatha</title>
@@ -163,7 +187,9 @@ So this is us and our story of &amp;ldquo;A Trek to Kumara Parvatha on Jan 6th,2
         
         &lt;p&gt;So finally i bought two new domains,one for myself and another one for my dad.After  days of hunting for the most creative domains and its availability,i have registered &lt;code&gt;winay dot in&lt;/code&gt; from gandi.net
 inspired from &lt;a href=&#34;https://wisharya.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vishal Arya&lt;/a&gt;,i always wanted to buy a domain for myself,had been hunting for the creative one since college, and finally i registered one.
-i have also bought another domain for my dad &lt;code&gt;smpdiesel dot in&lt;/code&gt;,which is a diesel generator service based company.I was able to convince my dad to use GNU/Linux, he now uses Debian 12 on this PC, and its super speed with low specs.In coming days i will configure the DNS to this site, and self host few applications for my personal use.&lt;/p&gt;
+I have also bought another domain for my dad &lt;code&gt;smpdiesel dot in&lt;/code&gt;,which is a diesel generator service based company.I was able to convince my dad to use GNU/Linux, he now uses Debian 12 on this PC, and its super speed with low specs.In coming days i will configure the DNS to this site, and self host few applications for my personal use.&lt;/p&gt;
+&lt;p&gt;[Update: Feb 27,2024 the interesting part of the domain winay.in was the &lt;code&gt;w&lt;/code&gt; consists of two &lt;code&gt;v&lt;/code&gt;&amp;rsquo;s ,so its &lt;code&gt;vvinay.in&lt;/code&gt; ]&lt;/p&gt;
+&lt;p&gt;[Update March 28,2024 https://smpdiesel.in is up and running built with hugo static theme,and finally i&amp;rsquo;ve setup a website for my dad yayyyy!  ]&lt;/p&gt;
 
       </description>
     </item>

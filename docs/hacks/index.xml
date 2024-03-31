@@ -15,6 +15,76 @@
     
     
     <item>
+      <title>API Architecture</title>
+      <link>/docs/hacks/api-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/hacks/api-architecture/</guid>
+      <description>
+        
+        
+        &lt;p&gt;SOAP,REST,GraphQL and gRPC are most popular API architecture, in this digitizing world where large amounts of data is being transferred&lt;/p&gt;
+&lt;h4&gt;REST&lt;span class=&#34;absolute -mt-20&#34; id=&#34;rest&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#rest&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;REST stands for REpresentational State Transfer, is a widely used architectural style for building web API&amp;rsquo;s. REST API&amp;rsquo;s uses HTTP requests to retreive and manipulate data. Key characteristics of REST include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Resource Based: REST API&amp;rsquo;s are based on concept of resources,which are exposed through URL&amp;rsquo;s.&lt;/li&gt;
+&lt;li&gt;Stateless: REST API does not maintain the state between two requests,hence stateless.&lt;/li&gt;
+&lt;li&gt;CRUD: REST API&amp;rsquo;s support Create,Read,Update and Delete operations for manipulating data.&lt;/li&gt;
+&lt;li&gt;Flexible: REST API&amp;rsquo;s are flexible,used for many purposes in general.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Caching: support caching,which improves performance and reduce server load.&lt;/li&gt;
+&lt;li&gt;Simplicity: Easy to understand consists of simple concepts&lt;/li&gt;
+&lt;li&gt;Widely Adopted: adopted my many web development projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Disadvantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Overfetching/Underfetching: REST API&amp;rsquo;s suffer from overfetching and underfetching which impacts the performance&lt;/li&gt;
+&lt;li&gt;Versioning: Versioning of API&amp;rsquo;s can be challenging, changes to API can be client applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;GraphQL&lt;span class=&#34;absolute -mt-20&#34; id=&#34;graphql&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#graphql&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;GraphQL is query language for API&amp;rsquo;s, which is more flexible than REST. Allows clients to specify exactly what data they need, which reduces the data transferred over network.Key characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Strongly Typed: clients and servers agree on the structure of the data exchanged.&lt;/li&gt;
+&lt;li&gt;Query Based: clients specify exactly what they need and receives only that data.&lt;/li&gt;
+&lt;li&gt;Single Endpoint: GraphQL has single endpoint,which simplifies client-server communications&lt;/li&gt;
+&lt;li&gt;Schema driven: API schema defines the type of data available and operations that can be performed on that data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/59162265/why-are-graphql-queries-post-requests-even-when-we-are-trying-to-fetch-data-and&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GraphQL uses &lt;code&gt;POST&lt;/code&gt; HTTP method for all the operations be it GET,POST etc it uses POST HTTP method.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduced network traffic: due to less number of data transferred, network traffic is reduced.&lt;/li&gt;
+&lt;li&gt;Versioning: versioning is easier to manage in GraphQL, changes to API schema can be managed more easily.&lt;/li&gt;
+&lt;li&gt;Strongly Typed: due to type of data being transferred.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Disadvantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Caching: caching of graphql API&amp;rsquo;s can be challenging,data requested by clients is highly specific&lt;/li&gt;
+&lt;li&gt;Learning Curve: difficult to learn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;gRPC&lt;span class=&#34;absolute -mt-20&#34; id=&#34;grpc&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#grpc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;gRPC Remote Procedure Call open source framework developed by Google for building Remote Procedure Calls API&amp;rsquo;s.Unlike traditional API&amp;rsquo;s that rely on HTTP methods,gRPC uses more efficient and lightweight Protocol Buffers as the datainterchange format and it supports multiple programming languages.&lt;/p&gt;
+&lt;p&gt;Using protocol buffers,faster and efficient communication is achieved.gRPC supports bidirectional streaming real-time  communication between clients and servers.&lt;/p&gt;
+&lt;p&gt;gRPC has strong support for code generation, generates a well-defined contract and generates client and server code in multiple languages making it easier for developers.
+GRPC APIs offer high performance, efficiency, and code generation support. However, they may have protocol compatibility and setup complexity limitations.&lt;/p&gt;
+&lt;p&gt;Advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Polyglot: gRPC API&amp;rsquo;s are polyglot which means that they can be used with a wide range of programming languages.&lt;/li&gt;
+&lt;li&gt;Bidirectional: supports bidirectional streaming, real time communication between client and server.&lt;/li&gt;
+&lt;li&gt;Fast &amp;amp; Strongly Typed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Disadvantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complexity: more complex to setup and configure.&lt;/li&gt;
+&lt;li&gt;Learning Curve: steeper learning curve.&lt;/li&gt;
+&lt;li&gt;Limited Browser Support: well suited for server-server communication, lacks support for web browser.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Conventional Commit</title>
       <link>/docs/hacks/conventional-commit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -113,7 +183,8 @@ additional details in the commit,which can include multiple paragraphs  to descr
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Reset the root password on the disk image&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Install the package &lt;code&gt;libguestfs-tools&lt;/code&gt; on debian for virt-customize.
+&lt;code&gt;$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;By default the .qcow2 doesn&amp;rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Increase size of .qcow2 disk image.

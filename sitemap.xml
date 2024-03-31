@@ -12,18 +12,27 @@
     <lastmod>2021-12-10T20:01:24+05:30</lastmod>
   </url><url>
     <loc>/tags/blog/</loc>
-    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/kumara-parvatha/</loc>
-    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <loc>/tags/learnings/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/logs/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/wily/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/kumara-parvatha/</loc>
     <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/trek/</loc>
@@ -150,13 +159,37 @@
   </url><url>
     <loc>/wily/2024/feb-2024/20240226/</loc>
   </url><url>
+    <loc>/wily/2024/mar-2024/20240305/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240306/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240312/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240313/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240314/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240318/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240319/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240320/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240326/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/2024028/</loc>
+  </url><url>
+    <loc>/wily/2024/mar-2024/20240327/</loc>
+  </url><url>
     <loc>/about/</loc>
   </url><url>
     <loc>/docs/java/ant/</loc>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>/docs/hacks/api-architecture/</loc>
   </url><url>
     <loc>/categories/</loc>
+  </url><url>
+    <loc>/docs/containers/</loc>
   </url><url>
     <loc>/docs/hacks/conventional-commit/</loc>
   </url><url>
@@ -164,11 +197,17 @@
   </url><url>
     <loc>/docs/debian/</loc>
   </url><url>
+    <loc>/docs/containers/docker/</loc>
+  </url><url>
+    <loc>/docs/containers/docker-swarm/</loc>
+  </url><url>
     <loc>/docs/</loc>
   </url><url>
     <loc>/docs/epm/</loc>
   </url><url>
     <loc>/wily/2024/feb-2024/</loc>
+  </url><url>
+    <loc>/docs/debian/gpg/</loc>
   </url><url>
     <loc>/docs/golang/</loc>
   </url><url>
@@ -192,6 +231,10 @@
   </url><url>
     <loc>/docs/java/java8/</loc>
   </url><url>
+    <loc>/docs/java/java9/</loc>
+  </url><url>
+    <loc>/docs/java/kafka/</loc>
+  </url><url>
     <loc>/docs/kafka/</loc>
   </url><url>
     <loc>/docs/ldap/</loc>
@@ -202,6 +245,8 @@
   </url><url>
     <loc>/docs/hacks/mapping-of-physical-usb-ports-to-device-names/</loc>
   </url><url>
+    <loc>/wily/2024/mar-2024/</loc>
+  </url><url>
     <loc>/captures/</loc>
   </url><url>
     <loc>/docs/selfhosting/nextcloud/</loc>
@@ -209,6 +254,8 @@
     <loc>/docs/nfs/</loc>
   </url><url>
     <loc>/docs/ldap/slapd-conf/</loc>
+  </url><url>
+    <loc>/docs/openshift/</loc>
   </url><url>
     <loc>/docs/powerdns/</loc>
   </url><url>
@@ -223,6 +270,8 @@
     <loc>/docs/selfhosting/</loc>
   </url><url>
     <loc>/docs/java/springcore/</loc>
+  </url><url>
+    <loc>/docs/java/springwebflux/</loc>
   </url><url>
     <loc>/docs/ldap/terminology/</loc>
   </url>
