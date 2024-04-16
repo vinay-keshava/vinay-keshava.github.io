@@ -37,7 +37,7 @@
 &lt;p&gt;&lt;img src=&#34;/images/docs/docker/ps.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;h3&gt;docker pull&lt;span class=&#34;absolute -mt-20&#34; id=&#34;docker-pull&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#docker-pull&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;docker pull Image:Tag&lt;/code&gt; pulls the image from the registry server where &lt;code&gt;Image&lt;/code&gt; is the image name, and tags can be used to identify versions of the same image, using tags a specific version of the image can be pulled&lt;/p&gt;
-&lt;p&gt;For example to pull a debian image with the tag bookworm or bullseye release the command would be &lt;code&gt;docker pull debian:bookworm&lt;/code&gt; &amp;amp; &lt;code&gt;docker pull debian;bullseye&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example to pull a debian image with the tag bookworm or bullseye release the command would be &lt;code&gt;docker pull debian:bookworm&lt;/code&gt; &amp;amp; &lt;code&gt;docker pull debian:bullseye&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;docker images&lt;span class=&#34;absolute -mt-20&#34; id=&#34;docker-images&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#docker-images&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;docker images&lt;/code&gt;: command output displays all the images downloaded in our local system, Every image gets an IMAGE_ID. The &lt;code&gt;-a&lt;/code&gt; flag is used to view all the images available on the local machine.&lt;/p&gt;
 &lt;p&gt;
