@@ -29,14 +29,15 @@ Dockerize Spring Boot Application. FROM debian:bookworm RUN apt update -y &amp;&
 
 
 
+  
   <meta itemprop="name" content="2024-03-20">
-<meta itemprop="description" content="Alpine Linux To install a package: apk add &lt;packagename&gt;, for example to install maven and openjdk17 we use the command apk add openjdk17 maven
+  <meta itemprop="description" content="Alpine Linux To install a package: apk add &lt;packagename&gt;, for example to install maven and openjdk17 we use the command apk add openjdk17 maven
 Dockerize Spring Boot Application. FROM debian:bookworm RUN apt update -y &amp;&amp; apt install default-jdk maven git -y RUN git clone https://gitlab.com/vinay-keshava/spring-boot-hello-world.git WORKDIR /spring-boot-hello-world EXPOSE 9328 RUN mvn clean install -DskipTests ENTRYPOINT [&#34;java&#34;,&#34;-jar&#34;,&#34;target/demo-0.0.1.jar&#34;] Selecting debian:bookworm as base image,installing jdk and maven packages, along with this exposing the port 9238 and building the project.">
-
-<meta itemprop="wordCount" content="424">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="2024-03-20"/>
-<meta name="twitter:description" content="Alpine Linux To install a package: apk add &lt;packagename&gt;, for example to install maven and openjdk17 we use the command apk add openjdk17 maven
-Dockerize Spring Boot Application. FROM debian:bookworm RUN apt update -y &amp;&amp; apt install default-jdk maven git -y RUN git clone https://gitlab.com/vinay-keshava/spring-boot-hello-world.git WORKDIR /spring-boot-hello-world EXPOSE 9328 RUN mvn clean install -DskipTests ENTRYPOINT [&#34;java&#34;,&#34;-jar&#34;,&#34;target/demo-0.0.1.jar&#34;] Selecting debian:bookworm as base image,installing jdk and maven packages, along with this exposing the port 9238 and building the project."/>
+  <meta itemprop="wordCount" content="424">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2024-03-20">
+  <meta name="twitter:description" content="Alpine Linux To install a package: apk add &lt;packagename&gt;, for example to install maven and openjdk17 we use the command apk add openjdk17 maven
+Dockerize Spring Boot Application. FROM debian:bookworm RUN apt update -y &amp;&amp; apt install default-jdk maven git -y RUN git clone https://gitlab.com/vinay-keshava/spring-boot-hello-world.git WORKDIR /spring-boot-hello-world EXPOSE 9328 RUN mvn clean install -DskipTests ENTRYPOINT [&#34;java&#34;,&#34;-jar&#34;,&#34;target/demo-0.0.1.jar&#34;] Selecting debian:bookworm as base image,installing jdk and maven packages, along with this exposing the port 9238 and building the project.">
 
     <link rel="preload" href="/css/compiled/main.min.5a06ca26e024c4f511f45ee6c33a2a1faefaebe6be8a38d36e100f40a4c59c06.css" as="style" integrity="sha256-WgbKJuAkxPUR9F7mwzoqH6766&#43;a&#43;ijjTbhAPQKTFnAY=" />
     <link href="/css/compiled/main.min.5a06ca26e024c4f511f45ee6c33a2a1faefaebe6be8a38d36e100f40a4c59c06.css" rel="stylesheet" integrity="sha256-WgbKJuAkxPUR9F7mwzoqH6766&#43;a&#43;ijjTbhAPQKTFnAY=" />

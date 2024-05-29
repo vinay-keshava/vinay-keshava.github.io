@@ -15,7 +15,8 @@
   <meta name="description" content="Tired of Debian Installer ):
 On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
 Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image Install the package libguestfs-tools on debian for virt-customize. $ virt-customize -a debian-10-genericcloud-amd64." />
+Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
+By default the .qcow2 doesn’t have any root password,so the disk image has be customized using virt-customize to add root password." />
   
   
     <link rel="canonical" href="/docs/hacks/customize-qcow2-disk-image/" itemprop="url" />
@@ -27,24 +28,28 @@ Reset the root password on the disk image Install the package libguestfs-tools o
 <meta property="og:description" content="Tired of Debian Installer ):
 On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
 Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image Install the package libguestfs-tools on debian for virt-customize. $ virt-customize -a debian-10-genericcloud-amd64." />
+Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
+By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/hacks/customize-qcow2-disk-image/" /><meta property="article:section" content="docs" />
 
 
 
+  
   <meta itemprop="name" content="Customize .qcow2 image">
-<meta itemprop="description" content="Tired of Debian Installer ):
+  <meta itemprop="description" content="Tired of Debian Installer ):
 On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
 Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image Install the package libguestfs-tools on debian for virt-customize. $ virt-customize -a debian-10-genericcloud-amd64.">
-
-<meta itemprop="wordCount" content="377">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Customize .qcow2 image"/>
-<meta name="twitter:description" content="Tired of Debian Installer ):
+Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
+By default the .qcow2 doesn’t have any root password,so the disk image has be customized using virt-customize to add root password.">
+  <meta itemprop="wordCount" content="369">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Customize .qcow2 image">
+  <meta name="twitter:description" content="Tired of Debian Installer ):
 On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.
 Download the .qcow2 image from cloud.debian.org https://cloud.debian.org/images/cloud/bookworm/20230910-1499/debian-12-genericcloud-amd64-20230910-1499.qcow2 ,this is a generic cloud image which can be easily imported onto proxmox.
-Reset the root password on the disk image Install the package libguestfs-tools on debian for virt-customize. $ virt-customize -a debian-10-genericcloud-amd64."/>
+Reset the root password on the disk image $ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian
+By default the .qcow2 doesn’t have any root password,so the disk image has be customized using virt-customize to add root password.">
 
     <link rel="preload" href="/css/compiled/main.min.5a06ca26e024c4f511f45ee6c33a2a1faefaebe6be8a38d36e100f40a4c59c06.css" as="style" integrity="sha256-WgbKJuAkxPUR9F7mwzoqH6766&#43;a&#43;ijjTbhAPQKTFnAY=" />
     <link href="/css/compiled/main.min.5a06ca26e024c4f511f45ee6c33a2a1faefaebe6be8a38d36e100f40a4c59c06.css" rel="stylesheet" integrity="sha256-WgbKJuAkxPUR9F7mwzoqH6766&#43;a&#43;ijjTbhAPQKTFnAY=" />
@@ -1520,8 +1525,7 @@ Reset the root password on the disk image Install the package libguestfs-tools o
 <ol start="2">
 <li>Reset the root password on the disk image</li>
 </ol>
-<p>Install the package <code>libguestfs-tools</code> on debian for virt-customize.
-<code>$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian</code></p>
+<p><code>$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian</code></p>
 <p>By default the .qcow2 doesn&rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.</p>
 <ol start="3">
 <li>Increase size of .qcow2 disk image.

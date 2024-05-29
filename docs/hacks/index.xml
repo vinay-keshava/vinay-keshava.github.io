@@ -183,8 +183,7 @@ additional details in the commit,which can include multiple paragraphs  to descr
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Reset the root password on the disk image&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Install the package &lt;code&gt;libguestfs-tools&lt;/code&gt; on debian for virt-customize.
-&lt;code&gt;$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ virt-customize -a debian-10-genericcloud-amd64.qcow2 --root-password password:debian&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;By default the .qcow2 doesn&amp;rsquo;t have any root password,so the disk image has be customized using virt-customize to add root password.&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Increase size of .qcow2 disk image.
