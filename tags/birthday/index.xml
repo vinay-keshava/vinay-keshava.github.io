@@ -1,0 +1,54 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – Birthday</title>
+    <link>/tags/birthday/</link>
+    <description>Recent content in Birthday on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 31 May 2024 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/birthday/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Lap&#39;23</title>
+      <link>/blog/lap-23/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lap-23/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cheers to 23,my another year of existence on this planet.
+A wonderful day filled with wishes from friends and family.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;Time Flies. Time Flies faster every year.
+Time Flies whether you&amp;#39;re having fun or not, 
+whether you&amp;#39;re living your life big or small,
+whether you surround yourself with fear or Laughter - Claire Cook&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Its exactly been an year since i was graduated from my bachelor&amp;rsquo;s degree.Last year at this point of time, was with my friends for the last trip of engineering.We had our convocation last month,after months of graduating. Wrote a separate blog post about attending the college &lt;a href=&#34;/blog/convocation&#34; &gt;convocation&lt;/a&gt;.
+These days the weekends is mostly to meet up college &amp;amp; hostel friends to chit chat about how we miss our good old days :)&lt;/p&gt;
+&lt;p&gt;Yayy i started reading books,the first book i read was &lt;code&gt;When Breath Becomes Air&lt;/code&gt; by Paul Kalanithi gifted by my friend.Currently reading &lt;code&gt;IKIGAI&lt;/code&gt; the japanese way of living life.I also wish to write a summary/review of the books i read if i find time over weekends.I also started loving to write more blog posts about the things happening.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve messed up my &lt;a href=&#34;https://nm.debian.org/1243&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Debian Developer process&lt;/a&gt;, i regret it and i hope to contribute more time to debian and i wish to become one atleast in the coming year.&lt;/p&gt;
+&lt;p&gt;I also have a huge pending list of tasks to be done,mostly learning stuff.&lt;/p&gt;
+&lt;p&gt;Lastly thanking family &amp;amp; friends for supporting me.&lt;/p&gt;
+&lt;p&gt;Bye!!!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
