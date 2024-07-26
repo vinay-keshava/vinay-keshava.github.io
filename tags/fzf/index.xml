@@ -1,0 +1,65 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – Fzf</title>
+    <link>/tags/fzf/</link>
+    <description>Recent content in Fzf on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jul 2024 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/fzf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Zsh Zen &#43; FZF</title>
+      <link>/blog/zsh-fzf/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/zsh-fzf/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Terminal emulator is like a home,every linux user wants to customize their terminal either fonts,appearance etc.
+I was a &lt;code&gt;bash&lt;/code&gt; user for all these years, and switched to &lt;code&gt;fish&lt;/code&gt; a few months ago, until i found the zsh and zimfw.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href=&#34;https://ohmyz.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ohmyzsh&lt;/a&gt; along with zsh for good theme.I use a default ohmyzsh theme.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Installing &lt;code&gt;zsh-autosuggestions&lt;/code&gt; and &lt;code&gt;zsh-syntax-highlighting&lt;/code&gt; packages to enable autosuggestions and syntax highlighting for zsh.
+Append the below lines to &lt;code&gt;.zshrc&lt;/code&gt; to enable autosuggestions and syntax highlighting.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;source &amp;#34;/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&amp;#34;
+source &amp;#34;/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://junegunn.github.io/fzf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fuzzy Finder&lt;/a&gt;, is a command line tool to find previously executed commands.
+To enable fzf with zsh, add the following in &lt;code&gt;.zshrc&lt;/code&gt; after installing fzf.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;source &amp;#34;/usr/share/doc/fzf/examples/key-bindings.zsh&amp;#34;
+source &amp;#34;/usr/share/doc/fzf/examples/completion.zsh&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Below is the image after fzf configuration with zsh.
+&lt;img src=&#34;/images/zsh-fzf.png&#34; alt=&#34;zsh and fzf configuration&#34; style=&#34;width:800px;height:350px;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Thanks (:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
