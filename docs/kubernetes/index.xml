@@ -1,0 +1,117 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – Kubernetes</title>
+    <link>/docs/kubernetes/</link>
+    <description>Recent content in Kubernetes on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Introduction to Kubernetes</title>
+      <link>/docs/kubernetes/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/kubernetes/introduction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Kubernetes is a container orchestration platform for managing workloads and services. Kubernetes has a rapidly growing ecosystem.
+Often abbreviated as &lt;code&gt;k8s&lt;/code&gt; which counts 8 between &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;s&lt;/code&gt; in Kubernetes.&lt;/p&gt;
+&lt;h3&gt;Monolith to Containers&lt;span class=&#34;absolute -mt-20&#34; id=&#34;monolith-to-containers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#monolith-to-containers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Let us divide the evolution of deploying application into three types:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Traditional deployment Era&lt;/li&gt;
+&lt;li&gt;Virtualized deployment Era&lt;/li&gt;
+&lt;li&gt;Container deployment Era&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;Traditional deployment&lt;/code&gt;, applications were deployed directly on the physical server stack, and if the resources has to be scaled up, the server specification were increased.If multiple applications are deployed on the same server stack one application would endup taking much resources, and other applications would underperform.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Virtualized Deployment&lt;/code&gt;, after the traditional server stack deployment, then arises Virtualized Deployment with the help of Virtual Machine,allowing to run multiple VM&amp;rsquo;s (Virtual Machines) on a single server with the help of a virtualization hypervisor. Each VM running different applications thereby making it isolated with different operating system for each virtual machine.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Container Deployment&lt;/code&gt;, containers are similar to VM&amp;rsquo;s with minimal requirements to run the application and to bootup.
+Like VM&amp;rsquo;s the container has a separate filesystem,share of CPU, memory, process space.&lt;/p&gt;
+&lt;p&gt;Containers are popular because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Agile methodology&lt;/li&gt;
+&lt;li&gt;Continous development,integration and development.&lt;/li&gt;
+&lt;li&gt;Portability&lt;/li&gt;
+&lt;li&gt;Resource isolation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Containers bundles the application and its dependencies to run the application within a minimalistic container to start and run the application. To manage multiple containers(to cope-up with the load) and on failure of the containers to restart them,if one container goes down another container has to be started automatically, here comes Kubernetes.Kubernetes takes care of scaling, restarting the failed containers, flushing unused containers,&lt;/p&gt;
+&lt;p&gt;Kubernetes provides the following features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Service discovery and load balancing&lt;/li&gt;
+&lt;li&gt;Storage orchestration&lt;/li&gt;
+&lt;li&gt;Automated rolling updates and rollbacks&lt;/li&gt;
+&lt;li&gt;Automatic bin packaging&lt;/li&gt;
+&lt;li&gt;Self healing&lt;/li&gt;
+&lt;li&gt;Secret and configuration management&lt;/li&gt;
+&lt;li&gt;Batch execution&lt;/li&gt;
+&lt;li&gt;Horizontal scaling&lt;/li&gt;
+&lt;li&gt;IPV4 / IPV6 dual stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kubernetes Components&lt;span class=&#34;absolute -mt-20&#34; id=&#34;kubernetes-components&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#kubernetes-components&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Architecture:
+&lt;img src=&#34;https://kubernetes.io/images/docs/components-of-kubernetes.svg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Source: kubernetes.io&lt;/p&gt;
+&lt;p&gt;Kubernetes architecture consists of various components that help manage clusters. A kubernetes cluster is a group of machines called nodes, that are used to run containerized applications.These nodes are managed by k8s for scaling,monitoring, deployment etc.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Nodes&lt;/code&gt;: nodes are the worker nodes, which is physical server or VM&amp;rsquo;s. Pods are deployed on the node and managed by the control plane.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Pods&lt;/code&gt;: basic unit of deployment in Kubernetes, a pod is a group of one or more containers that are deployed on the same node. Pods host the application&lt;/p&gt;
+&lt;p&gt;Date/Node Components: Node components run on every node for maintainance of running pods.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;kubelet&lt;/code&gt;: make sure containers are running in a pod. Also responsible for registering a node within cluster.Communicates with API server to alert downtime issues and auto healing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;container runtime&lt;/code&gt;: responsible for executing applications within container. container runtimes are docker, podman, containerd, cri-o&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;kubeproxy&lt;/code&gt;: is a network proxy that runs on each node, maintains network rules on nodes. These rules defined allow network communication to pods from network.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Control Plane Components:&lt;/p&gt;
+&lt;p&gt;Control plane is the brain of the kubernetes platform, monitoring every operations of the the cluster.Control Plane manages cluster events, like starting up new pod when more number of replicas are needed.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Kube-API server&lt;/code&gt;: acts as gateway, exposes the cluster to external traffic, the entry point of Kubernetes API.Heart of the kubernetes cluster as it centrally manages and directs the worker nodes to handle requests based on traffic analysis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Kube- Scheduler&lt;/code&gt;: executes the decisions made by kube API server, translating the directives into actionable tasks within the cluster.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;etcd&lt;/code&gt;: to store cluster information like configuration data, state data, meta data. &lt;code&gt;etcd&lt;/code&gt; is like a key-value store distributed across systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;kube-controller-manager&lt;/code&gt;: runs controller process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Node Controller: responsible for monitoring node&amp;rsquo;s downtime.&lt;/li&gt;
+&lt;li&gt;Job Controller: creates pods to run tasks for its completion.&lt;/li&gt;
+&lt;li&gt;Endpoint slice Controller: link between services and pods.&lt;/li&gt;
+&lt;li&gt;Service Account Controller: service account for new namespaces.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;code&gt;cloud-controller-manager&lt;/code&gt;: responsible for communication between the kubernetes cluster and the cloud provider(AWS,GCP,AZURE).For example a request from the cloud provider(say AWS) to check whether the nodes were deployed, this request is passed on from the cloud provider API (here AWS) to Cloud controller manager, the cloud controller manager passes onto kube-api-server to give instructions and execute the task.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Addons&lt;span class=&#34;absolute -mt-20&#34; id=&#34;addons&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#addons&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DNS&lt;/code&gt;: every k8s cluster has DNS, cluster DNS is a DNS server which serves DNS records for k8s services.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Web UI&lt;/code&gt;: Web UI to manage and troubleshoot applications running in the cluster.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Container Resource Monitoring&lt;/code&gt;: records a generic time-series metrics about containers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Logging&lt;/code&gt;: Cluster level logging for saving logs to central log store of containers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Network Plugins&lt;/code&gt;: assigning IP addresses to pods and enabling them to commmunicate within the cluster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;k3s&lt;/code&gt; is a lightweight distribution of &lt;code&gt;k8s&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

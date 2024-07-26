@@ -5,7 +5,7 @@
     <description>Recent content in Blog on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +18,7 @@
     <item>
       <title>Debian Maintainer Now !!!!</title>
       <link>/blog/debian-maintainer/</link>
-      <pubDate>Tue, 28 Mar 2023 20:01:24 +0530</pubDate>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/blog/debian-maintainer/</guid>
       <description>
@@ -41,7 +41,7 @@ I had previously written my experience of attending software freedom camp &lt;a 
     <item>
       <title>Software Freedom Camp 2021 Snikket</title>
       <link>/blog/software-freedom-camp-2021/</link>
-      <pubDate>Tue, 29 Mar 2022 20:01:24 +0530</pubDate>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>/blog/software-freedom-camp-2021/</guid>
       <description>
@@ -93,7 +93,7 @@ Snikket Source code &lt;a href=&#34;https://github.com/snikket-im&#34; target=&#
     <item>
       <title>git.fosscommunity.in Server Update</title>
       <link>/blog/git-fosscommunity-in-update/</link>
-      <pubDate>Fri, 10 Dec 2021 20:01:24 +0530</pubDate>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/git-fosscommunity-in-update/</guid>
       <description>
@@ -139,7 +139,7 @@ whether you surround yourself with fear or Laughter - Claire Cook&lt;/code&gt;&l
 &lt;p&gt;Its exactly been an year since i was graduated from my bachelor&amp;rsquo;s degree.Last year at this point of time, was with my friends for the last trip of engineering.We had our convocation last month,after months of graduating. Wrote a separate blog post about attending the college &lt;a href=&#34;/blog/convocation&#34; &gt;convocation&lt;/a&gt;.
 These days the weekends is mostly to meet up college &amp;amp; hostel friends to chit chat about how we miss our good old days :)&lt;/p&gt;
 &lt;p&gt;Yayy i started reading books,the first book i read was &lt;code&gt;When Breath Becomes Air&lt;/code&gt; by Paul Kalanithi gifted by my friend.Currently reading &lt;code&gt;IKIGAI&lt;/code&gt; the japanese way of living life.I also wish to write a summary/review of the books i read if i find time over weekends.I also started loving to write more blog posts about the things happening.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve messed up my &lt;a href=&#34;https://nm.debian.org/1243&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Debian Developer process&lt;/a&gt;, i regret it and i hope to contribute more time to debian and i wish to become one atleast in the coming year.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve messed up my &lt;a href=&#34;https://nm.debian.org/process/1243&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Debian Developer process&lt;/a&gt;, i regret it and i hope to contribute more time to debian and i wish to become one atleast in the coming year.&lt;/p&gt;
 &lt;p&gt;I also have a huge pending list of tasks to be done,mostly learning stuff.&lt;/p&gt;
 &lt;p&gt;Lastly thanking family &amp;amp; friends for supporting me.&lt;/p&gt;
 &lt;p&gt;Bye!!!&lt;/p&gt;
@@ -532,7 +532,7 @@ Answers like setting username and password for Account setup,Network Configurati
     <item>
       <title>Contributing to Debian</title>
       <link>/blog/contributing-to-debian/</link>
-      <pubDate>Sat, 30 Jul 2022 20:01:24 +0530</pubDate>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>/blog/contributing-to-debian/</guid>
       <description>

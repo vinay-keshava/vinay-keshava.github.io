@@ -3,24 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/blog/debian-maintainer/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/software-freedom-camp-2021/</loc>
-    <lastmod>2022-03-29T20:01:24+05:30</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/git-fosscommunity-in-update/</loc>
-    <lastmod>2021-12-10T20:01:24+05:30</lastmod>
+    <lastmod>2021-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2024-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/23/</loc>
     <lastmod>2024-05-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/birthday/</loc>
-    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2024-05-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/lap-23/</loc>
@@ -117,22 +117,22 @@
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/debian-maintainer/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/gitlab/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/ruby/</loc>
-    <lastmod>2023-03-28T20:01:24+05:30</lastmod>
+    <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/contributing-to-debian/</loc>
-    <lastmod>2022-07-30T20:01:24+05:30</lastmod>
+    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/fsci/</loc>
-    <lastmod>2022-03-29T20:01:24+05:30</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/git.fosscommunity.in/</loc>
-    <lastmod>2022-03-29T20:01:24+05:30</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/wily/2023/dec-2023/</loc>
   </url><url>
@@ -218,6 +218,22 @@
   </url><url>
     <loc>/wily/2024/apr-2024/20240416/</loc>
   </url><url>
+    <loc>/wily/2024/jul-2024/20240701/</loc>
+  </url><url>
+    <loc>/wily/2024/jul-2024/20240702/</loc>
+  </url><url>
+    <loc>/wily/2024/jul-2024/20240703/</loc>
+  </url><url>
+    <loc>/wily/2024/jul-2024/20240704/</loc>
+  </url><url>
+    <loc>/wily/2024/jul-2024/20240707/</loc>
+  </url><url>
+    <loc>/wily/2024/jul-2024/20240708/</loc>
+  </url><url>
+    <loc>/wily/2024/jul-2024/20240725/</loc>
+  </url><url>
+    <loc>/wily/2024/jul-2024/20240726/</loc>
+  </url><url>
     <loc>/about/</loc>
   </url><url>
     <loc>/docs/java/ant/</loc>
@@ -274,9 +290,13 @@
   </url><url>
     <loc>/docs/java/java9/</loc>
   </url><url>
+    <loc>/wily/2024/jul-2024/</loc>
+  </url><url>
     <loc>/docs/java/kafka/</loc>
   </url><url>
     <loc>/docs/kafka/</loc>
+  </url><url>
+    <loc>/docs/kubernetes/</loc>
   </url><url>
     <loc>/docs/ldap/</loc>
   </url><url>

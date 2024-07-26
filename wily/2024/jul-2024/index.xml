@@ -1,0 +1,331 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – Jul</title>
+    <link>/wily/2024/jul-2024/</link>
+    <description>Recent content in Jul on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/wily/2024/jul-2024/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>2024-07-01</title>
+      <link>/wily/2024/jul-2024/20240701/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240701/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Scripts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Echoing Messages :: &lt;code&gt;:ec&lt;/code&gt; or &lt;code&gt;:echo&lt;/code&gt; prints out the message, example &lt;code&gt;:ec &amp;quot;hello world&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Persistent Echoing:: &lt;code&gt;:echom &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt; or &lt;code&gt;:echomsg &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt;, stores these messages in the message history&lt;/li&gt;
+&lt;li&gt;Help :: &lt;code&gt;:help &amp;lt;commandname&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keybinding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keybinding &lt;code&gt;x&lt;/code&gt;: deletes the character next to the cursor&lt;/li&gt;
+&lt;li&gt;Deletion: &lt;code&gt;dd&lt;/code&gt;: deletes the entire line&lt;/li&gt;
+&lt;li&gt;Deletes a word: &lt;code&gt;dw&lt;/code&gt;, from the cursor until the space is found&lt;/li&gt;
+&lt;li&gt;Deletes characters till EOL: &lt;code&gt;d$&lt;/code&gt; deletes characters from the right of the cursor to the End of the Line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Deletion on Operators and motions: takes the form of &lt;code&gt;d motion&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;list of motions:
+&lt;code&gt;w&lt;/code&gt;: until the start of next word, excluding the first character
+&lt;code&gt;e&lt;/code&gt;: to the end of the current word, including the last character
+&lt;code&gt;$&lt;/code&gt;: to the end of the line&lt;/p&gt;
+&lt;p&gt;In case of deletion with motions:
+&lt;code&gt;dw&lt;/code&gt;: deletes the word until the start of next word
+&lt;code&gt;de&lt;/code&gt;: deletes until end of the current word
+&lt;code&gt;d$&lt;/code&gt;: deletes until end of line&lt;/p&gt;
+&lt;p&gt;Count with motion:
+&lt;code&gt;2w&lt;/code&gt;: moves the cursor two words forward
+&lt;code&gt;4e&lt;/code&gt;: moves the cursor 4 words to the end of fourth word forward.&lt;/p&gt;
+&lt;p&gt;Deletion with count and motion:
+&lt;code&gt;d2w&lt;/code&gt;: deletes two words until the start of the next word
+&lt;code&gt;d2e&lt;/code&gt;: deletes two words until the last character of the second character&lt;/p&gt;
+&lt;p&gt;Lines:
+&lt;code&gt;dd&lt;/code&gt;: deletes the entire line
+&lt;code&gt;d2d&lt;/code&gt;: count with deletion of two lines&lt;/p&gt;
+&lt;p&gt;Undo &amp;amp; Redo
+&lt;code&gt;u&lt;/code&gt;: Undoing the latest change
+&lt;code&gt;CTRL+R&lt;/code&gt;: Redoing the latest change&lt;/p&gt;
+&lt;p&gt;Vim Learning Resources
+[1] &lt;a href=&#34;https://learnvimscriptthehardway.stevelosh.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://learnvimscriptthehardway.stevelosh.com/&lt;/a&gt;
+[2] &lt;a href=&#34;https://vim-adventures.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://vim-adventures.com/&lt;/a&gt;
+[3] vimtutor&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-07-02</title>
+      <link>/wily/2024/jul-2024/20240702/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240702/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;rsync: stands for remote sync, which is used for remote and local file synchronization, alternative to &lt;code&gt;ssh&lt;/code&gt;,&lt;code&gt;scp&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;Local to Local&lt;/li&gt;
+&lt;li&gt;Local to Remote&lt;/li&gt;
+&lt;li&gt;Remote to Local&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;-a&lt;/code&gt;: option to sync files recursively
+&lt;code&gt;-P&lt;/code&gt;: option to show the progress of the transfer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zimfw change theme
+Install &lt;code&gt;zsh&lt;/code&gt; before installing zimfw
+&lt;code&gt;curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-07-03</title>
+      <link>/wily/2024/jul-2024/20240703/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240703/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Keybindings&lt;/p&gt;
+&lt;p&gt;Put command:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt;: put/paste the deleted text, after the text cursor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Replace Command:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r&amp;lt;character&amp;gt;&lt;/code&gt;: replace command, for example the word &lt;code&gt;typod&lt;/code&gt; where &lt;code&gt;o&lt;/code&gt; has to be replaced with &lt;code&gt;e&lt;/code&gt; to make it &lt;code&gt;typed&lt;/code&gt;, move the cursor to the start of the character to be placed(until o) and type &lt;code&gt;re&lt;/code&gt; to replace &lt;code&gt;o&lt;/code&gt; with &lt;code&gt;e&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Change Command: delete all the characters from the cursor till the end of the word.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ce&lt;/code&gt;: &lt;code&gt;VNKLO&lt;/code&gt;, move the cursor to the right of&lt;code&gt;V&lt;/code&gt; and input &lt;code&gt;ce&lt;/code&gt;,which deletes all the characters till the end, and type in the required characters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Internet Protocol&lt;span class=&#34;absolute -mt-20&#34; id=&#34;internet-protocol&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#internet-protocol&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;IPV4&lt;/p&gt;
+&lt;p&gt;32bit integers,represented in 4 numbers separated by &lt;code&gt;.&lt;/code&gt; and the numbers are ranging from 0-255.
+&lt;code&gt;192.168.1.1&lt;/code&gt;: example of IPV4 address.&lt;/p&gt;
+&lt;p&gt;Drawbacks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Limited Address space&lt;/li&gt;
+&lt;li&gt;Complex configuration: IPv4 requires mannual configuration or DHCP to assign address.&lt;/li&gt;
+&lt;li&gt;Fragmentation: IPv4 allows to fragment packets,chances of packets getting lost.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IPV6&lt;/p&gt;
+&lt;p&gt;To support increased use of computer networks, internet enabled devices, ipv6 was invented.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhanced packet header for efficient routing.&lt;/li&gt;
+&lt;li&gt;Data security through IPSec header field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ipv6 address representation as &lt;code&gt;x:x:x:x:x:x:x:x&lt;/code&gt;,where x is the hexadecimal values of eight 16digit pieces.
+Ipv6 addresses ranges from:
+&lt;code&gt;0000:0000:0000:0000:0000:0000:0000:0000&lt;/code&gt; to &lt;code&gt;ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Shorthand formats of IPV6 addresses.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Omit leading zeros
+Specify IPv6 addresses by omitting leading zeros. For example, IPv6 address 1050:0000:0000:0000:0005:0600:300c:326b can be written as 1050:0:0:0:5:600:300c:326b.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double colon
+Specify IPv6 addresses by using double colons (::) in place of a series of zeros. For example, IPv6 address ff06:0:0:0:0:0:0:c3 can be written as ff06::c3. Double colons can be used only once in an IP address.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-07-04</title>
+      <link>/wily/2024/jul-2024/20240704/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240704/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Vim Keybinding&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-keybinding&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-keybinding&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;-&lt;code&gt;dG&lt;/code&gt;: deletes from the cursor till the last line of file&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-07-07</title>
+      <link>/wily/2024/jul-2024/20240707/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240707/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;git&lt;span class=&#34;absolute -mt-20&#34; id=&#34;git&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#git&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git stash&lt;/code&gt;: recording the state of working directory with changes to the working directory,but want to go back to the clean working directory, this saves local changes and reverts the working directory to the HEAD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example your present working directory is branch1 and made a few local changes and these local changes has to be in another new branch, branch2&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git stash&lt;/code&gt;: stash the local changes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash branch branchName&lt;/code&gt;: creates a new branch with the branch name as &lt;code&gt;&amp;lt;branchName&amp;gt;&lt;/code&gt; and the local changes which were stashed are moved to the new branch.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash pop&lt;/code&gt;: to pop out the stashed changes in the new branch created.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git notes&lt;/code&gt;: is a feature to add extra information to a commit without the need to changing the commit itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;adding git notes feature to latest commit &lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git notes add -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;testing notes feature for the latest commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;commit e2d42c8b5104bb71b2697e723e23eb161684fbe4 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;HEAD -&amp;gt; master, origin/master, origin/HEAD&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Author: Vinay Keshava &amp;lt;vinaykeshava@email.com&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Date:   Wed Jul &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; 17:54:57 &lt;span class=&#34;m&#34;&gt;2024&lt;/span&gt; +0530
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    wily:July 3rd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Notes:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    testing notes feature &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; the latest commit&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git notes add -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt;: adding notes to the lastest commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git notes add -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot; &amp;lt;commit-id&amp;gt;&amp;quot;&lt;/code&gt;: adding a note to a particular commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git notes append -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot; &amp;lt;commit-id&amp;gt;&lt;/code&gt;: appending a note to existing commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git notes remove &amp;lt;commit-id&amp;gt;&lt;/code&gt;: removing notes for a particular id.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL-G&lt;/code&gt;: displays the file postion and other details.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gg&lt;/code&gt;: moves the cursor to the top of the file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;G&lt;/code&gt;: moves the cursor to bottom of the file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Substitute command&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;&lt;/code&gt;: replaces the single occurence of old phrase with the new phrase.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;/g&lt;/code&gt; : to find and replace every occurennce.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;/gc&lt;/code&gt; : to find and replace every occurennce of the phrase with a prompt to be replaced or not.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;/bin/bash&lt;span class=&#34;absolute -mt-20&#34; id=&#34;binbash&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#binbash&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;BASH stands for &amp;lsquo;Bourne Again SHell&amp;rsquo;, shell programming uses other common shells like sh,csh etc.
+Shell programming can be achieved by directly executing commands at the shell prompt.&lt;/p&gt;
+&lt;p&gt;Shebang: &lt;code&gt;#!/bin/bash&lt;/code&gt; telling the operating system which interpreter to be used to parse the rest of the file.&lt;/p&gt;
+&lt;h2&gt;Ansible&lt;span class=&#34;absolute -mt-20&#34; id=&#34;ansible&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ansible&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Ansible is a open source tool, that automates application deployment, cloud provisioning, intra-service orchestration.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-07-08</title>
+      <link>/wily/2024/jul-2024/20240708/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240708/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Executing commands using &lt;code&gt;:!&amp;lt;command-name&amp;gt;&lt;/code&gt; - used to execute the command for example &lt;code&gt;!ls&lt;/code&gt; will list the files in the current working directory and press ENTER to continue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Writing to New files&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Writing more files, copying the same contents of the existing file to another file using &lt;code&gt;:w &amp;lt;new-file-name&amp;gt;&lt;/code&gt;, say for example working on the file &lt;code&gt;hellohello.txt&lt;/code&gt; and you execute the command &lt;code&gt;:w hello1.txt&lt;/code&gt; will copy the same contents onto another new file called &lt;code&gt;hello1.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copying the selected content onto a new file: Enter visual mode by pressing &lt;code&gt;v&lt;/code&gt;, and in the below prompt &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt;&lt;/code&gt; and then follow the above similar step to save the copied contents onto new file. &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt; w hello1.txt&lt;/code&gt;, the new file &lt;code&gt;hello1.txt&lt;/code&gt; is created with the selected content.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-07-25</title>
+      <link>/wily/2024/jul-2024/20240725/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240725/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;zsh and fzf configuration&lt;span class=&#34;absolute -mt-20&#34; id=&#34;zsh-and-fzf-configuration&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#zsh-and-fzf-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;for autosuggestion and syntax highlighting install the packages &lt;code&gt;zsh-autosuggestion and zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wrote a &lt;a href=&#34;/blog/zsh-fzf/&#34; &gt;blog post here&lt;/a&gt; for configuring fzf with zsh&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-07-26</title>
+      <link>/wily/2024/jul-2024/20240726/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/20240726/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;caddy webserver configuration&lt;span class=&#34;absolute -mt-20&#34; id=&#34;caddy-webserver-configuration&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#caddy-webserver-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Serving a static files like hugo from caddy webserver, with the below example&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;static file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain1.in, https://www.domain1.in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	root * /var/www/html/domain1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	file_server
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;where &lt;code&gt;/var/www/html/domain1&lt;/code&gt; is the location of the static files.&lt;/p&gt;
+&lt;p&gt;To serve a reverse_proxy for an application running in localhost on port &lt;code&gt;8085&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;reverse proxy&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain-name.tld &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	reverse_proxy localhost:8085
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
+    &lt;button
+      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
+      title=&#34;Copy code&#34;
+    &gt;
+      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
