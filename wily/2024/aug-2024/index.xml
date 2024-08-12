@@ -1,0 +1,115 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vinay Keshava – Aug</title>
+    <link>/wily/2024/aug-2024/</link>
+    <description>Recent content in Aug on Vinay Keshava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/wily/2024/aug-2024/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>2024-08-01</title>
+      <link>/wily/2024/aug-2024/20240801/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/aug-2024/20240801/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;golang learnings: functions, variables, short hand initialization, type inference, type conversion, loops, conditional statements, switch statements&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;topology in networks- star,mesh,bus, point to point,ring&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;concept of repeaters for efficient transfer of data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RARP: &lt;a href=&#34;https://en.wikipedia.org/wiki/Reverse_Address_Resolution_Protocol&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RARP&lt;/a&gt;, requesting an IP address when the input is the physical MAC address, this is replaced by DHCP, Dynamic Host Control Protocol.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-08-02</title>
+      <link>/wily/2024/aug-2024/20240802/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/aug-2024/20240802/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;Golang&lt;span class=&#34;absolute -mt-20&#34; id=&#34;golang&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#golang&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;defer&lt;/code&gt;: keyword defers the execution of the statement until the surrounding function returns, these statements are evaluated immediately but not executed until the surrounding function returns.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;multiple defer statements are executed in stack wise, the last defer statement is executed first&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-08-04</title>
+      <link>/wily/2024/aug-2024/20240804/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/aug-2024/20240804/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;git hooks, scripts like &lt;code&gt;pre-receive&lt;/code&gt;, &lt;code&gt;pre-push&lt;/code&gt;, &lt;code&gt;post-push&lt;/code&gt;.. etc, sample scripts are located within &lt;code&gt;.git/hooks&lt;/code&gt; directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;.tif&lt;/code&gt; stands for tag image format is a format used by graphic artist or photographers, which is similar to &lt;code&gt;.png&lt;/code&gt; and &lt;code&gt;.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>2024-08-05</title>
+      <link>/wily/2024/aug-2024/20240805/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/aug-2024/20240805/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;golang&lt;span class=&#34;absolute -mt-20&#34; id=&#34;golang&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#golang&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;address of operator &lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dereference operator &lt;code&gt;*&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;structs are collection of fields&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;structs and pointers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;grep stands for &lt;code&gt;global/regular expression search/print&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
