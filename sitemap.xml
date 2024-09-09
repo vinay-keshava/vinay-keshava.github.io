@@ -11,16 +11,28 @@
     <loc>/blog/git-fosscommunity-in-update/</loc>
     <lastmod>2021-12-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/blog/cups-on-pi/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/blog/</loc>
-    <lastmod>2024-07-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/cups/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2024-07-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/fzf/</loc>
-    <lastmod>2024-07-26T00:00:00+00:00</lastmod>
+    <loc>/tags/hplip/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/raspberrypi/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/fzf/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/zsh/</loc>
@@ -259,6 +271,16 @@
   </url><url>
     <loc>/wily/2024/aug-2024/20240805/</loc>
   </url><url>
+    <loc>/wily/2024/sep-2024/20240401/</loc>
+  </url><url>
+    <loc>/wily/2024/sep-2024/20240402/</loc>
+  </url><url>
+    <loc>/wily/2024/sep-2024/20240403/</loc>
+  </url><url>
+    <loc>/wily/2024/sep-2024/20240404/</loc>
+  </url><url>
+    <loc>/wily/2024/sep-2024/20240405/</loc>
+  </url><url>
     <loc>/about/</loc>
   </url><url>
     <loc>/docs/java/ant/</loc>
@@ -268,6 +290,8 @@
     <loc>/wily/2024/apr-2024/</loc>
   </url><url>
     <loc>/wily/2024/aug-2024/</loc>
+  </url><url>
+    <loc>/docs/hacks/bash/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
@@ -358,6 +382,8 @@
     <loc>/docs/rust/</loc>
   </url><url>
     <loc>/docs/selfhosting/</loc>
+  </url><url>
+    <loc>/wily/2024/sep-2024/</loc>
   </url><url>
     <loc>/docs/java/springcore/</loc>
   </url><url>

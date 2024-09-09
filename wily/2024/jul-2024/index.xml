@@ -23,7 +23,7 @@
       <description>
         
         
-        &lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Scripts:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Echoing Messages :: &lt;code&gt;:ec&lt;/code&gt; or &lt;code&gt;:echo&lt;/code&gt; prints out the message, example &lt;code&gt;:ec &amp;quot;hello world&amp;quot;&lt;/code&gt;&lt;/li&gt;
@@ -104,7 +104,7 @@ Install &lt;code&gt;zsh&lt;/code&gt; before installing zimfw
       <description>
         
         
-        &lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Keybindings&lt;/p&gt;
 &lt;p&gt;Put command:&lt;/p&gt;
 &lt;ul&gt;
@@ -118,7 +118,7 @@ Install &lt;code&gt;zsh&lt;/code&gt; before installing zimfw
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;ce&lt;/code&gt;: &lt;code&gt;VNKLO&lt;/code&gt;, move the cursor to the right of&lt;code&gt;V&lt;/code&gt; and input &lt;code&gt;ce&lt;/code&gt;,which deletes all the characters till the end, and type in the required characters.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Internet Protocol&lt;span class=&#34;absolute -mt-20&#34; id=&#34;internet-protocol&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Internet Protocol&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;internet-protocol&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#internet-protocol&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;IPV4&lt;/p&gt;
 &lt;p&gt;32bit integers,represented in 4 numbers separated by &lt;code&gt;.&lt;/code&gt; and the numbers are ranging from 0-255.
 &lt;code&gt;192.168.1.1&lt;/code&gt;: example of IPV4 address.&lt;/p&gt;
@@ -161,7 +161,7 @@ Specify IPv6 addresses by using double colons (::) in place of a series of zeros
       <description>
         
         
-        &lt;h2&gt;Vim Keybinding&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-keybinding&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Vim Keybinding&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-keybinding&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#vim-keybinding&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;-&lt;code&gt;dG&lt;/code&gt;: deletes from the cursor till the last line of file&lt;/p&gt;
 
       </description>
@@ -176,7 +176,7 @@ Specify IPv6 addresses by using double colons (::) in place of a series of zeros
       <description>
         
         
-        &lt;h2&gt;git&lt;span class=&#34;absolute -mt-20&#34; id=&#34;git&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;git&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;git&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#git&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git stash&lt;/code&gt;: recording the state of working directory with changes to the working directory,but want to go back to the clean working directory, this saves local changes and reverts the working directory to the HEAD.&lt;/li&gt;
 &lt;/ul&gt;
@@ -189,7 +189,10 @@ Specify IPv6 addresses by using double colons (::) in place of a series of zeros
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git notes&lt;/code&gt;: is a feature to add extra information to a commit without the need to changing the commit itself.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;adding git notes feature to latest commit &lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git notes add -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;testing notes feature for the latest commit&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;adding git notes feature to latest commit &lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git notes add -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;testing notes feature for the latest commit&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git log
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;commit e2d42c8b5104bb71b2697e723e23eb161684fbe4 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;HEAD -&amp;gt; master, origin/master, origin/HEAD&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
@@ -199,15 +202,17 @@ Specify IPv6 addresses by using double colons (::) in place of a series of zeros
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    wily:July 3rd
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Notes:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    testing notes feature &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; the latest commit&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    testing notes feature &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; the latest commit&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git notes add -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt;: adding notes to the lastest commit&lt;/li&gt;
@@ -215,7 +220,7 @@ Specify IPv6 addresses by using double colons (::) in place of a series of zeros
 &lt;li&gt;&lt;code&gt;git notes append -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot; &amp;lt;commit-id&amp;gt;&lt;/code&gt;: appending a note to existing commit&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git notes remove &amp;lt;commit-id&amp;gt;&lt;/code&gt;: removing notes for a particular id.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;CTRL-G&lt;/code&gt;: displays the file postion and other details.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;gg&lt;/code&gt;: moves the cursor to the top of the file.&lt;/li&gt;
@@ -227,11 +232,11 @@ Specify IPv6 addresses by using double colons (::) in place of a series of zeros
 &lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;/g&lt;/code&gt; : to find and replace every occurennce.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;/gc&lt;/code&gt; : to find and replace every occurennce of the phrase with a prompt to be replaced or not.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;/bin/bash&lt;span class=&#34;absolute -mt-20&#34; id=&#34;binbash&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;/bin/bash&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;binbash&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#binbash&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;BASH stands for &amp;lsquo;Bourne Again SHell&amp;rsquo;, shell programming uses other common shells like sh,csh etc.
 Shell programming can be achieved by directly executing commands at the shell prompt.&lt;/p&gt;
 &lt;p&gt;Shebang: &lt;code&gt;#!/bin/bash&lt;/code&gt; telling the operating system which interpreter to be used to parse the rest of the file.&lt;/p&gt;
-&lt;h2&gt;Ansible&lt;span class=&#34;absolute -mt-20&#34; id=&#34;ansible&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Ansible&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ansible&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#ansible&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Ansible is a open source tool, that automates application deployment, cloud provisioning, intra-service orchestration.&lt;/p&gt;
 
       </description>
@@ -246,7 +251,7 @@ Shell programming can be achieved by directly executing commands at the shell pr
       <description>
         
         
-        &lt;h2&gt;Vim Learnings&lt;span class=&#34;absolute -mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Executing commands using &lt;code&gt;:!&amp;lt;command-name&amp;gt;&lt;/code&gt; - used to execute the command for example &lt;code&gt;!ls&lt;/code&gt; will list the files in the current working directory and press ENTER to continue.&lt;/li&gt;
 &lt;/ul&gt;
@@ -272,7 +277,7 @@ Shell programming can be achieved by directly executing commands at the shell pr
       <description>
         
         
-        &lt;h3&gt;zsh and fzf configuration&lt;span class=&#34;absolute -mt-20&#34; id=&#34;zsh-and-fzf-configuration&#34;&gt;&lt;/span&gt;
+        &lt;h3&gt;zsh and fzf configuration&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;zsh-and-fzf-configuration&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#zsh-and-fzf-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;for autosuggestion and syntax highlighting install the packages &lt;code&gt;zsh-autosuggestion and zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;
@@ -294,34 +299,44 @@ Shell programming can be achieved by directly executing commands at the shell pr
       <description>
         
         
-        &lt;h2&gt;caddy webserver configuration&lt;span class=&#34;absolute -mt-20&#34; id=&#34;caddy-webserver-configuration&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;caddy webserver configuration&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;caddy-webserver-configuration&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#caddy-webserver-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Serving a static files like hugo from caddy webserver, with the below example&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;static file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain1.in, https://www.domain1.in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;static file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain1.in, https://www.domain1.in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	root * /var/www/html/domain1
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	file_server
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;where &lt;code&gt;/var/www/html/domain1&lt;/code&gt; is the location of the static files.&lt;/p&gt;
 &lt;p&gt;To serve a reverse_proxy for an application running in localhost on port &lt;code&gt;8085&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;reverse proxy&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain-name.tld &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;reverse proxy&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain-name.tld &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	reverse_proxy localhost:8085
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
@@ -357,16 +372,21 @@ Shell programming can be achieved by directly executing commands at the shell pr
 &lt;code&gt;start %SOME_PATH_OF_THE_EXE%\file.exe&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Setting a path to a variable in &lt;code&gt;.bat&lt;/code&gt; file&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\ProgramFiles..&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;JDK&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;%JAVA_HOME%&lt;/span&gt;\bin&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\ProgramFiles..&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;JDK&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;%JAVA_HOME%&lt;/span&gt;\bin&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
@@ -384,15 +404,20 @@ Shell programming can be achieved by directly executing commands at the shell pr
         &lt;ul&gt;
 &lt;li&gt;i3 config - to remove the top border in i3wm&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;.config/i3/config&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;default border pixel &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;.config/i3/config&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;default border pixel &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;connecting irc oftc network in thelounge, click on add network and then irc.oftc.net with port 6697&lt;/li&gt;

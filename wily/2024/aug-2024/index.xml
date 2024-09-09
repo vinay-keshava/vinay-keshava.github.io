@@ -50,7 +50,7 @@
       <description>
         
         
-        &lt;h3&gt;Golang&lt;span class=&#34;absolute -mt-20&#34; id=&#34;golang&#34;&gt;&lt;/span&gt;
+        &lt;h3&gt;Golang&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;golang&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#golang&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;defer&lt;/code&gt;: keyword defers the execution of the statement until the surrounding function returns, these statements are evaluated immediately but not executed until the surrounding function returns.&lt;/li&gt;
 &lt;/ul&gt;
@@ -89,7 +89,7 @@
       <description>
         
         
-        &lt;h3&gt;golang&lt;span class=&#34;absolute -mt-20&#34; id=&#34;golang&#34;&gt;&lt;/span&gt;
+        &lt;h3&gt;golang&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;golang&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#golang&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;address of operator &lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/p&gt;

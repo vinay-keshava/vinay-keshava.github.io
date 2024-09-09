@@ -5,7 +5,7 @@
     <description>Recent content in Blog on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Sep 2024 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -54,18 +54,23 @@ Snikket is free software, a privacy-friendly messaging platform based on XMPP pr
 &lt;h1&gt;Experience of Running Snikket Server&lt;/h1&gt;&lt;p&gt;Snikket is my first self-hosted service, before talking about the experience of running the snikket server I would like to talk about &lt;a href=&#34;https://camp.fsci.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Software Freedom camp 2021 &lt;/a&gt;,the camp is organized by the Free Software Community of India. As a part of the camp initially, learners were made to understand the philosophy and intention behind free software. Later during the project phase, learners were allowed to choose certain available topics proposed by the mentor. &lt;br&gt;
 After joining the sfcamp as a learner, I choose to learn system administration and Debian packaging, under system administration one of the deliverables was to set up a Snikket server of my own.&lt;br&gt;
 To run any snikket server basic requirements are a domain name and a VPS (Virtual Private Server )to run your snikket server. I had signed up for the Github Student Developer pack through the pack got the free domain from name.com and I choose Amazon Web Services Free Tier as my VPS.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;  Snikket is all about the
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;  Snikket is all about the
         DNS
         Docker
-        Daemons&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+        Daemons&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;Snikket also has an option of creating circles, limiting users to that circle only, although any user can talk to any individual by providing an XMPP or Snikket username. Snikket uses an invite-based procedure for account creation on the server. Only the admin can have the authority to create an invite link. Snikket also supports audio and video calls of great speed, these are some of the &lt;a href=&#34;https://snikket.org/app/features/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;features&lt;/a&gt; of the snikket application. I have been using Snikket and invited most of my friends to my Snikket server. Initially, it took time to make them understand how it is completely different from other messaging platforms. Later educated them about how decentralization, vendor lock-in works and then introduced them to Snikket and other XMPP-based clients.&lt;br&gt;
 The learning while setting up the snikket server was got introduced to Docker Container, Domain Name System( DNS ), how server logs are checked, and debugging the errors.&lt;/p&gt;
@@ -76,15 +81,20 @@ Snikket Source code &lt;a href=&#34;https://github.com/snikket-im&#34; target=&#
 &lt;p&gt;Thanks to &lt;a href=&#34;https://ravish0007.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ravish&lt;/a&gt; and &lt;a href=&#34;https://blog.sahilister.in&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sahil&lt;/a&gt; for helping to set up the Snikket server.&lt;/p&gt;
 &lt;h1&gt;Next Goals&lt;/h1&gt; - Reverse Proxy by Nginx .
 &lt;p&gt;Bye for now .&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
@@ -113,6 +123,159 @@ FSCI also hosts and maintains a lot of services for the community, you can check
     </item>
     
     <item>
+      <title>[HomeLab] Cups, Print Server on Pi</title>
+      <link>/blog/cups-on-pi/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/cups-on-pi/</guid>
+      <description>
+        
+        
+        &lt;h4&gt;Cups&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;cups&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cups&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://openprinting.github.io/cups/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CUPS&lt;/a&gt;, Common Unix Printing System manages printing services on linux. Cups uses IPP( Internet Printing Protocol) for managing print jobs. Cups also provides web interface, command line interface to manage printer and print jobs.&lt;/p&gt;
+&lt;p&gt;I wanted to setup a print server at home on a raspberry pi under local network, instead of connecting the usb to my laptop everytime which is annoying. I have a &lt;a href=&#34;https://support.hp.com/ro-en/product/details/hp-laserjet-pro-m1136-multifunction-printer-series/5094778&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HP Laserjet M1136 Professional Pro&lt;/a&gt; printer at home which requires propreitary drivers to be installed on linux,my printer is not listed in &lt;a href=&#34;https://openprinting.org/printers/manufacturer/HP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;openprinting&lt;/a&gt;.
+&lt;img src=&#34;/images/cups-printer-server.jpg&#34; alt=&#34;HP Laserjet M1136 Printer&#34; style=&#34;width:450px;&#34;/&gt;&lt;/p&gt;
+&lt;h4&gt;hplip&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;hplip&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hplip&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://developers.hp.com/hp-linux-imaging-and-printing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hplip&lt;/a&gt;, a utility for hp printers to install drivers and setup the printer on the machine.&lt;/p&gt;
+&lt;p&gt;Install hplip on raspberry pi,&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install hplip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;hplip depends on cups, not needed to install it externally.&lt;/p&gt;
+&lt;p&gt;Due to &lt;a href=&#34;https://unix.stackexchange.com/questions/627597/hplip-cannot-be-installed-on-system-with-disabled-root-user-password-incorrect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;disabled root access issue&lt;/a&gt; root password fails, switch to root user using &lt;code&gt;sudo su&lt;/code&gt;, and run &lt;code&gt;hp-plugin&lt;/code&gt; to download all the proprietary plugins&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@raspberrypi:/home/vinay# hp-plugin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HP Linux Imaging and Printing System &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ver. 3.22.10&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Plugin Download and Install Utility ver. 2.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; PLUG-IN INSTALLATION FOR HPLIP 3.22.10 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Option      Description
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ----------  --------------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  d           Download plug-in from HP &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;recommended&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  p           Specify a path to the plug-in &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;advanced&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  q           Quit hp-plugin &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;skip installation&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Enter option &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;download*, &lt;span class=&#34;nv&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;specify path, &lt;span class=&#34;nv&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;quit&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; ? d&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Enter option &lt;code&gt;d&lt;/code&gt; to download the required plugin for the printer&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Do you accept the license terms &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; the plug-in &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;yes*, &lt;span class=&#34;nv&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;no, &lt;span class=&#34;nv&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;quit&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; ? y&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Input &lt;code&gt;y&lt;/code&gt; to accept terms and conditions&lt;/p&gt;
+&lt;p&gt;Exit the &lt;code&gt;sudo su&lt;/code&gt; terminal session and run &lt;code&gt;hp-setup -i&lt;/code&gt; as a normal user.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$hp&lt;/span&gt;-setup -i
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HP Linux Imaging and Printing System &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ver. 3.22.10&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Printer/Fax Setup Utility ver. 9.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Copyright &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 2001-18 HP Development Company, LP
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This software comes with ABSOLUTELY NO WARRANTY.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This is free software, and you are welcome to distribute it
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;under certain conditions. See COPYING file &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; more details.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Note: Defaults &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; each question are maked with a &lt;span class=&#34;s1&#34;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;. Press &amp;lt;enter&amp;gt; to accept the default.&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; SELECT CONNECTION &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;I/O&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; TYPE &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Num       Connection  Description
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            Type
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --------  ----------  ----------------------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  0*        usb         Universal Serial Bus &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;USB&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;         net         Network/Ethernet/Wireless &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;direct connection or JetDirect&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Enter number 0...1 &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; connection &lt;span class=&#34;nb&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;quit, &lt;span class=&#34;nv&#34;&gt;enter&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;usb*&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; ? &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Using connection type: usb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Setting up device: hp:/usb/HP_LaserJet_Professional_M1136_MFP?serial&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;000000000QHBYPM0PR1a&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;I have my printer connected to Pi via USB, so choosing &lt;code&gt;0&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo usermod -aG lpadmin &amp;lt;&amp;lt;USER&amp;gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo cupsctl --remote-any
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo /etc/init.d/cups restart&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Add the user to lpadmin and enabling remote printing within the network using &lt;code&gt;cupsctl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;https://192.168.1.100:631/admin/ cups web interface&lt;/p&gt;
+&lt;img src=&#34;/images/cups-1.png&#34; alt=&#34;Add a new printer in CUPS web UI&#34; style=&#34;width:650px;&#34;/&gt;
+Select HP Laserjet Pro M1136 connected via USB, and then input the root password of raspberrypi.
+&lt;img src=&#34;/images/cups-5.png&#34; alt=&#34;vinay&#34; style=&#34;width:650px;&#34;/&gt;
+&lt;img src=&#34;/images/cups-4.png&#34; alt=&#34;vinay&#34; style=&#34;width:650px;&#34;/&gt;
+Printer added successfully, you can now manage print jobs via UI also add printers.
+&lt;p&gt;Now my sister and dad can print documents from phone too (:
+&lt;img src=&#34;/images/cups-6.jpg&#34; alt=&#34;Print documents from phone&#34; style=&#34;width:250px;&#34;/&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Zsh Zen &#43; FZF</title>
       <link>/blog/zsh-fzf/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
@@ -127,29 +290,39 @@ I was a &lt;code&gt;bash&lt;/code&gt; user for all these years, and switched to 
 &lt;p&gt;&lt;code&gt;sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Installing &lt;code&gt;zsh-autosuggestions&lt;/code&gt; and &lt;code&gt;zsh-syntax-highlighting&lt;/code&gt; packages to enable autosuggestions and syntax highlighting for zsh.
 Append the below lines to &lt;code&gt;.zshrc&lt;/code&gt; to enable autosuggestions and syntax highlighting.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;source &amp;#34;/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&amp;#34;
-source &amp;#34;/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;source &amp;#34;/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&amp;#34;
+source &amp;#34;/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;&lt;a href=&#34;https://junegunn.github.io/fzf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fuzzy Finder&lt;/a&gt;, is a command line tool to find previously executed commands.
 To enable fzf with zsh, add the following in &lt;code&gt;.zshrc&lt;/code&gt; after installing fzf.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;source &amp;#34;/usr/share/doc/fzf/examples/key-bindings.zsh&amp;#34;
-source &amp;#34;/usr/share/doc/fzf/examples/completion.zsh&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;source &amp;#34;/usr/share/doc/fzf/examples/key-bindings.zsh&amp;#34;
+source &amp;#34;/usr/share/doc/fzf/examples/completion.zsh&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;Below is the image after fzf configuration with zsh.
 &lt;img src=&#34;/images/zsh-fzf.png&#34; alt=&#34;zsh and fzf configuration&#34; style=&#34;width:800px;height:350px;&#34;&gt;&lt;/p&gt;
@@ -169,18 +342,23 @@ source &amp;#34;/usr/share/doc/fzf/examples/completion.zsh&amp;#34;&lt;/code&gt;
         
         &lt;p&gt;Cheers to 23,my another year of existence on this planet.
 A wonderful day filled with wishes from friends and family.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;Time Flies. Time Flies faster every year.
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;Time Flies. Time Flies faster every year.
 Time Flies whether you&amp;#39;re having fun or not, 
 whether you&amp;#39;re living your life big or small,
-whether you surround yourself with fear or Laughter - Claire Cook&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+whether you surround yourself with fear or Laughter - Claire Cook&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;Its exactly been an year since i was graduated from my bachelor&amp;rsquo;s degree.Last year at this point of time, was with my friends for the last trip of engineering.We had our convocation last month,after months of graduating. Wrote a separate blog post about attending the college &lt;a href=&#34;/blog/convocation&#34; &gt;convocation&lt;/a&gt;.
 These days the weekends is mostly to meet up college &amp;amp; hostel friends to chit chat about how we miss our good old days :)&lt;/p&gt;
@@ -235,7 +413,7 @@ I still had a few more hours of time left to catch the train.The seat was not co
       <description>
         
         
-        &lt;h3&gt;What I Learnt Yesterday(WILY)&lt;span class=&#34;absolute -mt-20&#34; id=&#34;what-i-learnt-yesterdaywily&#34;&gt;&lt;/span&gt;
+        &lt;h3&gt;What I Learnt Yesterday(WILY)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-i-learnt-yesterdaywily&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#what-i-learnt-yesterdaywily&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;WILY is a name I rephrased to log all my daily learnings.I started this two months ago, where I log about what I learnt yesterday.Everyday is a learning day it can be tech, some commands or some life lessons experienced throughout the day.&lt;/p&gt;
 &lt;p&gt;Inspired from  &lt;a href=&#34;https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zettelkasten&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;At some point of time in our lives we would want to relearn a few things after a few days/weeks but the effort to find resources for a specific topic can be time consuming.
@@ -259,7 +437,7 @@ I also love the &lt;code&gt;docs&lt;/code&gt; feature of this theme,making it be
       <description>
         
         
-        &lt;h3&gt;Awakening&lt;span class=&#34;absolute -mt-20&#34; id=&#34;awakening&#34;&gt;&lt;/span&gt;
+        &lt;h3&gt;Awakening&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;awakening&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#awakening&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Kumara Parvatha 😍 ,the highest peak in Pushpagiri Wildlife sanctuary,the best and worst trekking we had ever experienced.It all started with my school friends who were planning for a long trip after graduating from engineering (Most of them are Engineers,few are doctors),the last time i went to a long trip with my school friends was a visit to Waynad,Kerala (10th School Trip).After completing my intermediate,i migrated to moodbidri for my bachelor&amp;rsquo;s degree and all my friends pursued their engineering in bangalore,this was the reason it took more time for me to go for a trip with them, during engineering i rarely used to come home,maybe 6 months once so it was difficult to plan for a long trip with them.&lt;/p&gt;
 &lt;p&gt;So I,dharnish,rohan,chandan started hunting for places to plan for the trip,and after a lot of discussions and budget restrictions we decided &amp;ldquo;A Trek To Kumara Parvatha&amp;rdquo; on Jan 5th,2024 should be good enough, after great grand new year.&lt;/p&gt;
 &lt;p&gt;We booked our train tickets one month before,so that we aren&amp;rsquo;t cancelling the trip this time, after so many cancellations at the last minute from my side too :) . We also had booked our tents at Battru Mane for one night stay on Jan 6th Saturday.&lt;/p&gt;
@@ -279,7 +457,7 @@ After a holy bath in the Kumaradhara River near Kukke Subhramanya Temple, we sta
 [A picture of ourselves infront of the temple,from left Rohann,Mee,Dharnishaa,Chandann, we look cool right?,i just love this picture, School friends are &lt;3 ]
 &lt;p&gt;After the darshan and we had our breakfast at a hotel nearby,we had to eat to our stomach full because the next point where we get food during the trek was Battru Mane which was 6km from the trek starting point.Later we realised we bought a lot of baggage which would make us tiring to trek along with carrying the bagge,so we wasted our time deciding and segregating where to put our baggages so that it is safe for atleast 2 days.We then finally found a place at the KSRTC bus stop since it was a paid service,we trusted it 😜.By the time we segregated and deposited our baggage at the KSRTC counter it was afternoon.
 I just hydrated myself with some juice, and then we started heading to the trek start point and Forest Office.It is around 2km walk from the temple to the trek start point.&lt;/p&gt;
-&lt;h3&gt;Trek Start Point - Forest Office&lt;span class=&#34;absolute -mt-20&#34; id=&#34;trek-start-point---forest-office&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Trek Start Point - Forest Office&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;trek-start-point---forest-office&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#trek-start-point---forest-office&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Roughly around 2km walk from the temple,we reached the Forest Office and Trek Starting Point.&lt;/p&gt;
 &lt;p&gt;A good initiative taken by the Forest office was to not dispose any plastics on the way to the trek.At the start of the trek point all the bags are checked thoroughly and the number of plastics are counted with chocolate wrappers counted too.We had a lot of plastics because it was mostly eatables, the total count of plastics was 90 + 4 90 numbers of plastics and 4 water bottles for each of us and if any plastic piece is left on the hill during the trek the forest office informed us that they would charge a Rs.50 per plastic,if any plastic is missed out we would go bankrupt 😢 , so we were careful about not littering the plastics anywhere.
 The excitement was very high at the first while walking along the trails,clicking pictures.&lt;/p&gt;
@@ -290,12 +468,12 @@ Legs started aching, it was very humid, with all these the only motivation for b
 Since it was the only way to trek to the top of the hill and get down from the hill, we were asking people who were coming down,how much time it takes to reach Battru Mane,few people were scaring us saying there&amp;rsquo;s a lot to trek more to reach battru mane,while few were motivating, but we didn&amp;rsquo;t know whom to believe.
 It was scorching heat and had to bear until we found the path to the water falls,near Bheemana Bande.
 Empty Bottles,thirsty throat,hungry stomach with birdy butterflies, this was our situation after a trekking for 2Kms&lt;/p&gt;
-&lt;h3&gt;Bheemana Bande | Bheema Rock&lt;span class=&#34;absolute -mt-20&#34; id=&#34;bheemana-bande--bheema-rock&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Bheemana Bande | Bheema Rock&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bheemana-bande--bheema-rock&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#bheemana-bande--bheema-rock&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Bheemana Bande translates to Bheema&amp;rsquo;s Rock.
 Bheemana Bande,a beautiful place with simple view with a small stream of water, a much needed place to rest, soaking our feet in the cold water to feel the relaxation.
 We had our lunch at bheema&amp;rsquo;s rock bought by rohan,we were more hungry so we started eating few sneakers by carefully peeling the wrapper of the chocolate and not littering it out.I think we were more careful about the plastic wrappers than our lives at that point of time.
 After having our lunch, we took rest for a few minutes and we wanted to drink water,since it was the only water resource until we reach Battru Mane which is like 3 to 4 KM from the Bheema&amp;rsquo;s rock. So i and chandan went to the top of the hill hunting for the fresh water.After taking a long rest we decided to leave and reach Battru mane before sunset, so that we aren&amp;rsquo;t stuck in dark&lt;/p&gt;
-&lt;h3&gt;Battru Mane&lt;span class=&#34;absolute -mt-20&#34; id=&#34;battru-mane&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Battru Mane&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;battru-mane&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#battru-mane&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We left Bheema&amp;rsquo;s rock at around 2:30 pm,After a long rest we started trekking back again, the trails had more elevation had to put longer steps,making us more tired and take frequent rests.For every 15 to 20 minutes we were taking rest for a period of 10mins
 Legs started aching badly,we were taking more breaths per second.The trails had more elevation,it wasn&amp;rsquo;t flat,may be with an angle of 30 degrees.Number of steps become more.
 We badly needed water, our throats were dried up.We were saving the snacks for the 2nd day trek because there&amp;rsquo;s no food resources after battru mane,we were planning to leave battru mane early morning so that we could complete the trek by next day evening.
@@ -330,7 +508,7 @@ But then here comes the another twist,one of our tents were occupied by other pe
 They said that they had been to the peak and had booked this tent afternoon,they were the one who were returning from the peak while we were stading in the queue.
 Arguments went on for a while, we neither had energy to talk ,and then it started raining heavily, the tent next to rohan and dharnish&amp;rsquo;s was empty so we just bombarded into it.It was already 12:30am by that time,the tent which we bombarded was good enough so I,chandan,dharnish went inside,rohan said it would adjust to the previous one.&lt;/p&gt;
 &lt;p&gt;Its 1:00 am we badly needed sleep,we were thinking of quitting and going back to the base morning after the breakfast,thinkging about the trails will be more slippery making it difficult to trek.In a one person tent we three slept,me horizontally,dharnish and chandan vertically.It was difficult to sleep there wasn&amp;rsquo;t any sufficient space to stretch our legs too.&lt;/p&gt;
-&lt;h3&gt;Kallu Mantapa &amp;amp;&amp;amp; Sesha Parvatha&lt;span class=&#34;absolute -mt-20&#34; id=&#34;kallu-mantapa--sesha-parvatha&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Kallu Mantapa &amp;amp;&amp;amp; Sesha Parvatha&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;kallu-mantapa--sesha-parvatha&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#kallu-mantapa--sesha-parvatha&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;After a worst nightmare we got up around 4:30am because people were leaving battru mane and heading towards peak.We thought of quitting even at that point of time,but dharnish motivated us saying &amp;ldquo;lets go to the peak atleast till Kallu Mantapa and if we fail lets take rest for a while and return from kallu mantapa,there was no use taking so many risks and trekking 6km &amp;ldquo;.We decided to continue the trek,left battru mane around 4:45 heading towards forest office to pay the registration entry fee and Rs.500 as security fee.A little time was wasted while waiting to register. Torch lights on, trails wasn&amp;rsquo;t that slippery through the grasslands, there wasn&amp;rsquo;t any leaches too.Started heading towards Kallu Mantapa with phone torch lights on. After a 2KM trek there was another forest office security check at another base, where our bags were checked, and also confirmed that our registration was also done.After one and half hour of trek the sun was rising.&lt;/p&gt;
 &lt;p&gt;Sticks in our hands,helping us to trek.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Peak innu eshtu doora idiyo gothilla&amp;rdquo;,&amp;ldquo;Peak beda enu beda vapas hogona&amp;rdquo;, were some of the common dialogues by everyone.
@@ -345,7 +523,7 @@ It was the best view ever,if given a chance we could have camped there.
 When we initially reached Sesha Parvatha we assumed it was Kumara Parvatha,but later when other people informed us we got to know that we are the peak of sesha parvatha.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/AQf56-9y26I?si=t6MIfZzkhOt-0aKd&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;Silence in the video was because had no energy to talk,after a long trek. EXHAUSEDTED&amp;hellip;.&lt;/p&gt;
-&lt;h3&gt;Thick Forest SP -&amp;gt; KP&lt;span class=&#34;absolute -mt-20&#34; id=&#34;thick-forest-sp---kp&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Thick Forest SP -&amp;gt; KP&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;thick-forest-sp---kp&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#thick-forest-sp---kp&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When we left battru mane, we had to thought to quit after Kallu Mantapa but we reached till Sesha Parvatha,but then we were hungry more to trek so we decided to trek till Kumara Parvatha Peak which is 2Km from Sesha parvatha and this phase of the trek is the most difficult part. We started motivating ourselves and gave a try.
 This thick dense forest shaped like a V between two the mountains Sesha Parvatha &amp;amp; Kumara Parvatha.Initially we have to get down from Sesha parvatha from one side and climb to Kumara Parvatha on the other side.&lt;/p&gt;
 &lt;img src=&#34;/images/kumara-parvatha/kp-forest-rohan-vinay.jpg&#34; alt=&#34;image&#34; style=&#34;width:450px;height:280px;&#34;&gt;
@@ -357,7 +535,7 @@ You get to experience the nature&amp;rsquo;s beauty with your eyes, this part of
 &lt;img src=&#34;/images/kumara-parvatha/kp-rock-trek.jpg&#34; alt=&#34;image&#34; style=&#34;width:250px;height:400px;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Even though the water was not clean enough to drink, we had to drink water to make ourselves stay hydrated with TANG.&lt;/p&gt;
 &lt;p&gt;A girl motivating chandan to climb the hill was another highlight of the trek [Update: We found the girl&amp;rsquo;s picture from Incredible Karnataka Instagram Post :) ]&lt;/p&gt;
-&lt;h3&gt;Kumara Parvatha&lt;span class=&#34;absolute -mt-20&#34; id=&#34;kumara-parvatha&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Kumara Parvatha&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;kumara-parvatha&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#kumara-parvatha&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Andddddddddddddddddddddddddddddddd Finallyyyyyyyyyyyyy there we go We reach KUMARAAANNA PARVATHA&amp;hellip;.&lt;/p&gt;
 &lt;p&gt;We reached the peak around 10:40am.&lt;/p&gt;
 &lt;img src=&#34;/images/kumara-parvatha/kp-group.jpg&#34; alt=&#34;image&#34; style=&#34;width:350px;height:600px;&#34;&gt;
@@ -366,7 +544,7 @@ You get to experience the nature&amp;rsquo;s beauty with your eyes, this part of
 &lt;img src=&#34;/images/kumara-parvatha/kp-vinay.jpg&#34; alt=&#34;image&#34; style=&#34;width:330px;height:550px;&#34;&gt;
 &lt;p&gt;We half emptied our snacks,took blessings from temple. We left Pushpagiri Peak around 11:45 am.
 The real challenge now is to trek down back,the distance we covered in one and half days, has to be covered in half day. We set ourselves a target to reach the base before sunset.&lt;/p&gt;
-&lt;h3&gt;Trek Down&lt;span class=&#34;absolute -mt-20&#34; id=&#34;trek-down&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Trek Down&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;trek-down&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#trek-down&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/9bON2Ff_eZA?si=nTzAp2aGw_RFi5Gm&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;Episode 1,this was our very first Vlog,we had planned to make a series of videos,but due to time constraints we recorded only few videos,but i enjoy whenever i see this video(PS: It&amp;rsquo;s Pushpagiri Peak and Kumara Parvatha Peak sorry for the mistake in the video)&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/moUxr_0WwSc?si=nzTQFoEEfU0e6QfQ&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -501,15 +679,20 @@ I just love writing now,I feel i should write more to express my thoughts,ideas,
 &lt;p&gt;At first when i started to create my portfolio i was reluctant to write much,barely one or two articles per year,i was not confident about my grammer too,now i really dont care about it,i just write my raw thoughts.There&amp;rsquo;s some level of satisfaction of writing,i encourage others also to write more.&lt;/p&gt;
 &lt;p&gt;People who read my blog might provide feedback too,correct if any mistakes.
 I also encourage other people to write, if they are too shy they can try anonymous blog.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
@@ -540,7 +723,10 @@ Preseeding is  like a set of answers to debian-installer(d-i)  questions.Preseed
 Answers like setting username and password for Account setup,Network Configuration,Mirror Settings,Partitioning disks,setting normal user as root user Locales,Keyboard layout,Package Selection and many more&lt;/p&gt;
 &lt;p&gt;All the features in the Debian installer can be answered with the preseed file.
 &lt;img src=&#34;/images/automate-debian-installer-3.png&#34; alt=&#34;AutomateDebianInstaller3&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;My Preseed file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/hostname string http.us.debian.org
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;My Preseed file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/hostname string http.us.debian.org
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/directory string /debian
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/proxy string
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/root-login boolean &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;
@@ -549,27 +735,34 @@ Answers like setting username and password for Account setup,Network Configurati
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/user-password password vinay
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/user-password-again password vinay
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i clock-setup/ntp boolean &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i partman-auto/init_automatically_partition &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; biggest_free&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i partman-auto/init_automatically_partition &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; biggest_free&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;In the above preseed file i&amp;rsquo;ve set the debian mirrors [ line 1-3 ]with &lt;code&gt;http.us.debian.org&lt;/code&gt;  and the directory for the mirror is &lt;code&gt; /debian&lt;/code&gt;,Account setup with password[ line 4-8 ], [ line 9 ] for ntp server to sync time with and [ line 10 ] for automatically partitioning the disk with biggest free space disk partition.&lt;/p&gt;
 &lt;p&gt;This is sample preseed file with few options and it can be customized accordingly.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
@@ -603,15 +796,20 @@ package update and then went to continue packaging few node modules.&lt;/p&gt;
 &lt;p&gt;I currently &lt;a href=&#34;https://qa.debian.org/developer.php?login=vinaykeshava@disroot.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;maintain&lt;/a&gt; around two node modules as of today, looking forward to maintain more packages in debian.
 All the communication happens mainly through mailing list or irc of respective &lt;a href=&#34;https://wiki.debian.org/Teams&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;teams&lt;/a&gt;.&lt;/p&gt;
 &lt;h1&gt;Further Development&lt;/h1&gt;&lt;p&gt;Looking forward to contribute and hangout with the awesome debian community and learn more.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>

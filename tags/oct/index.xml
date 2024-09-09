@@ -24,7 +24,7 @@
       <description>
         
         
-        &lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Debian Activities&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1488467/accepted-javamorph-0020100201-4-source-into-unstable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;javamorph&lt;/a&gt;&lt;/p&gt;
@@ -117,7 +117,7 @@
       <description>
         
         
-        &lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Debian Activities&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/javamorph/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;javamorph&lt;/a&gt;&lt;/p&gt;
@@ -152,7 +152,7 @@ Thanks to Miguel Landaeta for sponsoring this package upload.&lt;/p&gt;
         
         
         &lt;p&gt;Post DebConf Month&lt;/p&gt;
-&lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Debian Activities&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1470252/accepted-ruby-aws-sdk-core-31780-1-source-into-experimental/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ruby-aws-sdk-core&lt;/a&gt;&lt;/p&gt;
@@ -192,18 +192,23 @@ Thanks to Miguel Landaeta for sponsoring this package upload.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Open Street Map&lt;span class=&#34;absolute -mt-20&#34; id=&#34;open-street-map&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Open Street Map&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;open-street-map&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#open-street-map&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;My edits on open street Map for October in and around Bangalore and Pavagada.
 &lt;a href=&#34;https://www.openstreetmap.org/user/vinay-keshava/history&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.openstreetmap.org/user/vinay-keshava/history&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>

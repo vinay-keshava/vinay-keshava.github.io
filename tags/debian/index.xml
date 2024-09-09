@@ -54,18 +54,23 @@ Snikket is free software, a privacy-friendly messaging platform based on XMPP pr
 &lt;h1&gt;Experience of Running Snikket Server&lt;/h1&gt;&lt;p&gt;Snikket is my first self-hosted service, before talking about the experience of running the snikket server I would like to talk about &lt;a href=&#34;https://camp.fsci.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Software Freedom camp 2021 &lt;/a&gt;,the camp is organized by the Free Software Community of India. As a part of the camp initially, learners were made to understand the philosophy and intention behind free software. Later during the project phase, learners were allowed to choose certain available topics proposed by the mentor. &lt;br&gt;
 After joining the sfcamp as a learner, I choose to learn system administration and Debian packaging, under system administration one of the deliverables was to set up a Snikket server of my own.&lt;br&gt;
 To run any snikket server basic requirements are a domain name and a VPS (Virtual Private Server )to run your snikket server. I had signed up for the Github Student Developer pack through the pack got the free domain from name.com and I choose Amazon Web Services Free Tier as my VPS.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;  Snikket is all about the
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;  Snikket is all about the
         DNS
         Docker
-        Daemons&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+        Daemons&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;Snikket also has an option of creating circles, limiting users to that circle only, although any user can talk to any individual by providing an XMPP or Snikket username. Snikket uses an invite-based procedure for account creation on the server. Only the admin can have the authority to create an invite link. Snikket also supports audio and video calls of great speed, these are some of the &lt;a href=&#34;https://snikket.org/app/features/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;features&lt;/a&gt; of the snikket application. I have been using Snikket and invited most of my friends to my Snikket server. Initially, it took time to make them understand how it is completely different from other messaging platforms. Later educated them about how decentralization, vendor lock-in works and then introduced them to Snikket and other XMPP-based clients.&lt;br&gt;
 The learning while setting up the snikket server was got introduced to Docker Container, Domain Name System( DNS ), how server logs are checked, and debugging the errors.&lt;/p&gt;
@@ -76,15 +81,20 @@ Snikket Source code &lt;a href=&#34;https://github.com/snikket-im&#34; target=&#
 &lt;p&gt;Thanks to &lt;a href=&#34;https://ravish0007.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ravish&lt;/a&gt; and &lt;a href=&#34;https://blog.sahilister.in&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sahil&lt;/a&gt; for helping to set up the Snikket server.&lt;/p&gt;
 &lt;h1&gt;Next Goals&lt;/h1&gt; - Reverse Proxy by Nginx .
 &lt;p&gt;Bye for now .&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
@@ -121,7 +131,7 @@ FSCI also hosts and maintains a lot of services for the community, you can check
       <description>
         
         
-        &lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Debian Activities&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1488467/accepted-javamorph-0020100201-4-source-into-unstable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;javamorph&lt;/a&gt;&lt;/p&gt;
@@ -214,7 +224,7 @@ FSCI also hosts and maintains a lot of services for the community, you can check
       <description>
         
         
-        &lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Debian Activities&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/javamorph/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;javamorph&lt;/a&gt;&lt;/p&gt;
@@ -327,7 +337,10 @@ Preseeding is  like a set of answers to debian-installer(d-i)  questions.Preseed
 Answers like setting username and password for Account setup,Network Configuration,Mirror Settings,Partitioning disks,setting normal user as root user Locales,Keyboard layout,Package Selection and many more&lt;/p&gt;
 &lt;p&gt;All the features in the Debian installer can be answered with the preseed file.
 &lt;img src=&#34;/images/automate-debian-installer-3.png&#34; alt=&#34;AutomateDebianInstaller3&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;div class=&#34;filename&#34;&gt;My Preseed file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/hostname string http.us.debian.org
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;My Preseed file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/hostname string http.us.debian.org
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/directory string /debian
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i mirror/http/proxy string
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/root-login boolean &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;
@@ -336,27 +349,34 @@ Answers like setting username and password for Account setup,Network Configurati
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/user-password password vinay
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i passwd/user-password-again password vinay
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i clock-setup/ntp boolean &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i partman-auto/init_automatically_partition &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; biggest_free&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-8&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d-i partman-auto/init_automatically_partition &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; biggest_free&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 &lt;p&gt;In the above preseed file i&amp;rsquo;ve set the debian mirrors [ line 1-3 ]with &lt;code&gt;http.us.debian.org&lt;/code&gt;  and the directory for the mirror is &lt;code&gt; /debian&lt;/code&gt;,Account setup with password[ line 4-8 ], [ line 9 ] for ntp server to sync time with and [ line 10 ] for automatically partitioning the disk with biggest free space disk partition.&lt;/p&gt;
 &lt;p&gt;This is sample preseed file with few options and it can be customized accordingly.&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
@@ -372,7 +392,7 @@ Answers like setting username and password for Account setup,Network Configurati
         
         
         &lt;p&gt;Post DebConf Month&lt;/p&gt;
-&lt;h2&gt;Debian Activities&lt;span class=&#34;absolute -mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Debian Activities&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-activities&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#debian-activities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://tracker.debian.org/news/1470252/accepted-ruby-aws-sdk-core-31780-1-source-into-experimental/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ruby-aws-sdk-core&lt;/a&gt;&lt;/p&gt;
@@ -412,18 +432,23 @@ Answers like setting username and password for Account setup,Network Configurati
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Open Street Map&lt;span class=&#34;absolute -mt-20&#34; id=&#34;open-street-map&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Open Street Map&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;open-street-map&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#open-street-map&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;My edits on open street Map for October in and around Bangalore and Pavagada.
 &lt;a href=&#34;https://www.openstreetmap.org/user/vinay-keshava/history&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.openstreetmap.org/user/vinay-keshava/history&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;code-block relative mt-6 first:mt-0 group/code&#34;&gt;&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0&#34;&gt;
-    &lt;button
-      class=&#34;code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50&#34;
-      title=&#34;Copy code&#34;
-    &gt;
-      &lt;div class=&#34;group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4&#34;&gt;&lt;/div&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    :wq&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
 &lt;/div&gt;
 
       </description>
