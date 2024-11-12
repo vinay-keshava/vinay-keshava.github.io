@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vinay Keshava – September</title>
-    <link>/wily/2024/sep-2024/</link>
+    <link>//localhost:1313/wily/2024/sep-2024/</link>
     <description>Recent content in September on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/wily/2024/sep-2024/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/wily/2024/sep-2024/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>2024-09-01</title>
-      <link>/wily/2024/sep-2024/20240401/</link>
+      <link>//localhost:1313/wily/2024/sep-2024/20240401/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/sep-2024/20240401/</guid>
+      <guid>//localhost:1313/wily/2024/sep-2024/20240401/</guid>
       <description>
         
         
@@ -32,10 +32,10 @@
     
     <item>
       <title>2024-09-02</title>
-      <link>/wily/2024/sep-2024/20240402/</link>
+      <link>//localhost:1313/wily/2024/sep-2024/20240402/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/sep-2024/20240402/</guid>
+      <guid>//localhost:1313/wily/2024/sep-2024/20240402/</guid>
       <description>
         
         
@@ -64,10 +64,10 @@
     
     <item>
       <title>2024-09-03</title>
-      <link>/wily/2024/sep-2024/20240403/</link>
+      <link>//localhost:1313/wily/2024/sep-2024/20240403/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/sep-2024/20240403/</guid>
+      <guid>//localhost:1313/wily/2024/sep-2024/20240403/</guid>
       <description>
         
         
@@ -80,10 +80,10 @@
     
     <item>
       <title>2024-09-04</title>
-      <link>/wily/2024/sep-2024/20240404/</link>
+      <link>//localhost:1313/wily/2024/sep-2024/20240404/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/sep-2024/20240404/</guid>
+      <guid>//localhost:1313/wily/2024/sep-2024/20240404/</guid>
       <description>
         
         
@@ -96,10 +96,10 @@
     
     <item>
       <title>2024-09-05</title>
-      <link>/wily/2024/sep-2024/20240405/</link>
+      <link>//localhost:1313/wily/2024/sep-2024/20240405/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/sep-2024/20240405/</guid>
+      <guid>//localhost:1313/wily/2024/sep-2024/20240405/</guid>
       <description>
         
         

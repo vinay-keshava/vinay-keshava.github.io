@@ -15,46 +15,7 @@
     
     
     <item>
-      <title>April</title>
-      <link>/wily/2024/apr-2024/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/wily/2024/apr-2024/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Aug</title>
-      <link>/wily/2024/aug-2024/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/wily/2024/aug-2024/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Feb</title>
-      <link>/wily/2024/feb-2024/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/wily/2024/feb-2024/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Jan</title>
+      <title>01,January,2024</title>
       <link>/wily/2024/jan-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -62,25 +23,425 @@
       <description>
         
         
-        
+        &lt;h3&gt;2024-01-02&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-01-02&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-01-02&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LVM &amp;ndash; Logical Volume Management.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Concepts of Physical Volumes,Volume Groups,Logical Volumes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;sudo lvmdiskscan&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Creating physical volume using physical drives&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo pvcreate /dev/sda /dev/sdb&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Creating Volume groups
+&lt;code&gt;sudo vgcreate /dev/sda /dev/sdb&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Creating Logical Volumes within the volume groups&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;    sudo lvcreate -L 10G -n projects LVMVolGroup
+    sudo lvcreate -L 5G -n www LVMVolGroup
+   sudo lvcreate -L 20G -n db LVMVolGroup&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Golang&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Package import,multiple package import&lt;/li&gt;
+&lt;li&gt;Exported names starting with capital letters.&lt;/li&gt;
+&lt;li&gt;Functions: function definition,function parameters,shortening function parameters,return types, named return types,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-01-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-01-03&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-01-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;LVM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Formatting and Mounting a logical volume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo mkdir -p /mnt/{backup,college-data}
+sudo mount /dev/VolGrpLvm/backup /mnt/backup/
+sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Renaming a logical Volume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo lvrename /dev/VolGrpLvm/college-data /dev/VolGrpLvm/college&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Extending a logical Volume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo lvextend -L&amp;#43;5G /dev/VolGrpLvm/backup ``` ```sudo lvextend -L25G /dev/VolGrpLvm/backup&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Shrinking a logical volume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo lvreduce  -L20G /dev/VolGrpLvm/backup&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Removing an logical volume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo lvremove /dev/VolGrpLvm/backup&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;LVM Stripping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo lvcreate -L 10G -i2 -I64 -n backup1 VolGrpLvm&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;LVM Mirroring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo lvcreate -L 5G -m1 -n mirrorLV VolGrpLvm&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;ThinPool and Thin provisioning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;sudo lvcreate --thinpool vg_thin/thin_pool --name volume_1 --virtualsize 3G&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Golang&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables&lt;/li&gt;
+&lt;li&gt;Short Description variables&lt;/li&gt;
+&lt;li&gt;Types&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;docs/golang/introduction/#type-conversion-and-type-inference&#34; &gt;Type conversion and Type inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/golang/introduction/#constants&#34; &gt;Constants&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2024-01-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-01-04&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-01-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Network File System(NFS)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is the link to the &lt;a href=&#34;/docs/nfs&#34; &gt;document&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Installing NFS server and setting directory permissions to 777&lt;/li&gt;
+&lt;li&gt;Configuring Export directory by editing the file &lt;code&gt;/etc/exports&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Options to configure the NFS server,either readonly or read write, sync or async,subtree check.&lt;/li&gt;
+&lt;li&gt;Exporting the shared directory using &lt;code&gt;exportfs&lt;/code&gt; command&lt;/li&gt;
+&lt;li&gt;Configuring firewall &lt;code&gt;ufw&lt;/code&gt; to allow clients to access the shared folder.&lt;/li&gt;
+&lt;li&gt;Configuring client using nfs-common package&lt;/li&gt;
+&lt;li&gt;Creating mountpoints on the client side to access the shared folder.&lt;/li&gt;
+&lt;li&gt;Mounting the folder using mount command or adding the entry to &lt;code&gt;/etc/fstab&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-01-09&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-01-09&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-01-09&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ruby Learning&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#data-types&#34; &gt;Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#type-conversion&#34; &gt;Type Conversion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#string-interpolation&#34; &gt;String Interpolation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#strings&#34; &gt;Strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#basic-data-structures-arrays-and-hashes&#34; &gt;Basic Data Structures and Hashes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#symbols&#34; &gt;Symbols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#variables&#34; &gt;Variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#input--output&#34; &gt;Input Output&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solved exercises of Odin Project for the &lt;a href=&#34;https://github.com/vinay-keshava/ruby-learning/commit/94b3203524badc98ba8c822d362b8fbe2f5ba2ea&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;String Exercices&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/vinay-keshava/ruby-learning/commit/a5801bada579481177c4a2a42c28553dcbd74fb5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Data Types&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;2024-01-18&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-01-18&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-01-18&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Guake load preferences from config file
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;guake --restore-preferences ~/Downloads/guake_prefs &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python Introduction learing
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/python/introduction/#text&#34; &gt;Text&lt;/a&gt; - multi line print statement,escape sequences,strings and len() of strings&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/python/introduction/#variables-and-types&#34; &gt;Variables and Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/python/introduction/#lists&#34; &gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
     <item>
-      <title>Jul</title>
-      <link>/wily/2024/jul-2024/</link>
+      <title>02,February 2024</title>
+      <link>/wily/2024/feb-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/jul-2024/</guid>
+      <guid>/wily/2024/feb-2024/</guid>
       <description>
         
         
-        
+        &lt;h3&gt;2024-02-12&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-02-12&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-02-12&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/java/ant/&#34; &gt;Ant&lt;/a&gt; : Java based make tool&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating a simple ant build system for HelloWorld project.&lt;/li&gt;
+&lt;li&gt;Understanding of &lt;code&gt;build.xml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Build commands of ant like &lt;code&gt;ant compile&lt;/code&gt;, &lt;code&gt;ant jar&lt;/code&gt;, &lt;code&gt;ant run&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Java 17 features&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JEP: Pseudo Random Generator&lt;/li&gt;
+&lt;li&gt;JEP: Switch Expressions&lt;/li&gt;
+&lt;li&gt;JEP: Records - for creating immutable object without the use of lombok&lt;/li&gt;
+&lt;li&gt;JEP: Usage of Objects in &lt;code&gt;switch&lt;/code&gt; statement.&lt;/li&gt;
+&lt;li&gt;JEP: Updated &lt;code&gt;instanceof&lt;/code&gt; method to avoid redundant casting&lt;/li&gt;
+&lt;li&gt;JEP: Local Variable Type Inference&lt;/li&gt;
+&lt;li&gt;JEP: Sealed Classes using &lt;code&gt;sealed&lt;/code&gt; and &lt;code&gt;permits&lt;/code&gt; keyword, to restrict the implementation and extension of classes and interfaces in java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(JEP) - JDK Enhanced Proposal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-02-14&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-02-14&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-02-14&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Termux Learnings&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;installing packages in termux &lt;code&gt;pkg install git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg update&lt;/code&gt; for package updates.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg upgrade&lt;/code&gt; for package upgrades.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkg edit-sources&lt;/code&gt; command to edit sources.list alike files,to change the default mirror&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-02-15&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-02-15&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-02-15&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Java 17 Features&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/Java/java17.md&#34; &gt;Link to the Java 17 docs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sealed Classes &amp;amp; Interfaces&lt;/li&gt;
+&lt;li&gt;Switch Statements&lt;/li&gt;
+&lt;li&gt;InstanceOf Pattern Matching&lt;/li&gt;
+&lt;li&gt;Switch Expressions&lt;/li&gt;
+&lt;li&gt;Record Classes&lt;/li&gt;
+&lt;li&gt;TextBlocks&lt;/li&gt;
+&lt;li&gt;Strong Encapsulation of JDK Internal API’s&lt;/li&gt;
+&lt;li&gt;Local Variable Type Inference&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-02-18&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-02-18&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-02-18&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Nginx
+&lt;ul&gt;
+&lt;li&gt;To list files in nginx web server
+use &lt;code&gt;autoindex on&lt;/code&gt; within the server TextBlocks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-02-19&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-02-19&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-02-19&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Conventional Commits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Defining a standard format for commit changes,which can be processed by automated tools to produce documentation.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;type&amp;gt;&lt;span class=&#34;o&#34;&gt;[(&lt;/span&gt;optional &amp;lt;scope&amp;gt;&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;: &amp;lt;description&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;optional &amp;lt;body&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;optional &amp;lt;footer&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Link to &lt;a href=&#34;/docs/hacks/conventional-commit/&#34; &gt;docs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Descriptive git commit messages.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;Tittle&amp;quot; -m &amp;quot;Description&amp;quot;&lt;/code&gt; , a descriptive git commit can be written by using the option -m twice&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-02-19&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-02-19-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-02-19-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Project Lombok
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/docs/java/lombok&#34; &gt;Link to the docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;common annotations used in lombok&lt;/li&gt;
+&lt;li&gt;avoiding boilerplate code with lombok annotations&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@Getter&lt;/code&gt;,&lt;code&gt;@Setter&lt;/code&gt;,&lt;code&gt;@RequiredArgsConstructor&lt;/code&gt;,&lt;code&gt;@Builder&lt;/code&gt;,&lt;code&gt;@Data&lt;/code&gt;,&lt;code&gt;@AllArgsConstructor&lt;/code&gt;,&lt;code&gt;@NoArgsConstructor&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-02-26&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-02-26&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-02-26&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;FFMPEG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ffmpeg is a suite of libraries and programs to handle video,audio &amp;amp; other multimedia files and streams.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;Joining multiple videos using ffmpeg&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ffmpeg -f concat -safe &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; -i joinvideo.txt -c copy episode2.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vinay@falcon:~/Documents/blog$ cat ../KumaraParvathaVideo/joinvideo.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;file kp-peak-rest.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;file thick-forest.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;file rohan_vlog.mp4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Rotating a video by a certain degree using ffmpeg&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i inputfile.mp4 -vf &lt;span class=&#34;s2&#34;&gt;&amp;#34;transpose=1&amp;#34;&lt;/span&gt; outputfile.mp4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+
       </description>
     </item>
     
     <item>
-      <title>March</title>
+      <title>03, March 2024</title>
       <link>/wily/2024/mar-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -88,12 +449,1202 @@
       <description>
         
         
-        
+        &lt;h3&gt;2024-03-27&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-27&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-27&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Docker Swarm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Rolling Updates&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To reduce the downtime of an application and also to introduce minimal downtime for rolling updates while docker swarm.
+Here lets us take an example image of &lt;code&gt;alpine:3.17.7&lt;/code&gt; and with the command to &lt;code&gt;ping google.com&lt;/code&gt;, to demonstrate the rolling updates,let us update the image to &lt;code&gt;alpine:3.18.6&lt;/code&gt; while the container is running.&lt;/p&gt;
+&lt;p&gt;Pre-requisites are the enable the docker swarm mode, and add a worker node to the cluster.
+&lt;code&gt;docker service update --image alpine:3.18.6 helloworld&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Rollback Updates&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To continue from the above rolling updates, if many such cases we would want to rollback to the previous state of the service, due to a bug etc, in our example we would want to rollback to our previous state which is from &lt;code&gt;alpine:3.18.6&lt;/code&gt; to &lt;code&gt;alpine:3.17.7&lt;/code&gt; we use the command &lt;code&gt;docker service rollback &amp;lt;service-name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;node1&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; root@192.168.0.12 ~
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ docker service rollback helloworld
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;helloworld&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;API Architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SOAP,REST,GraphQL and gRPC are most popular API architecture, in this digitizing world where large amounts of data is being transferred&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;REST
+REST stands for REpresentational State Transfer, is a widely used architectural style for building web API&amp;rsquo;s. REST API&amp;rsquo;s uses HTTP requests to retreive and manipulate data. Key characteristics of REST include:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Resource Based: REST API&amp;rsquo;s are based on concept of resources,which are exposed through URL&amp;rsquo;s.
+Stateless: REST API does not maintain the state between two requests,hence stateless.
+CRUD: REST API&amp;rsquo;s support Create,Read,Update and Delete operations for manipulating data.
+Flexible: REST API&amp;rsquo;s are flexible,used for many purposes in general.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;GraphQL
+GraphQL is query language for API&amp;rsquo;s, which is more flexible than REST. Allows clients to specify exactly what data they need, which reduces the data transferred over network.Key characteristics:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Strongly Typed: clients and servers agree on the structure of the data exchanged.
+Query Based: clients specify exactly what they need and receives only that data.
+Single Endpoint: GraphQL has single endpoint,which simplifies client-server communications
+Schema driven: API schema defines the type of data available and operations that can be performed on that data.&lt;/p&gt;
+&lt;p&gt;GraphQL uses POST HTTP method for all the operations be it GET,POST etc it uses POST HTTP method.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;gRPC
+gRPC Remote Procedure Call open source framework developed by Google for building Remote Procedure Calls API&amp;rsquo;s.Unlike traditional API&amp;rsquo;s that rely on HTTP methods,gRPC uses more efficient and lightweight Protocol Buffers as the datainterchange format and it supports multiple programming languages.
+Using protocol buffers,faster and efficient communication is achieved.gRPC supports bidirectional streaming real-time  communication between clients and servers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2024-03-05&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-05&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-05&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Kafka Integration with Spring Boot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kafka is a distributed event store with stream processing message, handles low latency platforms for real time data feeds. Kafka allows users to subscribe and publish to the kafka broker.&lt;/p&gt;
+&lt;p&gt;A general use case with different micro services: User,Account and SMS microservice&lt;/p&gt;
+&lt;p&gt;Integration of the above microservices with Apache Kakfa messaging event.Below is the link for the detailed documentation and steps to integrate a spring boot project with kafka in a microservices architecture.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.com/vinay-keshava/spring-boot-kafka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Repository Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/java/kafka&#34; &gt;Docs link&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Twilio SDK Integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Twilio Integration with Spring boot to send SMS through a Twilio trial account.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.twilio.com/en-us/blog/send-basic-sms-java-springboot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reference Link&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using System Environment Variables in application.properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usage of system environment variables in &lt;code&gt;application.properties&lt;/code&gt; for example, mysql username and password,url etc making confidential information secure.&lt;/p&gt;
+&lt;h3&gt;2024-03-06&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-06&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-06&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;.gitkeep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;git only tracks files and not empty directories,for instead we want to create an empty directory in a project directory, instead of creating a dummy file, a standard practice is to create a &lt;code&gt;.gitkeep&lt;/code&gt; file within this empty directory.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git stash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;git stash is useful,when you want to switch to another branch, but there are few local changes in your current branch and you dont want to commit them,in this scenario &lt;code&gt;git stash&lt;/code&gt; can be used.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git stash apply&lt;/code&gt; - apply the stashed changes to the working project&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git stash pop&lt;/code&gt; - pop&amp;rsquo;s the changes and applies to working set.&lt;/p&gt;
+&lt;h3&gt;2024-03-12&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-12&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-12&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Java 8 Features&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;java-8-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#java-8-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Functional Interfaces&lt;/p&gt;
+&lt;p&gt;Functional Interfaces: Consumers, Suppliers, Predicate Functions&lt;/p&gt;
+&lt;p&gt;Why functional interfaces?&lt;/p&gt;
+&lt;p&gt;Lambda Expressions: Functional interfaces with lambda expressions&lt;/p&gt;
+&lt;p&gt;Examples of consumers,predicates,functions and suppliers with syntax and constructors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lambda Expressions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stream API&lt;/p&gt;
+&lt;p&gt;Difference between Sequence streams and Parallel streams.&lt;/p&gt;
+&lt;p&gt;How Streams work internally?&lt;/p&gt;
+&lt;p&gt;Intermediate operations, terminal operations, short circuit operations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Method Reference&lt;/p&gt;
+&lt;p&gt;Method reference in java,calling static methods,instantiated methods and so on.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/java/java8&#34; &gt;Documentation Link&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;2024-03-13&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-13&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-13&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reactive Programming&lt;/p&gt;
+&lt;p&gt;Need for reactive programming&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/java/webflux&#34; &gt;Reactive programming&lt;/a&gt; is a programming paradigm that promotes an asynchronous, non-blocking, event driven approach to data processing. Let us understand the difference between blocking and non blocking request processing.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Blocking Request Processing&lt;/li&gt;
+&lt;li&gt;Non Blocking Request Processing&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reactive Manifesto&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Back Pressure&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-03-14&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-14&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-14&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Openshift&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;openshift&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#openshift&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;/docs/openshift&#34; &gt;Redhat OpenShift&lt;/a&gt; is a platform that allows us to manage,deploy and orchestrate containerized applications in the cloud.Red hat openshift solves the biggest problem of developing and deploying microservice based applications.&lt;/p&gt;
+&lt;p&gt;oc command lets you work with the entire OpenShift cluster and deploy new applications.The CLI exposes the underlying Kubernetes orchestration system with the enhancements made by OpenShift. Users familiar with Kubernetes will be able to adapt to OpenShift quickly.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;oc login -u admin -p admin https://api.crc.testing:6443 --insecure-skip-tls-verify=true&lt;/code&gt;
+the command to login into openshift for the user (-u option) admin with password (-poption above)  admin
+&lt;code&gt;oc whoami&lt;/code&gt; : displays the logged in openshift user.&lt;/p&gt;
+&lt;h4&gt;Containers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;containers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#containers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Getting started with &lt;a href=&#34;/docs/containers&#34; &gt;containers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Like a normal linux program,containers have two states - rest and running. When the container is at rest, a container is a like a file that is stored on the disk like other files.This is referred to as &lt;code&gt;Container Image&lt;/code&gt; or &lt;code&gt;Container Repository&lt;/code&gt;. When the container is started, the &lt;code&gt;Container Engine&lt;/code&gt; unpacks the required files and meta-data, then hands them to the linux kernel.The next process is to start the container just like another linux process making an API call to the linux kernel. This API call makes an isolation and mounts  a copy of the files stored in the container image.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Registry Server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A container registry server is a tool which hosts and distributes container images. The container registry server can either be public or private.These container registries connect directly to container orchestration platforms like Docker and Kubernetes.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Container Image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A container image, which is a file, pulled from the registry server and used locally as a mount point when the containers are started&lt;/p&gt;
+&lt;h3&gt;2024-03-18&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-18&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-18&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Containers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;containers-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#containers-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;/docs/containers&#34; &gt;Containers&lt;/a&gt; have existed within operating systems for quite a long time, A Container is a runtime intiative of container image.
+Linux containers are often isolated through the use of cgroups,SELinux,AppArmor.&lt;/p&gt;
+&lt;p&gt;Overview of security like cgroups,AppArmor in Debian.&lt;/p&gt;
+&lt;p&gt;Container Terminology:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Registry Server: A container registry server is a tool which hosts and distributes container images. The container registry server can either be public or private.These container registries connect directly to container orchestration platforms like Docker and Kubernetes.
+
+- Container image: A container image, which is a file, pulled from the registry server and used locally as a mount point when the containers are started.LXD pulls a single container image from the registry server,while docker uses OCI-based images which can be made of multiple layers.
+
+- Container Engine: A container engine pulls the container image from the registry server,accepts user&#39;s requests via command line options and runs the container. There are many container engines like CRI-O, Docker, LXD.Most container engines do not run containers, they rely OCI compliant runtime like runc.
+
+- Container Host: container host is the system that runs the containerized process(containers). For example a VM in a data center is a host, while containers can be run on them.
+
+- Image,Tag: Images: Repositories are often reffered to as images or container images,but they are actually made up of one or more image layers.Image Layers are usually referenced by parent child relationship.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tag: Defining versions for the container images with the help of tags.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Container Orchestration: A container orchestrator does two things:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Dynamically schedules container workloads, within a cluster of computers.
+Provides a standardized application definition file (kube file, docker compose).&lt;/p&gt;
+&lt;h4&gt;Docker&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#docker&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;/docs/containers/docker&#34; &gt;Docker&lt;/a&gt; is within a sandboxed environment, it allows users to package an application with all of its dependencies into a standardized unit for development.Provides a layer of isolation from the host,where the container uses the host&amp;rsquo;s system resources like storage,memory and CPU.&lt;/p&gt;
+&lt;p&gt;Architecture
+- Docker Engine
+- Docker Client
+- Docker Registry&lt;/p&gt;
+&lt;p&gt;Docker commands&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- `docker pull`: pulls the image from the registry server
+- `docker images`: displays all the images present locally
+- `docker ps -a`: list of containers currently running and terminated
+- `docker run`: creates a new container from the image provided
+- `docker exec`: runs a new command within the container,example bash prompt
+- `docker stop`: stop the existing docker container
+- `docker rm`: delete the docker container without any traces on local
+- `docker rmi`: delete the container image locally
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;/docs/containers/docker&#34; &gt;Detailed explanation&lt;/a&gt;%&lt;/p&gt;
+&lt;h3&gt;2024-03-19&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-19&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-19&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;docker logs&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker-logs&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#docker-logs&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;`docker logs &lt;container-name&gt;, displays the logs of the container.&lt;/p&gt;
+&lt;h4&gt;docker kill vs docker stop&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker-kill-vs-docker-stop&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#docker-kill-vs-docker-stop&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Container doesn&amp;rsquo;t stop for a &lt;code&gt;SIGTERM&lt;/code&gt; signal sent by a stop command, to terminate the process stop follows the &lt;code&gt;SIGTERM&lt;/code&gt; with a &lt;code&gt;SIGKILL&lt;/code&gt; after a grace period, instead it is faster to use &lt;code&gt;docker kill&lt;/code&gt; which terminates the container immediately.&lt;/p&gt;
+&lt;h4&gt;docker search&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker-search&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#docker-search&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;To search for images within the registery server i.e here Docker Hub we can use the command &lt;code&gt;docker search &amp;lt;container-name&amp;gt;&lt;/code&gt; say for example, &lt;code&gt;docker search debian&lt;/code&gt; will list out the images with the repository owner and official status.&lt;/p&gt;
+&lt;h4&gt;docker prune&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker-prune&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#docker-prune&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;prune command deletes all the unused and stopped containers,unused build cache,unused images from the host system,below command demonstrates the examples of the &lt;code&gt;docker prune&lt;/code&gt; command.&lt;/p&gt;
+&lt;h4&gt;docker build&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker-build&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#docker-build&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;docker build&lt;/code&gt; command builds docker images from a Dockerfile, which is a file that contains all the commands a user could call from the terminal.Docker builds images by reading instructions in Dockerfile.&lt;/p&gt;
+&lt;p&gt;A docker instruction has two components: &lt;code&gt;INSTRUCTION&lt;/code&gt; and &lt;code&gt;ARGUMENT&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;Docker Instructions&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker-instructions&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#docker-instructions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;FROM&lt;/code&gt;: base image we want to start from&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RUN&lt;/code&gt;: run commands during the image build process&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ENV&lt;/code&gt;: sets Environment variable during the build process and also while the container is created.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;COPY&lt;/code&gt;: command copies a a file or folder from the host to the docker image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EXPOSE&lt;/code&gt;: to expose a port on the docker image at runtime.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ADD&lt;/code&gt;: advanced version of COPY command,to copy files,tarballs to the docker image from the host,we can also define instructions to extract the tarball on the docker image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;WORKDIR&lt;/code&gt;:  set the current working directory in the docker image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VOLUME&lt;/code&gt;: mount the volume to the docker container.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;USER&lt;/code&gt;:  sets the username and UUID when running the container,for setting the non-root user.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LABEL&lt;/code&gt;: sets metadata information of Docker image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CMD&lt;/code&gt;: executes a command within a running container, only one CMD command is allowed,if multiple are present only the last one is takes effect.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ENTRYPOINT&lt;/code&gt;: commands that will execute when the Docker container starts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Defining Start conditions for container&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;defining-start-conditions-for-container&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defining-start-conditions-for-container&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Let us consider a sample project where we run yt-dlp against a youtube link which downloads the video, let us build the Dockerfile by giving instructions.&lt;/p&gt;
+&lt;p&gt;To construct a container image we should first select a base image,here &lt;code&gt;debian:bookworm&lt;/code&gt; as a base image to build yt-dlp image, the first line of the Dockerfile will be&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;FROM debian:bookworm&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;To get the binary of yt-dlp, we need curl and to run the &lt;code&gt;yt-dlp&lt;/code&gt; we need &lt;code&gt;python3&lt;/code&gt; so these two packages has to be installed before running the binary,so the Dockerfile with additions will be&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;FROM debian:bookworm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN apt update -y &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt install curl python3 -y&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Fetching the yt-dlp binary from github and copying it to &lt;code&gt;/usr/local/bin&lt;/code&gt; and changing the permissions of the binary to executable of all.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;FROM debian:bookworm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN apt update -y &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt install curl python3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN chmod a+x /usr/local/bin/yt-dlp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;CMD &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/local/bin/yt-dlp&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Upon creating the image and creation of container yt-dlp is to be launched.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ docker run yt-dlp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Usage: yt-dlp &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;OPTIONS&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; URL &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;URL...&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  yt-dlp: error: You must provide at least one URL.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Type yt-dlp --help to see a list of all options.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ docker run yt-dlp https://www.youtube.com/watch?v&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;uTZSILGTskA
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  docker: Error response from daemon: failed to create task &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://www.youtube.com/watch?v=uTZSILGTskA&amp;#34;&lt;/span&gt;: stat https://www.youtube.com/watch?v&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;uTZSILGTskA: no such file or directory: unknown.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ERRO&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;0000&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; error waiting &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; container: context canceled&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;According to the above error the youtube link should be taken as an argument to the binary yt-dlp, but here the yt-dlp is executing as a command,updating the CMD TO ENTRYPOINT&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;FROM ubuntu:22.04
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;WORKDIR /mydir
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN apt-get update &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get install -y curl python3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN chmod a+x /usr/local/bin/yt-dlp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Replacing CMD with ENTRYPOINT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ENTRYPOINT &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/local/bin/yt-dlp&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ docker run yt-dlp https://www.youtube.com/watch?v&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;DptFY_MszQs
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;youtube&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Extracting URL: https://www.youtube.com/watch?v&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;DptFY_MszQs
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;youtube&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; DptFY_MszQs: Downloading webpage
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;youtube&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; DptFY_MszQs: Downloading ios player API JSON
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;youtube&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; DptFY_MszQs: Downloading android player API JSON
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;youtube&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; DptFY_MszQs: Downloading player 9bb09009
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;youtube&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; DptFY_MszQs: Downloading m3u8 information
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;info&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; DptFY_MszQs: Downloading &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; format&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;s&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;: &lt;span class=&#34;m&#34;&gt;22&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;download&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Destination: Welcome to Kumpula campus! ｜ University of Helsinki &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;DptFY_MszQs&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;download&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; 100% of   29.92MiB in 00:00:04 at 7.10MiB/s&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Now when the container is run when passed the youtube link as argument the video is downloaded, but it is stored onto the container,here comes the concept of volumes where data is stored.%&lt;/p&gt;
+&lt;h3&gt;2024-03-20&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-20&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-20&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Alpine Linux&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;alpine-linux&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#alpine-linux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;To install a package: &lt;code&gt;apk add &amp;lt;packagename&amp;gt;&lt;/code&gt;, for example to install maven and openjdk17 we use the command &lt;code&gt;apk add openjdk17 maven&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;Dockerize Spring Boot Application.&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dockerize-spring-boot-application&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dockerize-spring-boot-application&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;FROM debian:bookworm
+RUN apt update -y &amp;amp;&amp;amp; apt install default-jdk maven git -y
+RUN git clone https://gitlab.com/vinay-keshava/spring-boot-hello-world.git
+WORKDIR /spring-boot-hello-world
+EXPOSE 9328
+RUN mvn clean install -DskipTests
+ENTRYPOINT [&amp;#34;java&amp;#34;,&amp;#34;-jar&amp;#34;,&amp;#34;target/demo-0.0.1.jar&amp;#34;]&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Selecting &lt;code&gt;debian:bookworm&lt;/code&gt; as base image,installing jdk and maven packages, along with this exposing the port &lt;code&gt;9238&lt;/code&gt; and building the project.
+After successfull build of this docker image to create a container use the command &lt;code&gt;docker run -dit -p 8080:9328 &amp;lt;imagename&amp;gt;&lt;/code&gt; where 9328 port number is being binded to port 8080 on the host&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;FROM mysql:8.0.36-bookworm
+ENV MYSQL_PASSWORD=root\
+    MYSQL_DATABASE=customersurvey\
+    MYSQL_ALLOW_EMPTY_PASSWORD=false\
+    MYSQL_ALLOW_RANDOME_PASSWORD=false
+RUN apt update -y &amp;amp;&amp;amp; apt install git maven default-jdk -y
+RUN git clone https://gitlab.com/vinay-keshava/customer-survey.git
+WORKDIR /customer-survey
+EXPOSE 8088
+RUN mvn clean install -DskipTests
+ENTRYPOINT [&amp;#34;java&amp;#34;,&amp;#34;-jar&amp;#34;,&amp;#34;target/CustomerSurvey-0.0.1.jar&amp;#34;]&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Fetches the &lt;code&gt;mysql&lt;/code&gt; image from the docker hub and setting &lt;code&gt;ENV&lt;/code&gt; environment variables, and installing &lt;code&gt;maven&lt;/code&gt; and &lt;code&gt;default-jdk&lt;/code&gt; packages and then changing the working directory to the project which is cloned from gitlab, running &lt;code&gt;mvn install&lt;/code&gt; command and upon starting the container running the jar file of the project&lt;/p&gt;
+&lt;p&gt;Docker Volumes&lt;/p&gt;
+&lt;p&gt;What if you want to store information outside the docker container, that can be used as shared storage for other containers. Docker volumes are mounted to filesystem paths onto the container, where the actual data is stored on the host.With the help of drivers data is written in different services.&lt;/p&gt;
+&lt;p&gt;Example to pull a &lt;code&gt;nginx&lt;/code&gt; docker image and syncing file and directories across containers and docker volume.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To create a volume:
+&lt;code&gt;docker volume create nginx-data&lt;/code&gt;, where nginx-data is the volume name,where the volume is created at &lt;code&gt;/var/lib/docker/volumes/nginx-data/_data&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker inspect nginx-data&lt;/code&gt; displays information at what date the volume was created,mountpoint,drivers,etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;$ docker run -itd -v /var/lib/docker/volumes/nginx-data/_data/:/var/www/html nginx&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;what ever data in &lt;code&gt;/var/www/html&lt;/code&gt; inside the container is present is synced to the host &lt;code&gt;nginx-data&lt;/code&gt;.
+To verify the working of docker volume, [inside the container] change to the directory &lt;code&gt;/var/www/html&lt;/code&gt; and create a sample file like &lt;code&gt;hello_world.java&lt;/code&gt; and [on the host] when the files are listed under &lt;code&gt;/var/lib/docker/volumes/nginx-data/_data&lt;/code&gt;  hello_world.java shows, there by verifying the shared volume.&lt;/p&gt;
+&lt;p&gt;Docker Ports&lt;/p&gt;
+&lt;p&gt;To expose a particular ports we use the &lt;code&gt;-p&lt;/code&gt; flag and in Dockerfile we use the keyword &lt;code&gt;EXPOSE &amp;lt;PORTNUMBER&amp;gt;&lt;/code&gt; to expose a particular port&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker login&lt;/code&gt; command to login to hub.docker.com to push container images.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;GnuPG import keyword&lt;/p&gt;
+&lt;p&gt;To import the private GnuPG key we use &lt;code&gt;gpg --import private.asc&lt;/code&gt; and change the level of trust by editing the key and updating the trust level to &lt;code&gt;ultimate&lt;/code&gt;.%&lt;/p&gt;
+&lt;h3&gt;2024-03-26&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-26&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-26&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;hostname&lt;/code&gt; : set and view hostname of the system&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-i&lt;/code&gt; flag prints ip address of the hostname network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Docker Swarm&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;doker swarm init --advertise-addr &amp;lt;ip-address&amp;gt;&lt;/code&gt;: to initialize swarm mode.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker node ls&lt;/code&gt;: displays all members including manager and worker nodes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pravserver debugging the issue for inactive accounts, which are inactive for more than 28days.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://codeberg.org/prav/pravserver/src/branch/master/src/main/java/im/quicksy/server/configuration/Configuration.java#L54&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://codeberg.org/prav/pravserver/src/branch/master/src/main/java/im/quicksy/server/configuration/Configuration.java#L54&lt;/a&gt; : line 54 shows the limit set for inactive accounts&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://codeberg.org/prav/pravserver/src/branch/master/src/main/java/im/quicksy/server/controller/PasswordController.java#L122&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://codeberg.org/prav/pravserver/src/branch/master/src/main/java/im/quicksy/server/controller/PasswordController.java#L122&lt;/a&gt; (Line 122-142) if the account is inactive for more than 28days unregister and register account through the EjabberdApi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-03-27&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-03-27-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-03-27-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Docker Swarm
+&lt;ul&gt;
+&lt;li&gt;Deploying a service : &lt;code&gt;docker service create --replicas 1 --name helloworld alpine ping google.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Verify and Inspect service: &lt;code&gt;docker service inspect --pretty helloworld&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Scale Service: &lt;code&gt;docker service scale helloworld=5&lt;/code&gt; to increase the number of replicas.&lt;/li&gt;
+&lt;li&gt;Delete a service: &lt;code&gt;docker service rm helloworld&lt;/code&gt; deletes the service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
     <item>
-      <title>September</title>
+      <title>04, April 2024</title>
+      <link>/wily/2024/apr-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/apr-2024/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;2024-04-01&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-01&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-01&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reactive Programming: Reactive programming is a programming paradigm that promotes an asynchronous, non-blocking, event driven approach to data processing. Let us understand the difference between blocking and non blocking request processing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Blocking and Non blocking nature of API&amp;rsquo;s&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Backpressure: Controlling the rate limit of events being published to the subscriber from the publisher side, without crashing the system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Spring Boot with Webflux&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;spring-boot-with-webflux&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#spring-boot-with-webflux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;spring-boot-starter-data-r2dbc&lt;/code&gt;: need of r2dbc due to blocking nature of jdbc, JDBC cannot be used in reactive programming, hence reactive relational database connectivity arised, which helps to connect relational databases to webflux.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;jasync-r2dbc-mysql&lt;/code&gt; is a dependency for reactive support for MySQL, is an async, netty based JVM database driver.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;schema.sql&lt;/code&gt;: within the classpath,which should be located in &lt;code&gt;/src/main/resources&lt;/code&gt; because r2dbc doesn&amp;rsquo;t support hibernate,i.e the automatic creation of tables within the database&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repository layer: extending the &lt;code&gt;R2dbcRepository&lt;/code&gt; which in turn extends the &lt;code&gt;ReactiveCrudRepository&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Difference between &lt;code&gt;Mono&lt;/code&gt; and &lt;code&gt;Flux&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Testing API&amp;rsquo;s with curl&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;testing-apis-with-curl&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#testing-apis-with-curl&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;POST&lt;/code&gt; operation:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;{
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;    &amp;#34;tutorialId&amp;#34;: 5,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;    &amp;#34;title&amp;#34;: &amp;#34;breathe_become_air&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;    &amp;#34;description&amp;#34;: &amp;#34;kalanithi&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;}&amp;#39;&lt;/span&gt; -H &lt;span class=&#34;s1&#34;&gt;&amp;#39;Content-Type: application/json&amp;#39;&lt;/span&gt; http://localhost:8080/tutorials&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GET&lt;/code&gt; operation:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; curl -v http://localhost:8080/tutorials/5
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                                 Dload  Upload   Total   Spent    Left  Speed
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;     &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;    &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;     &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;    &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;     &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; --:--:-- --:--:-- --:--:--     0*   Trying 127.0.0.1:8080...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* Connected to localhost &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;127.0.0.1&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; port &lt;span class=&#34;m&#34;&gt;8080&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#0)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; GET /tutorials/5 HTTP/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; Host: localhost:8080
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; User-Agent: curl/7.87.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; Accept: */*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* Mark bundle as not supporting multiuse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt; HTTP/1.1 &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt; Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt; Content-Length: &lt;span class=&#34;m&#34;&gt;89&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;89&lt;/span&gt; bytes data&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;    &lt;span class=&#34;m&#34;&gt;89&lt;/span&gt;  &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;    &lt;span class=&#34;m&#34;&gt;89&lt;/span&gt;    &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;     &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;   &lt;span class=&#34;m&#34;&gt;6098&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; --:--:-- --:--:-- --:--:--  6357&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;tutorialId&amp;#34;&lt;/span&gt;:5,&lt;span class=&#34;s2&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;breathe_become_air&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;kalanithi&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;published&amp;#34;&lt;/span&gt;:false&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* Connection &lt;span class=&#34;c1&#34;&gt;#0 to host localhost left intact&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;which fetches the details.&lt;/p&gt;
+&lt;h4&gt;Debian&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#debian&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;debNuX&lt;/code&gt; is the changelog version format for stable where &amp;lsquo;+&amp;rsquo; or &amp;lsquo;~&amp;rsquo; is appended depending on the package
+&amp;lsquo;N&amp;rsquo; is the major version of Debian, &amp;lsquo;X&amp;rsquo;  is a number, starting at 1, that is increased for each stable upload of this package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For stable updates that use the same upstream version debian revision component will end in +debNuX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For stable updates that use the new upstream version debian revision component will end in  ~debNuX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Urgency&amp;rdquo; filed in the changelog is choosed based on the upload which fixes the RC bug,usual upload, or critical bugs.
+urgency=low: Usual upload, with britney transition from unstable to testing in 10days
+urgency=medium: RC Bug fixes, with britney transition in 5days
+urgency=high: fixes security bugs and 2 days for transition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-04-02&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-02&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-02&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Reactive Programming( Mono &amp;amp; Flux usage in Spring Boot): Till now we were using Mono which fetches at most zero or one object, what if in a situation we want to fetch more than one object, maybe a list of objects,here comes FLUX.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Till now we were using Mono which fetches at most zero or one object, what if in a situation we want to fetch more than one object, maybe a list of objects,here comes FLUX.&lt;/p&gt;
+&lt;p&gt;Mono is a type that represents a stream of data that emits zero or one item and few features of it are: Laziness, Error Handling and combining operators.&lt;/p&gt;
+&lt;p&gt;Flux is a type that represents a stream of data that emits zero or more items unlike mono, features of flux are: Backpressure, hot and cold publishing, error handling.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Flux implementation in spring Boot and testing with &lt;code&gt;curl&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kubernetes architecture and &lt;a href=&#34;https://cloud.google.com/kubernetes-engine/kubernetes-comic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;kubernetes comic&lt;/a&gt; providing an overview of the container technology.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-04-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-03&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Kubernetes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;kubernetes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#kubernetes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Transition from Traditional Deployment Era -&amp;gt; Virtualized Deployment Era -&amp;gt; Container Deployment Era.&lt;/p&gt;
+&lt;p&gt;In Traditional deployment uses of physical server stack for deployment application, later use of virtual machines for running each microservice in different VM&amp;rsquo;s and transitioned to Container deployment where minimal requirements to bootup the OS within an isolated environment.&lt;/p&gt;
+&lt;p&gt;Kubernetes provides the following features:&lt;/p&gt;
+&lt;p&gt;-Service discovery and load balancing
+-Storage orchestration
+-Automated rolling updates and rollbacks
+-Automatic bin packaging
+-Self healing
+-Secret and configuration management
+-Batch execution
+-Horizontal scaling
+-IPV4 / IPV6 dual stack&lt;/p&gt;
+&lt;p&gt;Kubernetes architecture&lt;/p&gt;
+&lt;p&gt;Nodes: nodes are the worker nodes, which is physical server or VM&amp;rsquo;s. Pods are deployed on the node and managed by the control plane.
+Pods: basic unit of deployment in Kubernetes, a pod is a group of one or more containers that are deployed on the same node. Pods host the application&lt;/p&gt;
+&lt;p&gt;Date/Node Components: Node components run on every node for maintainance of running pods.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kubelet&lt;/li&gt;
+&lt;li&gt;container runtime&lt;/li&gt;
+&lt;li&gt;kubeproxy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Control Plane Components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kube scheduler&lt;/li&gt;
+&lt;li&gt;etcd&lt;/li&gt;
+&lt;li&gt;kube API server&lt;/li&gt;
+&lt;li&gt;kube controller manager&lt;/li&gt;
+&lt;li&gt;cloud controller manager%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-04-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-04&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;virt-install&lt;/code&gt;: Launching a VM with the help of existing &lt;code&gt;qcow2&lt;/code&gt; image.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;virt-install --name &amp;lt;VM-NAME&amp;gt; --memory &lt;span class=&#34;m&#34;&gt;2048&lt;/span&gt; --vcpus &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --disk /home/vinay/Downloads/debian-12-generic-amd64-20240211-1654.qcow2,bus&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;sata --import --os-variant debian12 --network default&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Launching the vm with an existing disk image, here launching a debian 12 generic cloud image with 2GB of ram, 2 CPU&amp;rsquo;s, with network as default also mentioning the os-variant &lt;code&gt;debian&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To list all the os-variant the option is &lt;code&gt;virt-install --os-list info&lt;/code&gt;.%&lt;/p&gt;
+&lt;h3&gt;2024-04-10&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-10&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-10&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Typescript : is a strongly typed programming language,that builds on javascript with syntax for types.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Angular Framework&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;angular-framework&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#angular-framework&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Angular is a development platform, for building scalable web applications.&lt;/li&gt;
+&lt;li&gt;Routing, form-management, client-server communication and more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Project Structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;src&lt;/code&gt;: project&amp;rsquo;s root directory, source files and resources required to develop angular.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;src/app/&lt;/code&gt;: core functionality of angular application.Contains various components,services,directives and other resources.User interface,business logic and data manipulation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;src/assets/&lt;/code&gt;: images,fonts,icons,favicons,json files,configuration files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;src/environment/&lt;/code&gt;: environment specific configuration files.Different environments for development,staging,production.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;node_modules&lt;/code&gt;: node modules which are dependencies are stored in this folder&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;angular.json&lt;/code&gt;: essential configuration file, customize project&amp;rsquo;s build, development and deployment process like &lt;code&gt;ng build&lt;/code&gt;, &lt;code&gt;ng serve&lt;/code&gt; &amp;amp; &lt;code&gt;ng test&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Component&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Components are fundamental building blocks for creating applications in Angular.Angular built on component architecture to organize projects into organized parts.All the components are identified by the suffix &lt;code&gt;component&lt;/code&gt; to a file name like &lt;code&gt;todo-list-component.ts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To render UI items, allowing users to interact with the application and access its functionality.
+A component is like a class,where the element&amp;rsquo;s behaviour and its view are encapsulated.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Component&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;selector&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;calculator`,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;    templateUrl: &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;calculator&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;component&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;    styleUrls: [&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;calculator&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;component&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;rss&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Calculator&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;selector: which element app&amp;rsquo;s HTML component need to be used.&lt;/li&gt;
+&lt;li&gt;templateUrl: identifying the template component will use.&lt;/li&gt;
+&lt;li&gt;styleUrl: including component specifc CSS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-04-11&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-11&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-11&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;To create a new object in spring without using the &lt;code&gt;new&lt;/code&gt; keyword,using &lt;code&gt;@Configuration&lt;/code&gt; &amp;amp; &lt;code&gt;@Bean&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@Configuration&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@ComponentScan&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;com.example.account&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;AppConfig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Bean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RestTemplate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;restTemplate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RestTemplate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Bean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Accounts&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;accounts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Accounts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Now autowire RestTemplate or Accounts in the service layer, this is the standard way of creating new objects in spring using bean definitions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rest Template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@Autowired&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RestTemplate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;restTemplate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Override&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AccountResponseDto&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;addNewAccountCustomer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AccountRequestDto&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;accountDto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;http://localhost:8081/api/v1/customer/{id}&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ResponseEntity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;CustomerDto&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;restTemplate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getForEntity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;CustomerDto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;accountDto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;customerId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Filing RM bugs in debian
+[1] &lt;a href=&#34;https://qa.debian.org/howto-remove.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://qa.debian.org/howto-remove.html&lt;/a&gt;
+[2] &lt;a href=&#34;https://lists.debian.org/debian-qa/2004/09/msg00049.HTML&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lists.debian.org/debian-qa/2004/09/msg00049.HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-04-15&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-15&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-15&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Debian&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ABI: Application Binary Interface, how the compiler builds the application, abbreviation just like API.&lt;/p&gt;
+&lt;p&gt;There are two types of ABI changes: ones that are backward-compatible and ones that are not. An ABI change is backward-compatible if any reasonable program or library that was linked with the previous version of the shared library will still work correctly with the new version of the shared library.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;symbols files, a shared library are normally provided by the shared library package&lt;/li&gt;
+&lt;li&gt;If a package or library depends on a shared library, when the package is installed, its libraries should also be installed.If the shared library implementation or behaviour is changed , to determine these either a symbol file or shlibs file is to be provided.&lt;/li&gt;
+&lt;li&gt;symbols file: records every changes done to the shared library,the minimal version of the package any binary using this symbol will need&lt;/li&gt;
+&lt;li&gt;shlibs file only documents the last time the library ABI changed%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-04-16&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-04-16&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-04-16&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;git tag: &lt;code&gt;git tag -a &amp;lt;tagname&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;wrote a bash script for my site deployment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;tag&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;git describe --tags --abbrev&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;git log &lt;span class=&#34;nv&#34;&gt;$tag&lt;/span&gt;..HEAD --oneline --pretty&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;format:&lt;span class=&#34;s2&#34;&gt;&amp;#34;%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$message&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$tag&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone git@github.com:vinay-keshava/vinay-keshava.github.io.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp -r public/* vinay-keshava.github.io &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; vinay-keshava.github.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$message&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;Tag: &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$tag&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push --all
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; .. &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf vinay-keshava.github.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git tag &lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date +&lt;span class=&#34;s2&#34;&gt;&amp;#34;%d.%m.%Y&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>07, Jul 2024</title>
+      <link>/wily/2024/jul-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/jul-2024/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;2024-07-01&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-01&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-01&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Scripts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Echoing Messages :: &lt;code&gt;:ec&lt;/code&gt; or &lt;code&gt;:echo&lt;/code&gt; prints out the message, example &lt;code&gt;:ec &amp;quot;hello world&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Persistent Echoing:: &lt;code&gt;:echom &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt; or &lt;code&gt;:echomsg &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt;, stores these messages in the message history&lt;/li&gt;
+&lt;li&gt;Help :: &lt;code&gt;:help &amp;lt;commandname&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keybinding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keybinding &lt;code&gt;x&lt;/code&gt;: deletes the character next to the cursor&lt;/li&gt;
+&lt;li&gt;Deletion: &lt;code&gt;dd&lt;/code&gt;: deletes the entire line&lt;/li&gt;
+&lt;li&gt;Deletes a word: &lt;code&gt;dw&lt;/code&gt;, from the cursor until the space is found&lt;/li&gt;
+&lt;li&gt;Deletes characters till EOL: &lt;code&gt;d$&lt;/code&gt; deletes characters from the right of the cursor to the End of the Line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Deletion on Operators and motions: takes the form of &lt;code&gt;d motion&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;list of motions:
+&lt;code&gt;w&lt;/code&gt;: until the start of next word, excluding the first character
+&lt;code&gt;e&lt;/code&gt;: to the end of the current word, including the last character
+&lt;code&gt;$&lt;/code&gt;: to the end of the line&lt;/p&gt;
+&lt;p&gt;In case of deletion with motions:
+&lt;code&gt;dw&lt;/code&gt;: deletes the word until the start of next word
+&lt;code&gt;de&lt;/code&gt;: deletes until end of the current word
+&lt;code&gt;d$&lt;/code&gt;: deletes until end of line&lt;/p&gt;
+&lt;p&gt;Count with motion:
+&lt;code&gt;2w&lt;/code&gt;: moves the cursor two words forward
+&lt;code&gt;4e&lt;/code&gt;: moves the cursor 4 words to the end of fourth word forward.&lt;/p&gt;
+&lt;p&gt;Deletion with count and motion:
+&lt;code&gt;d2w&lt;/code&gt;: deletes two words until the start of the next word
+&lt;code&gt;d2e&lt;/code&gt;: deletes two words until the last character of the second character&lt;/p&gt;
+&lt;p&gt;Lines:
+&lt;code&gt;dd&lt;/code&gt;: deletes the entire line
+&lt;code&gt;d2d&lt;/code&gt;: count with deletion of two lines&lt;/p&gt;
+&lt;p&gt;Undo &amp;amp; Redo
+&lt;code&gt;u&lt;/code&gt;: Undoing the latest change
+&lt;code&gt;CTRL+R&lt;/code&gt;: Redoing the latest change&lt;/p&gt;
+&lt;p&gt;Vim Learning Resources
+[1] &lt;a href=&#34;https://learnvimscriptthehardway.stevelosh.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://learnvimscriptthehardway.stevelosh.com/&lt;/a&gt;
+[2] &lt;a href=&#34;https://vim-adventures.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://vim-adventures.com/&lt;/a&gt;
+[3] vimtutor&lt;/p&gt;
+&lt;h3&gt;2024-07-02&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-02&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-02&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;rsync: stands for remote sync, which is used for remote and local file synchronization, alternative to &lt;code&gt;ssh&lt;/code&gt;,&lt;code&gt;scp&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;Local to Local&lt;/li&gt;
+&lt;li&gt;Local to Remote&lt;/li&gt;
+&lt;li&gt;Remote to Local&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;-a&lt;/code&gt;: option to sync files recursively
+&lt;code&gt;-P&lt;/code&gt;: option to show the progress of the transfer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zimfw change theme
+Install &lt;code&gt;zsh&lt;/code&gt; before installing zimfw
+&lt;code&gt;curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-07-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-03&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Keybindings&lt;/p&gt;
+&lt;p&gt;Put command:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt;: put/paste the deleted text, after the text cursor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Replace Command:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r&amp;lt;character&amp;gt;&lt;/code&gt;: replace command, for example the word &lt;code&gt;typod&lt;/code&gt; where &lt;code&gt;o&lt;/code&gt; has to be replaced with &lt;code&gt;e&lt;/code&gt; to make it &lt;code&gt;typed&lt;/code&gt;, move the cursor to the start of the character to be placed(until o) and type &lt;code&gt;re&lt;/code&gt; to replace &lt;code&gt;o&lt;/code&gt; with &lt;code&gt;e&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Change Command: delete all the characters from the cursor till the end of the word.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ce&lt;/code&gt;: &lt;code&gt;VNKLO&lt;/code&gt;, move the cursor to the right of&lt;code&gt;V&lt;/code&gt; and input &lt;code&gt;ce&lt;/code&gt;,which deletes all the characters till the end, and type in the required characters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Internet Protocol&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;internet-protocol&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#internet-protocol&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;IPV4&lt;/p&gt;
+&lt;p&gt;32bit integers,represented in 4 numbers separated by &lt;code&gt;.&lt;/code&gt; and the numbers are ranging from 0-255.
+&lt;code&gt;192.168.1.1&lt;/code&gt;: example of IPV4 address.&lt;/p&gt;
+&lt;p&gt;Drawbacks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Limited Address space&lt;/li&gt;
+&lt;li&gt;Complex configuration: IPv4 requires mannual configuration or DHCP to assign address.&lt;/li&gt;
+&lt;li&gt;Fragmentation: IPv4 allows to fragment packets,chances of packets getting lost.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IPV6&lt;/p&gt;
+&lt;p&gt;To support increased use of computer networks, internet enabled devices, ipv6 was invented.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhanced packet header for efficient routing.&lt;/li&gt;
+&lt;li&gt;Data security through IPSec header field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ipv6 address representation as &lt;code&gt;x:x:x:x:x:x:x:x&lt;/code&gt;,where x is the hexadecimal values of eight 16digit pieces.
+Ipv6 addresses ranges from:
+&lt;code&gt;0000:0000:0000:0000:0000:0000:0000:0000&lt;/code&gt; to &lt;code&gt;ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Shorthand formats of IPV6 addresses.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Omit leading zeros
+Specify IPv6 addresses by omitting leading zeros. For example, IPv6 address 1050:0000:0000:0000:0005:0600:300c:326b can be written as 1050:0:0:0:5:600:300c:326b.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double colon
+Specify IPv6 addresses by using double colons (::) in place of a series of zeros. For example, IPv6 address ff06:0:0:0:0:0:0:c3 can be written as ff06::c3. Double colons can be used only once in an IP address.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-07-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-04&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Vim Keybinding&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-keybinding&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-keybinding&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;-&lt;code&gt;dG&lt;/code&gt;: deletes from the cursor till the last line of file&lt;/p&gt;
+&lt;h3&gt;2024-07-07&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-07&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-07&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;git&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;git&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#git&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git stash&lt;/code&gt;: recording the state of working directory with changes to the working directory,but want to go back to the clean working directory, this saves local changes and reverts the working directory to the HEAD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example your present working directory is branch1 and made a few local changes and these local changes has to be in another new branch, branch2&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git stash&lt;/code&gt;: stash the local changes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash branch branchName&lt;/code&gt;: creates a new branch with the branch name as &lt;code&gt;&amp;lt;branchName&amp;gt;&lt;/code&gt; and the local changes which were stashed are moved to the new branch.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash pop&lt;/code&gt;: to pop out the stashed changes in the new branch created.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git notes&lt;/code&gt;: is a feature to add extra information to a commit without the need to changing the commit itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;adding git notes feature to latest commit &lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git notes add -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;testing notes feature for the latest commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;commit e2d42c8b5104bb71b2697e723e23eb161684fbe4 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;HEAD -&amp;gt; master, origin/master, origin/HEAD&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Author: Vinay Keshava &amp;lt;vinaykeshava@email.com&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Date:   Wed Jul &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; 17:54:57 &lt;span class=&#34;m&#34;&gt;2024&lt;/span&gt; +0530
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    wily:July 3rd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Notes:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    testing notes feature &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; the latest commit&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git notes add -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt;: adding notes to the lastest commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git notes add -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot; &amp;lt;commit-id&amp;gt;&amp;quot;&lt;/code&gt;: adding a note to a particular commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git notes append -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot; &amp;lt;commit-id&amp;gt;&lt;/code&gt;: appending a note to existing commit&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git notes remove &amp;lt;commit-id&amp;gt;&lt;/code&gt;: removing notes for a particular id.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL-G&lt;/code&gt;: displays the file postion and other details.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gg&lt;/code&gt;: moves the cursor to the top of the file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;G&lt;/code&gt;: moves the cursor to bottom of the file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Substitute command&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;&lt;/code&gt;: replaces the single occurence of old phrase with the new phrase.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;/g&lt;/code&gt; : to find and replace every occurennce.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s/&amp;lt;oldphrase&amp;gt;/&amp;lt;newphrase&amp;gt;/gc&lt;/code&gt; : to find and replace every occurennce of the phrase with a prompt to be replaced or not.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;/bin/bash&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;binbash&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#binbash&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;BASH stands for &amp;lsquo;Bourne Again SHell&amp;rsquo;, shell programming uses other common shells like sh,csh etc.
+Shell programming can be achieved by directly executing commands at the shell prompt.&lt;/p&gt;
+&lt;p&gt;Shebang: &lt;code&gt;#!/bin/bash&lt;/code&gt; telling the operating system which interpreter to be used to parse the rest of the file.&lt;/p&gt;
+&lt;h4&gt;Ansible&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ansible&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ansible&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Ansible is a open source tool, that automates application deployment, cloud provisioning, intra-service orchestration.&lt;/p&gt;
+&lt;h3&gt;2024-07-08&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-08&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-08&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Vim Learnings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vim-learnings-3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vim-learnings-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Executing commands using &lt;code&gt;:!&amp;lt;command-name&amp;gt;&lt;/code&gt; - used to execute the command for example &lt;code&gt;!ls&lt;/code&gt; will list the files in the current working directory and press ENTER to continue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Writing to New files&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Writing more files, copying the same contents of the existing file to another file using &lt;code&gt;:w &amp;lt;new-file-name&amp;gt;&lt;/code&gt;, say for example working on the file &lt;code&gt;hellohello.txt&lt;/code&gt; and you execute the command &lt;code&gt;:w hello1.txt&lt;/code&gt; will copy the same contents onto another new file called &lt;code&gt;hello1.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copying the selected content onto a new file: Enter visual mode by pressing &lt;code&gt;v&lt;/code&gt;, and in the below prompt &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt;&lt;/code&gt; and then follow the above similar step to save the copied contents onto new file. &lt;code&gt;:&#39;&amp;lt;,&#39;&amp;gt; w hello1.txt&lt;/code&gt;, the new file &lt;code&gt;hello1.txt&lt;/code&gt; is created with the selected content.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-07-25&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-25&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-25&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;zsh and fzf configuration&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;zsh-and-fzf-configuration&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#zsh-and-fzf-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;for autosuggestion and syntax highlighting install the packages &lt;code&gt;zsh-autosuggestion and zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wrote a &lt;a href=&#34;/blog/zsh-fzf/&#34; &gt;blog post here&lt;/a&gt; for configuring fzf with zsh-fzf&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-07-26&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-26&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-26&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;caddy webserver configuration&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;caddy-webserver-configuration&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#caddy-webserver-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Serving a static files like hugo from caddy webserver, with the below example&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;static file&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain1.in, https://www.domain1.in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	root * /var/www/html/domain1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	file_server
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;where &lt;code&gt;/var/www/html/domain1&lt;/code&gt; is the location of the static files.&lt;/p&gt;
+&lt;p&gt;To serve a reverse_proxy for an application running in localhost on port &lt;code&gt;8085&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;reverse proxy&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://domain-name.tld &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	reverse_proxy localhost:8085
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;h3&gt;2024-07-27&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-27&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-27&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Self hosted &lt;a href=&#34;https://thelounge.chat&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;thelounge&lt;/a&gt; irc server  using docker and set up the proxy in Caddyfile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-07-29&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-29&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-29&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Writing a .bat file in windows, starting a particular .exe file
+&lt;code&gt;start %SOME_PATH_OF_THE_EXE%\file.exe&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Setting a path to a variable in &lt;code&gt;.bat&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\ProgramFiles..&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;JDK&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;%JAVA_HOME%&lt;/span&gt;\bin&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;h3&gt;2024-07-30&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-30&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-30&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;i3 config - to remove the top border in i3wm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div class=&#34;filename&#34; dir=&#34;auto&#34;&gt;.config/i3/config&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;default border pixel &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;connecting irc oftc network in thelounge, click on add network and then irc.oftc.net with port 6697&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-07-31&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-31&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-31&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://lazyvim.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lazy vim&lt;/a&gt; configuration
+clone the lazy vim git repository and move it to the configuration folder of &lt;code&gt;neovim&lt;/code&gt; and that&amp;rsquo;s it start using it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;copying text to clipboard in neovim, use visual mode and copy the selected text and type &lt;code&gt;&amp;quot;+y&lt;/code&gt; and press enter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-07-31&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-07-31-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-07-31-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://lazyvim.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lazy vim&lt;/a&gt; configuration
+clone the lazy vim git repository and move it to the configuration folder of &lt;code&gt;neovim&lt;/code&gt; and that&amp;rsquo;s it start using it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;copying text to clipboard in neovim, use visual mode and copy the selected text and type &lt;code&gt;&amp;quot;+y&lt;/code&gt; and press enter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>08, Aug 2024</title>
+      <link>/wily/2024/aug-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/aug-2024/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;2024-08-01&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-08-01&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-08-01&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;golang learnings: functions, variables, short hand initialization, type inference, type conversion, loops, conditional statements, switch statements&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;topology in networks- star,mesh,bus, point to point,ring&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;concept of repeaters for efficient transfer of data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RARP: &lt;a href=&#34;https://en.wikipedia.org/wiki/Reverse_Address_Resolution_Protocol&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RARP&lt;/a&gt;, requesting an IP address when the input is the physical MAC address, this is replaced by DHCP, Dynamic Host Control Protocol.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-08-02&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-08-02&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-08-02&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Golang&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;golang&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#golang&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;defer&lt;/code&gt;: keyword defers the execution of the statement until the surrounding function returns, these statements are evaluated immediately but not executed until the surrounding function returns.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;multiple defer statements are executed in stack wise, the last defer statement is executed first&lt;/p&gt;
+&lt;h3&gt;2024-08-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-08-04&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-08-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;git hooks, scripts like &lt;code&gt;pre-receive&lt;/code&gt;, &lt;code&gt;pre-push&lt;/code&gt;, &lt;code&gt;post-push&lt;/code&gt;.. etc, sample scripts are located within &lt;code&gt;.git/hooks&lt;/code&gt; directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;.tif&lt;/code&gt; stands for tag image format is a format used by graphic artist or photographers, which is similar to &lt;code&gt;.png&lt;/code&gt; and &lt;code&gt;.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-08-05&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-08-05&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-08-05&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;golang&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;golang-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#golang-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;address of operator &lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dereference operator &lt;code&gt;*&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;structs are collection of fields&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;structs and pointers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;grep stands for &lt;code&gt;global/regular expression search/print&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>08, Septemeber 2024</title>
       <link>/wily/2024/sep-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -101,7 +1652,43 @@
       <description>
         
         
-        
+        &lt;h3&gt;2024-09-01&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-01&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-01&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.hp.com/hp-linux-imaging-and-printing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hplip&lt;/a&gt;, a utility for hp printers, to setup run &lt;code&gt;hp-setup&lt;/code&gt; without &lt;code&gt;sudo&lt;/code&gt;, but due to &lt;a href=&#34;https://unix.stackexchange.com/questions/627597/hplip-cannot-be-installed-on-system-with-disabled-root-user-password-incorrect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;disabled root access issue&lt;/a&gt; root password issue fails, switch to root user using &lt;code&gt;sudo su&lt;/code&gt;, and run &lt;code&gt;hp-plugin&lt;/code&gt; to download all the proprietary plugins and then exit the &lt;code&gt;sudo su&lt;/code&gt; terminal session and run &lt;code&gt;hp-setup&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-09-02&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-02&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-02&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Turning off laptop screen when external monitor is connected using &lt;code&gt;xrandr&lt;/code&gt;, running &lt;code&gt;xrandr&lt;/code&gt; will output the displays&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xrandr --output eDP-1 --off&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Will turn off the laptop screen which is named &lt;code&gt;eDP-1&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;2024-09-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-03&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cups.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cups.org&lt;/a&gt; common unix printing hplip-cannot-be-installed-on-system-with-disabled-root-user-password-incorrect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-09-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-04&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Setting up &lt;a href=&#34;https://cups.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cups.org&lt;/a&gt; common unix printing system on raspberry pi with hplip to make a print server at home for printing with phone and other computer within the local network.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-09-05&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-05&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-05&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;No op when laptop lid is closed &lt;code&gt;/etc/systemd/logind.conf&lt;/code&gt; and change &lt;code&gt;HandleLidSwitch=ignore&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     

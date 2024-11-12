@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vinay Keshava – Jan</title>
-    <link>/wily/2024/jan-2024/</link>
+    <link>//localhost:1313/wily/2024/jan-2024/</link>
     <description>Recent content in Jan on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/wily/2024/jan-2024/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/wily/2024/jan-2024/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>2024-01-02</title>
-      <link>/wily/2024/jan-2024/20240102/</link>
+      <link>//localhost:1313/wily/2024/jan-2024/20240102/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/jan-2024/20240102/</guid>
+      <guid>//localhost:1313/wily/2024/jan-2024/20240102/</guid>
       <description>
         
         
@@ -78,10 +78,10 @@
     
     <item>
       <title>2024-01-03</title>
-      <link>/wily/2024/jan-2024/20240103/</link>
+      <link>//localhost:1313/wily/2024/jan-2024/20240103/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/jan-2024/20240103/</guid>
+      <guid>//localhost:1313/wily/2024/jan-2024/20240103/</guid>
       <description>
         
         
@@ -242,7 +242,7 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
 &lt;li&gt;Short Description variables&lt;/li&gt;
 &lt;li&gt;Types&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;docs/golang/introduction/#type-conversion-and-type-inference&#34; &gt;Type conversion and Type inference&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/golang/introduction/#constants&#34; &gt;Constants&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/golang/introduction/#constants&#34; &gt;Constants&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -252,10 +252,10 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>2024-01-04</title>
-      <link>/wily/2024/jan-2024/20240104/</link>
+      <link>//localhost:1313/wily/2024/jan-2024/20240104/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/jan-2024/20240104/</guid>
+      <guid>//localhost:1313/wily/2024/jan-2024/20240104/</guid>
       <description>
         
         
@@ -263,7 +263,7 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
 &lt;li&gt;
 &lt;p&gt;Network File System(NFS)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Here is the link to the &lt;a href=&#34;/docs/nfs&#34; &gt;document&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Here is the link to the &lt;a href=&#34;//localhost:1313/docs/nfs&#34; &gt;document&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Installing NFS server and setting directory permissions to 777&lt;/li&gt;
 &lt;li&gt;Configuring Export directory by editing the file &lt;code&gt;/etc/exports&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Options to configure the NFS server,either readonly or read write, sync or async,subtree check.&lt;/li&gt;
@@ -281,10 +281,10 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>2024-01-09</title>
-      <link>/wily/2024/jan-2024/20240109/</link>
+      <link>//localhost:1313/wily/2024/jan-2024/20240109/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/jan-2024/20240109/</guid>
+      <guid>//localhost:1313/wily/2024/jan-2024/20240109/</guid>
       <description>
         
         
@@ -292,14 +292,14 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
 &lt;li&gt;
 &lt;p&gt;Ruby Learning&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#data-types&#34; &gt;Data Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#type-conversion&#34; &gt;Type Conversion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#string-interpolation&#34; &gt;String Interpolation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#strings&#34; &gt;Strings&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#basic-data-structures-arrays-and-hashes&#34; &gt;Basic Data Structures and Hashes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#symbols&#34; &gt;Symbols&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#variables&#34; &gt;Variables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#input--output&#34; &gt;Input Output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#data-types&#34; &gt;Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#type-conversion&#34; &gt;Type Conversion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#string-interpolation&#34; &gt;String Interpolation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#strings&#34; &gt;Strings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#basic-data-structures-arrays-and-hashes&#34; &gt;Basic Data Structures and Hashes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#symbols&#34; &gt;Symbols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#variables&#34; &gt;Variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#input--output&#34; &gt;Input Output&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -310,10 +310,10 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>2024-01-10</title>
-      <link>/wily/2024/jan-2024/20240110/</link>
+      <link>//localhost:1313/wily/2024/jan-2024/20240110/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/jan-2024/20240110/</guid>
+      <guid>//localhost:1313/wily/2024/jan-2024/20240110/</guid>
       <description>
         
         
@@ -321,12 +321,12 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
 &lt;li&gt;
 &lt;p&gt;Ruby Learning Cont.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#conditional-logic&#34; &gt;Conditional Logic&lt;/a&gt;, &lt;code&gt;if&lt;/code&gt;,&lt;code&gt;elsif&lt;/code&gt;,&lt;code&gt;else&lt;/code&gt;,&lt;code&gt;unless&lt;/code&gt;,&lt;code&gt;case&lt;/code&gt; statements and &lt;code&gt;ternary&lt;/code&gt; operator.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#loops&#34; &gt;Loops&lt;/a&gt; -&lt;code&gt;loop&lt;/code&gt;,&lt;code&gt;while&lt;/code&gt;,&lt;code&gt;for&lt;/code&gt;,&lt;code&gt;until&lt;/code&gt; loops and &lt;code&gt;upto and downto&lt;/code&gt; loops,&lt;code&gt;times&lt;/code&gt; and &lt;code&gt;iterators&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#conditional-logic&#34; &gt;Conditional Logic&lt;/a&gt;, &lt;code&gt;if&lt;/code&gt;,&lt;code&gt;elsif&lt;/code&gt;,&lt;code&gt;else&lt;/code&gt;,&lt;code&gt;unless&lt;/code&gt;,&lt;code&gt;case&lt;/code&gt; statements and &lt;code&gt;ternary&lt;/code&gt; operator.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#loops&#34; &gt;Loops&lt;/a&gt; -&lt;code&gt;loop&lt;/code&gt;,&lt;code&gt;while&lt;/code&gt;,&lt;code&gt;for&lt;/code&gt;,&lt;code&gt;until&lt;/code&gt; loops and &lt;code&gt;upto and downto&lt;/code&gt; loops,&lt;code&gt;times&lt;/code&gt; and &lt;code&gt;iterators&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Blocks - single line blocks and multi line blocks&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#arrays&#34; &gt;Arrays&lt;/a&gt; &lt;code&gt;Array.new&lt;/code&gt;, &lt;code&gt;.first&lt;/code&gt; &amp;amp; &lt;code&gt;.last&lt;/code&gt; functions , &lt;code&gt;push &amp;amp; pop&lt;/code&gt; of elements, &lt;code&gt;shift and unshift&lt;/code&gt; of elements.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#hashes&#34; &gt;Hashes&lt;/a&gt; &lt;code&gt;Hash.new&lt;/code&gt;,Accessing values from key, adding and updating values, merging two hashes and hashes with symbols&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/ruby/introduction/#methods&#34; &gt;Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#arrays&#34; &gt;Arrays&lt;/a&gt; &lt;code&gt;Array.new&lt;/code&gt;, &lt;code&gt;.first&lt;/code&gt; &amp;amp; &lt;code&gt;.last&lt;/code&gt; functions , &lt;code&gt;push &amp;amp; pop&lt;/code&gt; of elements, &lt;code&gt;shift and unshift&lt;/code&gt; of elements.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#hashes&#34; &gt;Hashes&lt;/a&gt; &lt;code&gt;Hash.new&lt;/code&gt;,Accessing values from key, adding and updating values, merging two hashes and hashes with symbols&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/ruby/introduction/#methods&#34; &gt;Methods&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -337,10 +337,10 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>2024-01-18</title>
-      <link>/wily/2024/jan-2024/20240118/</link>
+      <link>//localhost:1313/wily/2024/jan-2024/20240118/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/jan-2024/20240118/</guid>
+      <guid>//localhost:1313/wily/2024/jan-2024/20240118/</guid>
       <description>
         
         
@@ -352,9 +352,9 @@ sudo mount /dev/VolGrpLvm/college-data /mnt/college-data/&lt;/code&gt;&lt;/pre&g
 &lt;/li&gt;
 &lt;li&gt;Python Introduction learing
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/python/introduction/#text&#34; &gt;Text&lt;/a&gt; - multi line print statement,escape sequences,strings and len() of strings&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/python/introduction/#variables-and-types&#34; &gt;Variables and Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/python/introduction/#lists&#34; &gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/python/introduction/#text&#34; &gt;Text&lt;/a&gt; - multi line print statement,escape sequences,strings and len() of strings&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/python/introduction/#variables-and-types&#34; &gt;Variables and Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/python/introduction/#lists&#34; &gt;Lists&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

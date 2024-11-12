@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vinay Keshava – April</title>
-    <link>/wily/2024/apr-2024/</link>
+    <link>//localhost:1313/wily/2024/apr-2024/</link>
     <description>Recent content in April on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/wily/2024/apr-2024/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/wily/2024/apr-2024/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>2024-04-01</title>
-      <link>/wily/2024/apr-2024/20240401/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240401/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240401/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240401/</guid>
       <description>
         
         
@@ -137,10 +137,10 @@ urgency=high: fixes security bugs and 2 days for transition.&lt;/p&gt;
     
     <item>
       <title>2024-04-02</title>
-      <link>/wily/2024/apr-2024/20240402/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240402/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240402/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240402/</guid>
       <description>
         
         
@@ -164,10 +164,10 @@ urgency=high: fixes security bugs and 2 days for transition.&lt;/p&gt;
     
     <item>
       <title>2024-04-03</title>
-      <link>/wily/2024/apr-2024/20240403/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240403/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240403/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240403/</guid>
       <description>
         
         
@@ -207,10 +207,10 @@ Pods: basic unit of deployment in Kubernetes, a pod is a group of one or more co
     
     <item>
       <title>2024-04-04</title>
-      <link>/wily/2024/apr-2024/20240404/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240404/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240404/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240404/</guid>
       <description>
         
         
@@ -240,10 +240,10 @@ Pods: basic unit of deployment in Kubernetes, a pod is a group of one or more co
     
     <item>
       <title>2024-04-10</title>
-      <link>/wily/2024/apr-2024/20240410/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240410/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240410/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240410/</guid>
       <description>
         
         
@@ -303,10 +303,10 @@ A component is like a class,where the element&amp;rsquo;s behaviour and its view
     
     <item>
       <title>2024-04-11</title>
-      <link>/wily/2024/apr-2024/20240411/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240411/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240411/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240411/</guid>
       <description>
         
         
@@ -378,10 +378,10 @@ A component is like a class,where the element&amp;rsquo;s behaviour and its view
     
     <item>
       <title>2024-04-15</title>
-      <link>/wily/2024/apr-2024/20240415/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240415/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240415/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240415/</guid>
       <description>
         
         
@@ -402,10 +402,10 @@ A component is like a class,where the element&amp;rsquo;s behaviour and its view
     
     <item>
       <title>2024-04-16</title>
-      <link>/wily/2024/apr-2024/20240416/</link>
+      <link>//localhost:1313/wily/2024/apr-2024/20240416/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/apr-2024/20240416/</guid>
+      <guid>//localhost:1313/wily/2024/apr-2024/20240416/</guid>
       <description>
         
         

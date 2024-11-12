@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vinay Keshava – Feb</title>
-    <link>/wily/2024/feb-2024/</link>
+    <link>//localhost:1313/wily/2024/feb-2024/</link>
     <description>Recent content in Feb on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/wily/2024/feb-2024/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/wily/2024/feb-2024/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,16 +16,16 @@
     
     <item>
       <title>2024-02-12</title>
-      <link>/wily/2024/feb-2024/20240212/</link>
+      <link>//localhost:1313/wily/2024/feb-2024/20240212/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/feb-2024/20240212/</guid>
+      <guid>//localhost:1313/wily/2024/feb-2024/20240212/</guid>
       <description>
         
         
         &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/java/ant/&#34; &gt;Ant&lt;/a&gt; : Java based make tool&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/java/ant/&#34; &gt;Ant&lt;/a&gt; : Java based make tool&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Creating a simple ant build system for HelloWorld project.&lt;/li&gt;
 &lt;li&gt;Understanding of &lt;code&gt;build.xml&lt;/code&gt;&lt;/li&gt;
@@ -52,10 +52,10 @@
     
     <item>
       <title>2024-02-14</title>
-      <link>/wily/2024/feb-2024/20240214/</link>
+      <link>//localhost:1313/wily/2024/feb-2024/20240214/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/feb-2024/20240214/</guid>
+      <guid>//localhost:1313/wily/2024/feb-2024/20240214/</guid>
       <description>
         
         
@@ -76,15 +76,15 @@
     
     <item>
       <title>2024-02-15</title>
-      <link>/wily/2024/feb-2024/20240215/</link>
+      <link>//localhost:1313/wily/2024/feb-2024/20240215/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/feb-2024/20240215/</guid>
+      <guid>//localhost:1313/wily/2024/feb-2024/20240215/</guid>
       <description>
         
         
         &lt;h3&gt;Java 17 Features&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;java-17-features&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#java-17-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;/docs/Java/java17.md&#34; &gt;Link to the Java 17 docs&lt;/a&gt;&lt;/p&gt;
+    &lt;a href=&#34;#java-17-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/Java/java17.md&#34; &gt;Link to the Java 17 docs&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Sealed Classes &amp;amp; Interfaces&lt;/li&gt;
 &lt;li&gt;Switch Statements&lt;/li&gt;
@@ -101,10 +101,10 @@
     
     <item>
       <title>2024-02-18</title>
-      <link>/wily/2024/feb-2024/20240218/</link>
+      <link>//localhost:1313/wily/2024/feb-2024/20240218/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/feb-2024/20240218/</guid>
+      <guid>//localhost:1313/wily/2024/feb-2024/20240218/</guid>
       <description>
         
         
@@ -122,10 +122,10 @@ use &lt;code&gt;autoindex on&lt;/code&gt; within the server block&lt;/li&gt;
     
     <item>
       <title>2024-02-19</title>
-      <link>/wily/2024/feb-2024/20240219/</link>
+      <link>//localhost:1313/wily/2024/feb-2024/20240219/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/feb-2024/20240219/</guid>
+      <guid>//localhost:1313/wily/2024/feb-2024/20240219/</guid>
       <description>
         
         
@@ -150,7 +150,7 @@ use &lt;code&gt;autoindex on&lt;/code&gt; within the server block&lt;/li&gt;
 
   
 &lt;/div&gt;
-&lt;p&gt;Link to &lt;a href=&#34;/docs/hacks/conventional-commit/&#34; &gt;docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link to &lt;a href=&#34;//localhost:1313/docs/hacks/conventional-commit/&#34; &gt;docs&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Descriptive git commit messages.&lt;/p&gt;
@@ -163,17 +163,17 @@ use &lt;code&gt;autoindex on&lt;/code&gt; within the server block&lt;/li&gt;
     
     <item>
       <title>2024-02-19</title>
-      <link>/wily/2024/feb-2024/20240220/</link>
+      <link>//localhost:1313/wily/2024/feb-2024/20240220/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/feb-2024/20240220/</guid>
+      <guid>//localhost:1313/wily/2024/feb-2024/20240220/</guid>
       <description>
         
         
         &lt;ul&gt;
 &lt;li&gt;Project Lombok
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/docs/java/lombok&#34; &gt;Link to the docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/docs/java/lombok&#34; &gt;Link to the docs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;common annotations used in lombok&lt;/li&gt;
 &lt;li&gt;avoiding boilerplate code with lombok annotations&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;@Getter&lt;/code&gt;,&lt;code&gt;@Setter&lt;/code&gt;,&lt;code&gt;@RequiredArgsConstructor&lt;/code&gt;,&lt;code&gt;@Builder&lt;/code&gt;,&lt;code&gt;@Data&lt;/code&gt;,&lt;code&gt;@AllArgsConstructor&lt;/code&gt;,&lt;code&gt;@NoArgsConstructor&lt;/code&gt;&lt;/li&gt;
@@ -186,10 +186,10 @@ use &lt;code&gt;autoindex on&lt;/code&gt; within the server block&lt;/li&gt;
     
     <item>
       <title>2024-02-26</title>
-      <link>/wily/2024/feb-2024/20240226/</link>
+      <link>//localhost:1313/wily/2024/feb-2024/20240226/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/feb-2024/20240226/</guid>
+      <guid>//localhost:1313/wily/2024/feb-2024/20240226/</guid>
       <description>
         
         

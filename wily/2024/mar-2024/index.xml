@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vinay Keshava – March</title>
-    <link>/wily/2024/mar-2024/</link>
+    <link>//localhost:1313/wily/2024/mar-2024/</link>
     <description>Recent content in March on Vinay Keshava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/wily/2024/mar-2024/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/wily/2024/mar-2024/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>2024-03-05</title>
-      <link>/wily/2024/mar-2024/20240305/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240305/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240305/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240305/</guid>
       <description>
         
         
@@ -30,7 +30,7 @@
 &lt;p&gt;A general use case with different micro services: User,Account and SMS microservice&lt;/p&gt;
 &lt;p&gt;Integration of the above microservices with Apache Kakfa messaging event.Below is the link for the detailed documentation and steps to integrate a spring boot project with kafka in a microservices architecture.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://gitlab.com/vinay-keshava/spring-boot-kafka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Repository Link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/java/kafka&#34; &gt;Docs link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/java/kafka&#34; &gt;Docs link&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Twilio SDK Integration&lt;/li&gt;
 &lt;/ul&gt;
@@ -46,10 +46,10 @@
     
     <item>
       <title>2024-03-06</title>
-      <link>/wily/2024/mar-2024/20240306/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240306/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240306/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240306/</guid>
       <description>
         
         
@@ -69,10 +69,10 @@
     
     <item>
       <title>2024-03-12</title>
-      <link>/wily/2024/mar-2024/20240312/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240312/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240312/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240312/</guid>
       <description>
         
         
@@ -99,17 +99,17 @@
 &lt;p&gt;Method reference in java,calling static methods,instantiated methods and so on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/java/java8&#34; &gt;Documentation Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/java/java8&#34; &gt;Documentation Link&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>2024-03-13</title>
-      <link>/wily/2024/mar-2024/20240313/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240313/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240313/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240313/</guid>
       <description>
         
         
@@ -117,7 +117,7 @@
 &lt;li&gt;
 &lt;p&gt;Reactive Programming&lt;/p&gt;
 &lt;p&gt;Need for reactive programming&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/java/webflux&#34; &gt;Reactive programming&lt;/a&gt; is a programming paradigm that promotes an asynchronous, non-blocking, event driven approach to data processing. Let us understand the difference between blocking and non blocking request processing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/java/webflux&#34; &gt;Reactive programming&lt;/a&gt; is a programming paradigm that promotes an asynchronous, non-blocking, event driven approach to data processing. Let us understand the difference between blocking and non blocking request processing.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Blocking Request Processing&lt;/li&gt;
 &lt;li&gt;Non Blocking Request Processing&lt;/li&gt;
@@ -136,21 +136,21 @@
     
     <item>
       <title>2024-03-14</title>
-      <link>/wily/2024/mar-2024/20240314/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240314/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240314/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240314/</guid>
       <description>
         
         
         &lt;h3&gt;Openshift&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;openshift&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#openshift&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;/docs/openshift&#34; &gt;Redhat OpenShift&lt;/a&gt; is a platform that allows us to manage,deploy and orchestrate containerized applications in the cloud.Red hat openshift solves the biggest problem of developing and deploying microservice based applications.&lt;/p&gt;
+    &lt;a href=&#34;#openshift&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/openshift&#34; &gt;Redhat OpenShift&lt;/a&gt; is a platform that allows us to manage,deploy and orchestrate containerized applications in the cloud.Red hat openshift solves the biggest problem of developing and deploying microservice based applications.&lt;/p&gt;
 &lt;p&gt;oc command lets you work with the entire OpenShift cluster and deploy new applications.The CLI exposes the underlying Kubernetes orchestration system with the enhancements made by OpenShift. Users familiar with Kubernetes will be able to adapt to OpenShift quickly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;oc login -u admin -p admin https://api.crc.testing:6443 --insecure-skip-tls-verify=true&lt;/code&gt;
 the command to login into openshift for the user (-u option) admin with password (-poption above)  admin
 &lt;code&gt;oc whoami&lt;/code&gt; : displays the logged in openshift user.&lt;/p&gt;
 &lt;h3&gt;Containers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;containers&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#containers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Getting started with &lt;a href=&#34;/docs/containers&#34; &gt;containers&lt;/a&gt;&lt;/p&gt;
+    &lt;a href=&#34;#containers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Getting started with &lt;a href=&#34;//localhost:1313/docs/containers&#34; &gt;containers&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Like a normal linux program,containers have two states - rest and running. When the container is at rest, a container is a like a file that is stored on the disk like other files.This is referred to as &lt;code&gt;Container Image&lt;/code&gt; or &lt;code&gt;Container Repository&lt;/code&gt;. When the container is started, the &lt;code&gt;Container Engine&lt;/code&gt; unpacks the required files and meta-data, then hands them to the linux kernel.The next process is to start the container just like another linux process making an API call to the linux kernel. This API call makes an isolation and mounts  a copy of the files stored in the container image.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Registry Server&lt;/li&gt;
@@ -166,15 +166,15 @@ the command to login into openshift for the user (-u option) admin with password
     
     <item>
       <title>2024-03-18</title>
-      <link>/wily/2024/mar-2024/20240318/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240318/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240318/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240318/</guid>
       <description>
         
         
         &lt;h3&gt;Containers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;containers&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#containers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;/docs/containers&#34; &gt;Containers&lt;/a&gt; have existed within operating systems for quite a long time, A Container is a runtime intiative of container image.
+    &lt;a href=&#34;#containers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/containers&#34; &gt;Containers&lt;/a&gt; have existed within operating systems for quite a long time, A Container is a runtime intiative of container image.
 Linux containers are often isolated through the use of cgroups,SELinux,AppArmor.&lt;/p&gt;
 &lt;p&gt;Overview of security like cgroups,AppArmor in Debian.&lt;/p&gt;
 &lt;p&gt;Container Terminology:&lt;/p&gt;
@@ -194,7 +194,7 @@ Linux containers are often isolated through the use of cgroups,SELinux,AppArmor.
 &lt;p&gt;Dynamically schedules container workloads, within a cluster of computers.
 Provides a standardized application definition file (kube file, docker compose).&lt;/p&gt;
 &lt;h3&gt;Docker&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;docker&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#docker&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;/docs/containers/docker&#34; &gt;Docker&lt;/a&gt; is within a sandboxed environment, it allows users to package an application with all of its dependencies into a standardized unit for development.Provides a layer of isolation from the host,where the container uses the host&amp;rsquo;s system resources like storage,memory and CPU.&lt;/p&gt;
+    &lt;a href=&#34;#docker&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/containers/docker&#34; &gt;Docker&lt;/a&gt; is within a sandboxed environment, it allows users to package an application with all of its dependencies into a standardized unit for development.Provides a layer of isolation from the host,where the container uses the host&amp;rsquo;s system resources like storage,memory and CPU.&lt;/p&gt;
 &lt;p&gt;Architecture
 - Docker Engine
 - Docker Client
@@ -209,17 +209,17 @@ Provides a standardized application definition file (kube file, docker compose).
 - `docker rm`: delete the docker container without any traces on local
 - `docker rmi`: delete the container image locally
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href=&#34;/docs/containers/docker&#34; &gt;Detailed explanation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//localhost:1313/docs/containers/docker&#34; &gt;Detailed explanation&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>2024-03-19</title>
-      <link>/wily/2024/mar-2024/20240319/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240319/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240319/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240319/</guid>
       <description>
         
         
@@ -399,10 +399,10 @@ Provides a standardized application definition file (kube file, docker compose).
     
     <item>
       <title>2024-03-20</title>
-      <link>/wily/2024/mar-2024/20240320/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240320/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240320/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240320/</guid>
       <description>
         
         
@@ -486,10 +486,10 @@ To verify the working of docker volume, [inside the container] change to the dir
     
     <item>
       <title>2024-03-26</title>
-      <link>/wily/2024/mar-2024/20240326/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240326/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240326/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240326/</guid>
       <description>
         
         
@@ -521,10 +521,10 @@ To verify the working of docker volume, [inside the container] change to the dir
     
     <item>
       <title>2024-03-27</title>
-      <link>/wily/2024/mar-2024/2024028/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/2024028/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/2024028/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/2024028/</guid>
       <description>
         
         
@@ -591,10 +591,10 @@ Using protocol buffers,faster and efficient communication is achieved.gRPC suppo
     
     <item>
       <title>2024-03-27</title>
-      <link>/wily/2024/mar-2024/20240327/</link>
+      <link>//localhost:1313/wily/2024/mar-2024/20240327/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/wily/2024/mar-2024/20240327/</guid>
+      <guid>//localhost:1313/wily/2024/mar-2024/20240327/</guid>
       <description>
         
         
