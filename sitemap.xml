@@ -167,8 +167,6 @@
   </url><url>
     <loc>/wily/2024/aug-2024/</loc>
   </url><url>
-    <loc>/wily/2024/sep-2024/</loc>
-  </url><url>
     <loc>/wily/2023/dec-2023/</loc>
   </url><url>
     <loc>/wily/2023/</loc>
@@ -206,6 +204,8 @@
     <loc>/docs/hacks/customize-qcow2-disk-image/</loc>
   </url><url>
     <loc>/docs/debian/</loc>
+  </url><url>
+    <loc>/wily/2024/dec-2024/</loc>
   </url><url>
     <loc>/docs/containers/docker/</loc>
   </url><url>
@@ -282,6 +282,8 @@
     <loc>/docs/rust/</loc>
   </url><url>
     <loc>/docs/selfhosting/</loc>
+  </url><url>
+    <loc>/wily/2024/sep-2024/</loc>
   </url><url>
     <loc>/docs/java/springcore/</loc>
   </url><url>

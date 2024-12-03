@@ -1644,55 +1644,6 @@ clone the lazy vim git repository and move it to the configuration folder of &lt
     </item>
     
     <item>
-      <title>08, Septemeber 2024</title>
-      <link>/wily/2024/sep-2024/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/wily/2024/sep-2024/</guid>
-      <description>
-        
-        
-        &lt;h3&gt;2024-09-01&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-01&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2024-09-01&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://developers.hp.com/hp-linux-imaging-and-printing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hplip&lt;/a&gt;, a utility for hp printers, to setup run &lt;code&gt;hp-setup&lt;/code&gt; without &lt;code&gt;sudo&lt;/code&gt;, but due to &lt;a href=&#34;https://unix.stackexchange.com/questions/627597/hplip-cannot-be-installed-on-system-with-disabled-root-user-password-incorrect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;disabled root access issue&lt;/a&gt; root password issue fails, switch to root user using &lt;code&gt;sudo su&lt;/code&gt;, and run &lt;code&gt;hp-plugin&lt;/code&gt; to download all the proprietary plugins and then exit the &lt;code&gt;sudo su&lt;/code&gt; terminal session and run &lt;code&gt;hp-setup&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;2024-09-02&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-02&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2024-09-02&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Turning off laptop screen when external monitor is connected using &lt;code&gt;xrandr&lt;/code&gt;, running &lt;code&gt;xrandr&lt;/code&gt; will output the displays&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
-  
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xrandr --output eDP-1 --off&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
-    title=&#34;Copy code&#34;
-  &gt;
-    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-
-  
-&lt;/div&gt;
-&lt;p&gt;Will turn off the laptop screen which is named &lt;code&gt;eDP-1&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;2024-09-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-03&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2024-09-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cups.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cups.org&lt;/a&gt; common unix printing hplip-cannot-be-installed-on-system-with-disabled-root-user-password-incorrect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;2024-09-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-04&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2024-09-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Setting up &lt;a href=&#34;https://cups.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cups.org&lt;/a&gt; common unix printing system on raspberry pi with hplip to make a print server at home for printing with phone and other computer within the local network.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;2024-09-05&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-05&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2024-09-05&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;No op when laptop lid is closed &lt;code&gt;/etc/systemd/logind.conf&lt;/code&gt; and change &lt;code&gt;HandleLidSwitch=ignore&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>2023-12-14</title>
       <link>/wily/2023/dec-2023/20231214/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2546,6 +2497,31 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
 
   
 &lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>December 2024</title>
+      <link>/wily/2024/dec-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/dec-2024/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;2024-12-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-12-03&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-12-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;libreoffice -&amp;gt; Image and Wrap, QR code, Insert variable date and time in libreoffice Writer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Proxmox settings -&amp;gt; Self Host Wazuh&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wazuh -&amp;gt; Online SIEM tool to monitor machines with the help of agents, Disable SSL and setup reverse_proxy under Caddy. Disabled SSL in dashboard settings &lt;code&gt;/etc/wazuh-dashboard/opensearch_dashboards.yml&lt;/code&gt;, &lt;a href=&#34;https://github.com/wazuh/wazuh-docker/issues/875#issuecomment-2514464113&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github Issue Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -11077,6 +11053,55 @@ SyntaxError: closing parenthesis &amp;#39;}&amp;#39; does not match opening pare
 
   
 &lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Septemeber 2024</title>
+      <link>/wily/2024/sep-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wily/2024/sep-2024/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;2024-09-01&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-01&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-01&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.hp.com/hp-linux-imaging-and-printing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hplip&lt;/a&gt;, a utility for hp printers, to setup run &lt;code&gt;hp-setup&lt;/code&gt; without &lt;code&gt;sudo&lt;/code&gt;, but due to &lt;a href=&#34;https://unix.stackexchange.com/questions/627597/hplip-cannot-be-installed-on-system-with-disabled-root-user-password-incorrect&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;disabled root access issue&lt;/a&gt; root password issue fails, switch to root user using &lt;code&gt;sudo su&lt;/code&gt;, and run &lt;code&gt;hp-plugin&lt;/code&gt; to download all the proprietary plugins and then exit the &lt;code&gt;sudo su&lt;/code&gt; terminal session and run &lt;code&gt;hp-setup&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-09-02&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-02&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-02&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Turning off laptop screen when external monitor is connected using &lt;code&gt;xrandr&lt;/code&gt;, running &lt;code&gt;xrandr&lt;/code&gt; will output the displays&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xrandr --output eDP-1 --off&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Will turn off the laptop screen which is named &lt;code&gt;eDP-1&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;2024-09-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-03&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cups.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cups.org&lt;/a&gt; common unix printing hplip-cannot-be-installed-on-system-with-disabled-root-user-password-incorrect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-09-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-04&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Setting up &lt;a href=&#34;https://cups.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cups.org&lt;/a&gt; common unix printing system on raspberry pi with hplip to make a print server at home for printing with phone and other computer within the local network.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2024-09-05&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2024-09-05&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2024-09-05&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;No op when laptop lid is closed &lt;code&gt;/etc/systemd/logind.conf&lt;/code&gt; and change &lt;code&gt;HandleLidSwitch=ignore&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
