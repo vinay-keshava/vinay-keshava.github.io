@@ -247,6 +247,22 @@ additional details in the commit,which can include multiple paragraphs  to descr
         
         &lt;p&gt;Tired of Debian Installer ):&lt;/p&gt;
 &lt;p&gt;On Proxmox VE i had to go through the Debian Installer if i want to spin up a new VM,taking a lot of time and effort.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo apt install qemu-system libguestfs-tools&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Download libguestfs-tools and qemu-system to modify the password and resizing the image.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Download the .qcow2 image from cloud.debian.org&lt;/li&gt;
 &lt;/ol&gt;
@@ -283,7 +299,7 @@ Create a VM on Proxmox VE without any media (do not attach any physical media) a
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
   
 
-&lt;pre&gt;&lt;code&gt;qm importdisk 114 /var/lib/vz/template/qemu/debian-12-genericcloud-amd64-20230910-1499.qcow2 amogha -format qcow2&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+&lt;pre&gt;&lt;code&gt;qm importdisk 114 /var/lib/vz/template/qemu/debian-12-genericcloud-amd64-20230910-1499.qcow2 amogha -format raw&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
   &lt;button
     class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
     title=&#34;Copy code&#34;
@@ -433,6 +449,38 @@ debian installer,haven&amp;rsquo;t tried that yet.&lt;/p&gt;
   
 &lt;/div&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>LibreOffice Shortcuts</title>
+      <link>/docs/hacks/libreoffice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/hacks/libreoffice/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;Image as Watermark&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;image-as-watermark&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#image-as-watermark&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;code&gt;Insert&lt;/code&gt; in the menu bar of LibreOffice Writer, and click on image.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Extend the image to full page and right click on the image and select &lt;code&gt;Wrap&lt;/code&gt; option and then select &lt;code&gt;In Background&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;QR Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;qr-code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#qr-code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;code&gt;Insert&lt;/code&gt; in the menu bar, next click &lt;code&gt;OLE Object&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Next click on QR code and put the URL/Text in the field and click on &lt;code&gt;OK&lt;/code&gt; to generate the QR code&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Variable Data and Time&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;variable-data-and-time&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#variable-data-and-time&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
       </description>
     </item>
     
